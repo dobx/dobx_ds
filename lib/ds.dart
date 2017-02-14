@@ -33,6 +33,8 @@ class ParamId {
       .._id = id;
   }
 
+  static const int FN_ID = 1;
+
   int _id;
 
   /// required: 1
@@ -81,6 +83,9 @@ class ParamKey {
       .._key = key
       .._parentKey = parentKey;
   }
+
+  static const int FN_KEY = 1;
+  static const int FN_PARENT_KEY = 2;
 
   String _key;
   String _parentKey;
@@ -145,6 +150,10 @@ class ParamUpdate {
       .._mc = mc ?? MultiCAS.createObservable()
       .._id = id;
   }
+
+  static const int FN_KEY = 1;
+  static const int FN_MC = 2;
+  static const int FN_ID = 3;
 
   String _key;
   MultiCAS _mc;
@@ -224,6 +233,11 @@ class ParamRangeKey {
       .._startKey = startKey
       .._parentKey = parentKey;
   }
+
+  static const int FN_DESC = 1;
+  static const int FN_LIMIT = 2;
+  static const int FN_START_KEY = 3;
+  static const int FN_PARENT_KEY = 4;
 
   bool _desc;
   int _limit;
@@ -305,6 +319,10 @@ class ACResult {
       .._id = id;
   }
 
+  static const int FN_NAME = 1;
+  static const int FN_VALUE = 2;
+  static const int FN_ID = 3;
+
   String _name;
   String _value;
   int _id;
@@ -352,6 +370,8 @@ class ACResult_PList {
     return new ACResult_PList()
       .._p = p;
   }
+  static const int FN_P = 1;
+
   List<ACResult> _p;
 
   /// repeated: 1
@@ -410,6 +430,11 @@ class P1 {
       .._pgstart = pgstart
       .._prk = prk ?? ParamRangeKey.createObservable();
   }
+
+  static const int FN_VALUE = 1;
+  static const int FN_END = 2;
+  static const int FN_PGSTART = 3;
+  static const int FN_PRK = 4;
 
   int _value;
   int _end;
@@ -498,6 +523,11 @@ class P4 {
       .._prk = prk ?? ParamRangeKey.createObservable();
   }
 
+  static const int FN_VALUE = 1;
+  static const int FN_END = 2;
+  static const int FN_PGSTART = 3;
+  static const int FN_PRK = 4;
+
   int _value;
   int _end;
   int _pgstart;
@@ -584,6 +614,11 @@ class P8 {
       .._pgstart = pgstart
       .._prk = prk ?? ParamRangeKey.createObservable();
   }
+
+  static const int FN_VALUE = 1;
+  static const int FN_END = 2;
+  static const int FN_PGSTART = 3;
+  static const int FN_PRK = 4;
 
   int _value;
   int _end;
@@ -672,6 +707,11 @@ class PD {
       .._prk = prk ?? ParamRangeKey.createObservable();
   }
 
+  static const int FN_VALUE = 1;
+  static const int FN_END = 2;
+  static const int FN_PGSTART = 3;
+  static const int FN_PRK = 4;
+
   int _value;
   int _end;
   int _pgstart;
@@ -758,6 +798,11 @@ class PB {
       .._pgstart = pgstart
       .._prk = prk ?? ParamRangeKey.createObservable();
   }
+
+  static const int FN_VALUE = 1;
+  static const int FN_END = 2;
+  static const int FN_PGSTART = 3;
+  static const int FN_PRK = 4;
 
   String _value;
   String _end;
@@ -846,6 +891,11 @@ class PK {
       .._prk = prk ?? ParamRangeKey.createObservable();
   }
 
+  static const int FN_VALUE = 1;
+  static const int FN_END = 2;
+  static const int FN_PGSTART = 3;
+  static const int FN_PRK = 4;
+
   String _value;
   String _end;
   String _pgstart;
@@ -932,6 +982,11 @@ class PS {
       .._pgstart = pgstart
       .._prk = prk ?? ParamRangeKey.createObservable();
   }
+
+  static const int FN_VALUE = 1;
+  static const int FN_END = 2;
+  static const int FN_PGSTART = 3;
+  static const int FN_PRK = 4;
 
   String _value;
   String _end;
