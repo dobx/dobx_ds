@@ -1,9 +1,15 @@
 name: dobx_ds
-description: dobx and protostuff-ds
 version: 0.1.0
+author: dyu <davidyu@cebu.io>
+description: dobx and protostuff-ds
+
+environment:
+  sdk: '>=1.21.0 <2.0.0'
 
 dependencies:
   dobx: ^0.5.1
+
+dev_dependencies:
   flutter:
     sdk: flutter
 
