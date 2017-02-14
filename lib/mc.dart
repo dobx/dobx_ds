@@ -14,3 +14,16 @@
 // @author dyu
 // @created 2017/02/14
 
+import 'package:collection/collection.dart';
+
+class MultiCAS extends DelegatingMap<String,dynamic> {
+  static MultiCAS create() {
+    return new MultiCAS({});
+  }
+  static MultiCAS createObservable() {
+    return new MultiCAS({});
+  }
+
+  MultiCAS(Map<String,dynamic> store) : super(store);
+
+}
