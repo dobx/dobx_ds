@@ -10,6 +10,22 @@ import '../ds.dart' as ds;
 ///   required ds.P1 l = 4;
 /// }
 class PK111 {
+  static Map<String,dynamic> toMap(PK111 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._l == null ? null : ds.P1.toMap(item._l),
+  };
+  static PK111 fromMap(Map<String,dynamic> map, [ PK111 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK111();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._p2 = map["3"];
+    item._l = ds.P1.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK111 create(
     String p0, int p1, int p2, ds.P1 l, 
   ) {
@@ -54,6 +70,22 @@ class PK111 {
 ///   required ds.P4 l = 4;
 /// }
 class PK114 {
+  static Map<String,dynamic> toMap(PK114 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._l == null ? null : ds.P4.toMap(item._l),
+  };
+  static PK114 fromMap(Map<String,dynamic> map, [ PK114 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK114();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._p2 = map["3"];
+    item._l = ds.P4.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK114 create(
     String p0, int p1, int p2, ds.P4 l, 
   ) {
@@ -98,6 +130,22 @@ class PK114 {
 ///   required ds.P8 l = 4;
 /// }
 class PK118 {
+  static Map<String,dynamic> toMap(PK118 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._l == null ? null : ds.P8.toMap(item._l),
+  };
+  static PK118 fromMap(Map<String,dynamic> map, [ PK118 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK118();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._p2 = map["3"];
+    item._l = ds.P8.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK118 create(
     String p0, int p1, int p2, ds.P8 l, 
   ) {
@@ -142,6 +190,22 @@ class PK118 {
 ///   required ds.PD l = 4;
 /// }
 class PK11D {
+  static Map<String,dynamic> toMap(PK11D item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._l == null ? null : ds.PD.toMap(item._l),
+  };
+  static PK11D fromMap(Map<String,dynamic> map, [ PK11D item ]) {
+    if (map == null) return item;
+
+    item ??= new PK11D();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._p2 = map["3"];
+    item._l = ds.PD.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK11D create(
     String p0, int p1, int p2, ds.PD l, 
   ) {
@@ -186,6 +250,22 @@ class PK11D {
 ///   required ds.PK l = 4;
 /// }
 class PK11K {
+  static Map<String,dynamic> toMap(PK11K item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._l == null ? null : ds.PK.toMap(item._l),
+  };
+  static PK11K fromMap(Map<String,dynamic> map, [ PK11K item ]) {
+    if (map == null) return item;
+
+    item ??= new PK11K();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._p2 = map["3"];
+    item._l = ds.PK.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK11K create(
     String p0, int p1, int p2, ds.PK l, 
   ) {
@@ -230,6 +310,22 @@ class PK11K {
 ///   required ds.PS l = 4;
 /// }
 class PK11S {
+  static Map<String,dynamic> toMap(PK11S item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._l == null ? null : ds.PS.toMap(item._l),
+  };
+  static PK11S fromMap(Map<String,dynamic> map, [ PK11S item ]) {
+    if (map == null) return item;
+
+    item ??= new PK11S();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._p2 = map["3"];
+    item._l = ds.PS.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK11S create(
     String p0, int p1, int p2, ds.PS l, 
   ) {
@@ -273,6 +369,20 @@ class PK11S {
 ///   required ds.P1 l = 3;
 /// }
 class PK81 {
+  static Map<String,dynamic> toMap(PK81 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P1.toMap(item._l),
+  };
+  static PK81 fromMap(Map<String,dynamic> map, [ PK81 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK81();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK81 create(
     String p0, int p1, ds.P1 l, 
   ) {
@@ -309,6 +419,20 @@ class PK81 {
 ///   required ds.P4 l = 3;
 /// }
 class PK84 {
+  static Map<String,dynamic> toMap(PK84 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P4.toMap(item._l),
+  };
+  static PK84 fromMap(Map<String,dynamic> map, [ PK84 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK84();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK84 create(
     String p0, int p1, ds.P4 l, 
   ) {
@@ -345,6 +469,20 @@ class PK84 {
 ///   required ds.P8 l = 3;
 /// }
 class PK88 {
+  static Map<String,dynamic> toMap(PK88 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P8.toMap(item._l),
+  };
+  static PK88 fromMap(Map<String,dynamic> map, [ PK88 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK88();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK88 create(
     String p0, int p1, ds.P8 l, 
   ) {
@@ -381,6 +519,20 @@ class PK88 {
 ///   required ds.PD l = 3;
 /// }
 class PK8D {
+  static Map<String,dynamic> toMap(PK8D item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PD.toMap(item._l),
+  };
+  static PK8D fromMap(Map<String,dynamic> map, [ PK8D item ]) {
+    if (map == null) return item;
+
+    item ??= new PK8D();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK8D create(
     String p0, int p1, ds.PD l, 
   ) {
@@ -417,6 +569,20 @@ class PK8D {
 ///   required ds.PK l = 3;
 /// }
 class PK8K {
+  static Map<String,dynamic> toMap(PK8K item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PK.toMap(item._l),
+  };
+  static PK8K fromMap(Map<String,dynamic> map, [ PK8K item ]) {
+    if (map == null) return item;
+
+    item ??= new PK8K();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK8K create(
     String p0, int p1, ds.PK l, 
   ) {
@@ -453,6 +619,20 @@ class PK8K {
 ///   required ds.PS l = 3;
 /// }
 class PK8S {
+  static Map<String,dynamic> toMap(PK8S item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PS.toMap(item._l),
+  };
+  static PK8S fromMap(Map<String,dynamic> map, [ PK8S item ]) {
+    if (map == null) return item;
+
+    item ??= new PK8S();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK8S create(
     String p0, int p1, ds.PS l, 
   ) {
@@ -491,6 +671,24 @@ class PK8S {
 ///   required ds.P1 l = 5;
 /// }
 class PK1111 {
+  static Map<String,dynamic> toMap(PK1111 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._l == null ? null : ds.P1.toMap(item._l),
+  };
+  static PK1111 fromMap(Map<String,dynamic> map, [ PK1111 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK1111();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._p2 = map["3"];
+    item._p3 = map["4"];
+    item._l = ds.P1.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK1111 create(
     String p0, int p1, int p2, int p3, ds.P1 l, 
   ) {
@@ -543,6 +741,24 @@ class PK1111 {
 ///   required ds.P4 l = 5;
 /// }
 class PK1114 {
+  static Map<String,dynamic> toMap(PK1114 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._l == null ? null : ds.P4.toMap(item._l),
+  };
+  static PK1114 fromMap(Map<String,dynamic> map, [ PK1114 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK1114();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._p2 = map["3"];
+    item._p3 = map["4"];
+    item._l = ds.P4.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK1114 create(
     String p0, int p1, int p2, int p3, ds.P4 l, 
   ) {
@@ -595,6 +811,24 @@ class PK1114 {
 ///   required ds.P8 l = 5;
 /// }
 class PK1118 {
+  static Map<String,dynamic> toMap(PK1118 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._l == null ? null : ds.P8.toMap(item._l),
+  };
+  static PK1118 fromMap(Map<String,dynamic> map, [ PK1118 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK1118();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._p2 = map["3"];
+    item._p3 = map["4"];
+    item._l = ds.P8.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK1118 create(
     String p0, int p1, int p2, int p3, ds.P8 l, 
   ) {
@@ -647,6 +881,24 @@ class PK1118 {
 ///   required ds.PD l = 5;
 /// }
 class PK111D {
+  static Map<String,dynamic> toMap(PK111D item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._l == null ? null : ds.PD.toMap(item._l),
+  };
+  static PK111D fromMap(Map<String,dynamic> map, [ PK111D item ]) {
+    if (map == null) return item;
+
+    item ??= new PK111D();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._p2 = map["3"];
+    item._p3 = map["4"];
+    item._l = ds.PD.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK111D create(
     String p0, int p1, int p2, int p3, ds.PD l, 
   ) {
@@ -699,6 +951,24 @@ class PK111D {
 ///   required ds.PK l = 5;
 /// }
 class PK111K {
+  static Map<String,dynamic> toMap(PK111K item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._l == null ? null : ds.PK.toMap(item._l),
+  };
+  static PK111K fromMap(Map<String,dynamic> map, [ PK111K item ]) {
+    if (map == null) return item;
+
+    item ??= new PK111K();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._p2 = map["3"];
+    item._p3 = map["4"];
+    item._l = ds.PK.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK111K create(
     String p0, int p1, int p2, int p3, ds.PK l, 
   ) {
@@ -751,6 +1021,24 @@ class PK111K {
 ///   required ds.PS l = 5;
 /// }
 class PK111S {
+  static Map<String,dynamic> toMap(PK111S item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._l == null ? null : ds.PS.toMap(item._l),
+  };
+  static PK111S fromMap(Map<String,dynamic> map, [ PK111S item ]) {
+    if (map == null) return item;
+
+    item ??= new PK111S();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._p2 = map["3"];
+    item._p3 = map["4"];
+    item._l = ds.PS.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK111S create(
     String p0, int p1, int p2, int p3, ds.PS l, 
   ) {
@@ -801,6 +1089,20 @@ class PK111S {
 ///   required ds.P1 l = 3;
 /// }
 class PK11 {
+  static Map<String,dynamic> toMap(PK11 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P1.toMap(item._l),
+  };
+  static PK11 fromMap(Map<String,dynamic> map, [ PK11 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK11();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK11 create(
     String p0, int p1, ds.P1 l, 
   ) {
@@ -837,6 +1139,20 @@ class PK11 {
 ///   required ds.P4 l = 3;
 /// }
 class PK14 {
+  static Map<String,dynamic> toMap(PK14 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P4.toMap(item._l),
+  };
+  static PK14 fromMap(Map<String,dynamic> map, [ PK14 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK14();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK14 create(
     String p0, int p1, ds.P4 l, 
   ) {
@@ -873,6 +1189,20 @@ class PK14 {
 ///   required ds.P8 l = 3;
 /// }
 class PK18 {
+  static Map<String,dynamic> toMap(PK18 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P8.toMap(item._l),
+  };
+  static PK18 fromMap(Map<String,dynamic> map, [ PK18 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK18();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK18 create(
     String p0, int p1, ds.P8 l, 
   ) {
@@ -909,6 +1239,20 @@ class PK18 {
 ///   required ds.PD l = 3;
 /// }
 class PK1D {
+  static Map<String,dynamic> toMap(PK1D item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PD.toMap(item._l),
+  };
+  static PK1D fromMap(Map<String,dynamic> map, [ PK1D item ]) {
+    if (map == null) return item;
+
+    item ??= new PK1D();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK1D create(
     String p0, int p1, ds.PD l, 
   ) {
@@ -945,6 +1289,20 @@ class PK1D {
 ///   required ds.PK l = 3;
 /// }
 class PK1K {
+  static Map<String,dynamic> toMap(PK1K item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PK.toMap(item._l),
+  };
+  static PK1K fromMap(Map<String,dynamic> map, [ PK1K item ]) {
+    if (map == null) return item;
+
+    item ??= new PK1K();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK1K create(
     String p0, int p1, ds.PK l, 
   ) {
@@ -981,6 +1339,20 @@ class PK1K {
 ///   required ds.PS l = 3;
 /// }
 class PK1S {
+  static Map<String,dynamic> toMap(PK1S item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PS.toMap(item._l),
+  };
+  static PK1S fromMap(Map<String,dynamic> map, [ PK1S item ]) {
+    if (map == null) return item;
+
+    item ??= new PK1S();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK1S create(
     String p0, int p1, ds.PS l, 
   ) {
@@ -1017,6 +1389,20 @@ class PK1S {
 ///   required ds.P1 l = 3;
 /// }
 class PKK1 {
+  static Map<String,dynamic> toMap(PKK1 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P1.toMap(item._l),
+  };
+  static PKK1 fromMap(Map<String,dynamic> map, [ PKK1 item ]) {
+    if (map == null) return item;
+
+    item ??= new PKK1();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKK1 create(
     String p0, String p1, ds.P1 l, 
   ) {
@@ -1053,6 +1439,20 @@ class PKK1 {
 ///   required ds.P4 l = 3;
 /// }
 class PKK4 {
+  static Map<String,dynamic> toMap(PKK4 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P4.toMap(item._l),
+  };
+  static PKK4 fromMap(Map<String,dynamic> map, [ PKK4 item ]) {
+    if (map == null) return item;
+
+    item ??= new PKK4();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKK4 create(
     String p0, String p1, ds.P4 l, 
   ) {
@@ -1089,6 +1489,20 @@ class PKK4 {
 ///   required ds.P8 l = 3;
 /// }
 class PKK8 {
+  static Map<String,dynamic> toMap(PKK8 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P8.toMap(item._l),
+  };
+  static PKK8 fromMap(Map<String,dynamic> map, [ PKK8 item ]) {
+    if (map == null) return item;
+
+    item ??= new PKK8();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKK8 create(
     String p0, String p1, ds.P8 l, 
   ) {
@@ -1125,6 +1539,20 @@ class PKK8 {
 ///   required ds.PD l = 3;
 /// }
 class PKKD {
+  static Map<String,dynamic> toMap(PKKD item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PD.toMap(item._l),
+  };
+  static PKKD fromMap(Map<String,dynamic> map, [ PKKD item ]) {
+    if (map == null) return item;
+
+    item ??= new PKKD();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKKD create(
     String p0, String p1, ds.PD l, 
   ) {
@@ -1161,6 +1589,20 @@ class PKKD {
 ///   required ds.PK l = 3;
 /// }
 class PKKK {
+  static Map<String,dynamic> toMap(PKKK item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PK.toMap(item._l),
+  };
+  static PKKK fromMap(Map<String,dynamic> map, [ PKKK item ]) {
+    if (map == null) return item;
+
+    item ??= new PKKK();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKKK create(
     String p0, String p1, ds.PK l, 
   ) {
@@ -1197,6 +1639,20 @@ class PKKK {
 ///   required ds.PS l = 3;
 /// }
 class PKKS {
+  static Map<String,dynamic> toMap(PKKS item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PS.toMap(item._l),
+  };
+  static PKKS fromMap(Map<String,dynamic> map, [ PKKS item ]) {
+    if (map == null) return item;
+
+    item ??= new PKKS();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKKS create(
     String p0, String p1, ds.PS l, 
   ) {
@@ -1232,6 +1688,18 @@ class PKKS {
 ///   required ds.P1 l = 2;
 /// }
 class PK1 {
+  static Map<String,dynamic> toMap(PK1 item) => {
+    "1": item._p0,
+    "2": item._l == null ? null : ds.P1.toMap(item._l),
+  };
+  static PK1 fromMap(Map<String,dynamic> map, [ PK1 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK1();
+    item._p0 = map["1"];
+    item._l = ds.P1.fromMap(map["2"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK1 create(
     String p0, ds.P1 l, 
   ) {
@@ -1260,6 +1728,18 @@ class PK1 {
 ///   required ds.P4 l = 2;
 /// }
 class PK4 {
+  static Map<String,dynamic> toMap(PK4 item) => {
+    "1": item._p0,
+    "2": item._l == null ? null : ds.P4.toMap(item._l),
+  };
+  static PK4 fromMap(Map<String,dynamic> map, [ PK4 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK4();
+    item._p0 = map["1"];
+    item._l = ds.P4.fromMap(map["2"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK4 create(
     String p0, ds.P4 l, 
   ) {
@@ -1288,6 +1768,18 @@ class PK4 {
 ///   required ds.P8 l = 2;
 /// }
 class PK8 {
+  static Map<String,dynamic> toMap(PK8 item) => {
+    "1": item._p0,
+    "2": item._l == null ? null : ds.P8.toMap(item._l),
+  };
+  static PK8 fromMap(Map<String,dynamic> map, [ PK8 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK8();
+    item._p0 = map["1"];
+    item._l = ds.P8.fromMap(map["2"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK8 create(
     String p0, ds.P8 l, 
   ) {
@@ -1316,6 +1808,18 @@ class PK8 {
 ///   required ds.PD l = 2;
 /// }
 class PKD {
+  static Map<String,dynamic> toMap(PKD item) => {
+    "1": item._p0,
+    "2": item._l == null ? null : ds.PD.toMap(item._l),
+  };
+  static PKD fromMap(Map<String,dynamic> map, [ PKD item ]) {
+    if (map == null) return item;
+
+    item ??= new PKD();
+    item._p0 = map["1"];
+    item._l = ds.PD.fromMap(map["2"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKD create(
     String p0, ds.PD l, 
   ) {
@@ -1344,6 +1848,18 @@ class PKD {
 ///   required ds.PK l = 2;
 /// }
 class PKK {
+  static Map<String,dynamic> toMap(PKK item) => {
+    "1": item._p0,
+    "2": item._l == null ? null : ds.PK.toMap(item._l),
+  };
+  static PKK fromMap(Map<String,dynamic> map, [ PKK item ]) {
+    if (map == null) return item;
+
+    item ??= new PKK();
+    item._p0 = map["1"];
+    item._l = ds.PK.fromMap(map["2"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKK create(
     String p0, ds.PK l, 
   ) {
@@ -1372,6 +1888,18 @@ class PKK {
 ///   required ds.PS l = 2;
 /// }
 class PKS {
+  static Map<String,dynamic> toMap(PKS item) => {
+    "1": item._p0,
+    "2": item._l == null ? null : ds.PS.toMap(item._l),
+  };
+  static PKS fromMap(Map<String,dynamic> map, [ PKS item ]) {
+    if (map == null) return item;
+
+    item ??= new PKS();
+    item._p0 = map["1"];
+    item._l = ds.PS.fromMap(map["2"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKS create(
     String p0, ds.PS l, 
   ) {
@@ -1401,6 +1929,20 @@ class PKS {
 ///   required ds.P1 l = 3;
 /// }
 class PKD1 {
+  static Map<String,dynamic> toMap(PKD1 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P1.toMap(item._l),
+  };
+  static PKD1 fromMap(Map<String,dynamic> map, [ PKD1 item ]) {
+    if (map == null) return item;
+
+    item ??= new PKD1();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKD1 create(
     String p0, int p1, ds.P1 l, 
   ) {
@@ -1437,6 +1979,20 @@ class PKD1 {
 ///   required ds.P4 l = 3;
 /// }
 class PKD4 {
+  static Map<String,dynamic> toMap(PKD4 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P4.toMap(item._l),
+  };
+  static PKD4 fromMap(Map<String,dynamic> map, [ PKD4 item ]) {
+    if (map == null) return item;
+
+    item ??= new PKD4();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKD4 create(
     String p0, int p1, ds.P4 l, 
   ) {
@@ -1473,6 +2029,20 @@ class PKD4 {
 ///   required ds.P8 l = 3;
 /// }
 class PKD8 {
+  static Map<String,dynamic> toMap(PKD8 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P8.toMap(item._l),
+  };
+  static PKD8 fromMap(Map<String,dynamic> map, [ PKD8 item ]) {
+    if (map == null) return item;
+
+    item ??= new PKD8();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKD8 create(
     String p0, int p1, ds.P8 l, 
   ) {
@@ -1509,6 +2079,20 @@ class PKD8 {
 ///   required ds.PD l = 3;
 /// }
 class PKDD {
+  static Map<String,dynamic> toMap(PKDD item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PD.toMap(item._l),
+  };
+  static PKDD fromMap(Map<String,dynamic> map, [ PKDD item ]) {
+    if (map == null) return item;
+
+    item ??= new PKDD();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKDD create(
     String p0, int p1, ds.PD l, 
   ) {
@@ -1545,6 +2129,20 @@ class PKDD {
 ///   required ds.PK l = 3;
 /// }
 class PKDK {
+  static Map<String,dynamic> toMap(PKDK item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PK.toMap(item._l),
+  };
+  static PKDK fromMap(Map<String,dynamic> map, [ PKDK item ]) {
+    if (map == null) return item;
+
+    item ??= new PKDK();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKDK create(
     String p0, int p1, ds.PK l, 
   ) {
@@ -1581,6 +2179,20 @@ class PKDK {
 ///   required ds.PS l = 3;
 /// }
 class PKDS {
+  static Map<String,dynamic> toMap(PKDS item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PS.toMap(item._l),
+  };
+  static PKDS fromMap(Map<String,dynamic> map, [ PKDS item ]) {
+    if (map == null) return item;
+
+    item ??= new PKDS();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKDS create(
     String p0, int p1, ds.PS l, 
   ) {
@@ -1617,6 +2229,20 @@ class PKDS {
 ///   required ds.P1 l = 3;
 /// }
 class PK41 {
+  static Map<String,dynamic> toMap(PK41 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P1.toMap(item._l),
+  };
+  static PK41 fromMap(Map<String,dynamic> map, [ PK41 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK41();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK41 create(
     String p0, int p1, ds.P1 l, 
   ) {
@@ -1653,6 +2279,20 @@ class PK41 {
 ///   required ds.P4 l = 3;
 /// }
 class PK44 {
+  static Map<String,dynamic> toMap(PK44 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P4.toMap(item._l),
+  };
+  static PK44 fromMap(Map<String,dynamic> map, [ PK44 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK44();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK44 create(
     String p0, int p1, ds.P4 l, 
   ) {
@@ -1689,6 +2329,20 @@ class PK44 {
 ///   required ds.P8 l = 3;
 /// }
 class PK48 {
+  static Map<String,dynamic> toMap(PK48 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P8.toMap(item._l),
+  };
+  static PK48 fromMap(Map<String,dynamic> map, [ PK48 item ]) {
+    if (map == null) return item;
+
+    item ??= new PK48();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK48 create(
     String p0, int p1, ds.P8 l, 
   ) {
@@ -1725,6 +2379,20 @@ class PK48 {
 ///   required ds.PD l = 3;
 /// }
 class PK4D {
+  static Map<String,dynamic> toMap(PK4D item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PD.toMap(item._l),
+  };
+  static PK4D fromMap(Map<String,dynamic> map, [ PK4D item ]) {
+    if (map == null) return item;
+
+    item ??= new PK4D();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK4D create(
     String p0, int p1, ds.PD l, 
   ) {
@@ -1761,6 +2429,20 @@ class PK4D {
 ///   required ds.PK l = 3;
 /// }
 class PK4K {
+  static Map<String,dynamic> toMap(PK4K item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PK.toMap(item._l),
+  };
+  static PK4K fromMap(Map<String,dynamic> map, [ PK4K item ]) {
+    if (map == null) return item;
+
+    item ??= new PK4K();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK4K create(
     String p0, int p1, ds.PK l, 
   ) {
@@ -1797,6 +2479,20 @@ class PK4K {
 ///   required ds.PS l = 3;
 /// }
 class PK4S {
+  static Map<String,dynamic> toMap(PK4S item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PS.toMap(item._l),
+  };
+  static PK4S fromMap(Map<String,dynamic> map, [ PK4S item ]) {
+    if (map == null) return item;
+
+    item ??= new PK4S();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PK4S create(
     String p0, int p1, ds.PS l, 
   ) {
@@ -1833,6 +2529,20 @@ class PK4S {
 ///   required ds.P1 l = 3;
 /// }
 class PKS1 {
+  static Map<String,dynamic> toMap(PKS1 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P1.toMap(item._l),
+  };
+  static PKS1 fromMap(Map<String,dynamic> map, [ PKS1 item ]) {
+    if (map == null) return item;
+
+    item ??= new PKS1();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKS1 create(
     String p0, String p1, ds.P1 l, 
   ) {
@@ -1869,6 +2579,20 @@ class PKS1 {
 ///   required ds.P4 l = 3;
 /// }
 class PKS4 {
+  static Map<String,dynamic> toMap(PKS4 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P4.toMap(item._l),
+  };
+  static PKS4 fromMap(Map<String,dynamic> map, [ PKS4 item ]) {
+    if (map == null) return item;
+
+    item ??= new PKS4();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKS4 create(
     String p0, String p1, ds.P4 l, 
   ) {
@@ -1905,6 +2629,20 @@ class PKS4 {
 ///   required ds.P8 l = 3;
 /// }
 class PKS8 {
+  static Map<String,dynamic> toMap(PKS8 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P8.toMap(item._l),
+  };
+  static PKS8 fromMap(Map<String,dynamic> map, [ PKS8 item ]) {
+    if (map == null) return item;
+
+    item ??= new PKS8();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKS8 create(
     String p0, String p1, ds.P8 l, 
   ) {
@@ -1941,6 +2679,20 @@ class PKS8 {
 ///   required ds.PD l = 3;
 /// }
 class PKSD {
+  static Map<String,dynamic> toMap(PKSD item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PD.toMap(item._l),
+  };
+  static PKSD fromMap(Map<String,dynamic> map, [ PKSD item ]) {
+    if (map == null) return item;
+
+    item ??= new PKSD();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKSD create(
     String p0, String p1, ds.PD l, 
   ) {
@@ -1977,6 +2729,20 @@ class PKSD {
 ///   required ds.PK l = 3;
 /// }
 class PKSK {
+  static Map<String,dynamic> toMap(PKSK item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PK.toMap(item._l),
+  };
+  static PKSK fromMap(Map<String,dynamic> map, [ PKSK item ]) {
+    if (map == null) return item;
+
+    item ??= new PKSK();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKSK create(
     String p0, String p1, ds.PK l, 
   ) {
@@ -2013,6 +2779,20 @@ class PKSK {
 ///   required ds.PS l = 3;
 /// }
 class PKSS {
+  static Map<String,dynamic> toMap(PKSS item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PS.toMap(item._l),
+  };
+  static PKSS fromMap(Map<String,dynamic> map, [ PKSS item ]) {
+    if (map == null) return item;
+
+    item ??= new PKSS();
+    item._p0 = map["1"];
+    item._p1 = map["2"];
+    item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    return item;
+  }
   static PKSS create(
     String p0, String p1, ds.PS l, 
   ) {

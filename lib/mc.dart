@@ -17,6 +17,11 @@
 import 'package:collection/collection.dart';
 
 class MultiCAS extends DelegatingMap<String,dynamic> {
+  static Map<String,dynamic> toMap(MultiCAS item) => item._store;
+  static MultiCAS fromMap(Map<String,dynamic> map, [ MultiCAS item ]) {
+    // no merge
+    return new MultiCAS(map);
+  }
   static MultiCAS create() {
     return new MultiCAS({});
   }
@@ -24,6 +29,7 @@ class MultiCAS extends DelegatingMap<String,dynamic> {
     return new MultiCAS({});
   }
 
-  MultiCAS(Map<String,dynamic> store) : super(store);
+  final Map<String,dynamic> _store;
 
+  MultiCAS(Map<String,dynamic> store) : _store = store, super(store);
 }
