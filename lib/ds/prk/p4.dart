@@ -12,14 +12,6 @@ import '../../ds.dart' as ds;
 ///   required ds.P1 l = 6;
 /// }
 class P444441 {
-  static Map<String,dynamic> toMap(P444441 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._p3,
-    "5": item._p4,
-    "6": item._l == null ? null : ds.P1.toMap(item._l),
-  };
   static P444441 fromMap(Map<String,dynamic> map, [ P444441 item ]) {
     if (map == null) return item;
 
@@ -32,6 +24,20 @@ class P444441 {
     item._l = ds.P1.fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P444441 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P444441 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._p4,
+    "6": item._l == null ? null : ds.P1.toMap(item._l),
+  };
   static P444441 create(
     int p0, int p1, int p2, int p3, int p4, ds.P1 l, 
   ) {
@@ -99,14 +105,6 @@ class P444441 {
 ///   required ds.P4 l = 6;
 /// }
 class P444444 {
-  static Map<String,dynamic> toMap(P444444 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._p3,
-    "5": item._p4,
-    "6": item._l == null ? null : ds.P4.toMap(item._l),
-  };
   static P444444 fromMap(Map<String,dynamic> map, [ P444444 item ]) {
     if (map == null) return item;
 
@@ -119,6 +117,20 @@ class P444444 {
     item._l = ds.P4.fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P444444 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P444444 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._p4,
+    "6": item._l == null ? null : ds.P4.toMap(item._l),
+  };
   static P444444 create(
     int p0, int p1, int p2, int p3, int p4, ds.P4 l, 
   ) {
@@ -186,14 +198,6 @@ class P444444 {
 ///   required ds.P8 l = 6;
 /// }
 class P444448 {
-  static Map<String,dynamic> toMap(P444448 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._p3,
-    "5": item._p4,
-    "6": item._l == null ? null : ds.P8.toMap(item._l),
-  };
   static P444448 fromMap(Map<String,dynamic> map, [ P444448 item ]) {
     if (map == null) return item;
 
@@ -206,6 +210,20 @@ class P444448 {
     item._l = ds.P8.fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P444448 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P444448 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._p4,
+    "6": item._l == null ? null : ds.P8.toMap(item._l),
+  };
   static P444448 create(
     int p0, int p1, int p2, int p3, int p4, ds.P8 l, 
   ) {
@@ -273,14 +291,6 @@ class P444448 {
 ///   required ds.PD l = 6;
 /// }
 class P44444D {
-  static Map<String,dynamic> toMap(P44444D item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._p3,
-    "5": item._p4,
-    "6": item._l == null ? null : ds.PD.toMap(item._l),
-  };
   static P44444D fromMap(Map<String,dynamic> map, [ P44444D item ]) {
     if (map == null) return item;
 
@@ -293,6 +303,20 @@ class P44444D {
     item._l = ds.PD.fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P44444D $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P44444D item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._p4,
+    "6": item._l == null ? null : ds.PD.toMap(item._l),
+  };
   static P44444D create(
     int p0, int p1, int p2, int p3, int p4, ds.PD l, 
   ) {
@@ -360,14 +384,6 @@ class P44444D {
 ///   required ds.PK l = 6;
 /// }
 class P44444K {
-  static Map<String,dynamic> toMap(P44444K item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._p3,
-    "5": item._p4,
-    "6": item._l == null ? null : ds.PK.toMap(item._l),
-  };
   static P44444K fromMap(Map<String,dynamic> map, [ P44444K item ]) {
     if (map == null) return item;
 
@@ -380,6 +396,20 @@ class P44444K {
     item._l = ds.PK.fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P44444K $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P44444K item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._p4,
+    "6": item._l == null ? null : ds.PK.toMap(item._l),
+  };
   static P44444K create(
     int p0, int p1, int p2, int p3, int p4, ds.PK l, 
   ) {
@@ -447,14 +477,6 @@ class P44444K {
 ///   required ds.PS l = 6;
 /// }
 class P44444S {
-  static Map<String,dynamic> toMap(P44444S item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._p3,
-    "5": item._p4,
-    "6": item._l == null ? null : ds.PS.toMap(item._l),
-  };
   static P44444S fromMap(Map<String,dynamic> map, [ P44444S item ]) {
     if (map == null) return item;
 
@@ -467,6 +489,20 @@ class P44444S {
     item._l = ds.PS.fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P44444S $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P44444S item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._p4,
+    "6": item._l == null ? null : ds.PS.toMap(item._l),
+  };
   static P44444S create(
     int p0, int p1, int p2, int p3, int p4, ds.PS l, 
   ) {
@@ -533,13 +569,6 @@ class P44444S {
 ///   required ds.P1 l = 5;
 /// }
 class P44441 {
-  static Map<String,dynamic> toMap(P44441 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._p3,
-    "5": item._l == null ? null : ds.P1.toMap(item._l),
-  };
   static P44441 fromMap(Map<String,dynamic> map, [ P44441 item ]) {
     if (map == null) return item;
 
@@ -551,6 +580,19 @@ class P44441 {
     item._l = ds.P1.fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P44441 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P44441 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._l == null ? null : ds.P1.toMap(item._l),
+  };
   static P44441 create(
     int p0, int p1, int p2, int p3, ds.P1 l, 
   ) {
@@ -609,13 +651,6 @@ class P44441 {
 ///   required ds.P4 l = 5;
 /// }
 class P44444 {
-  static Map<String,dynamic> toMap(P44444 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._p3,
-    "5": item._l == null ? null : ds.P4.toMap(item._l),
-  };
   static P44444 fromMap(Map<String,dynamic> map, [ P44444 item ]) {
     if (map == null) return item;
 
@@ -627,6 +662,19 @@ class P44444 {
     item._l = ds.P4.fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P44444 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P44444 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._l == null ? null : ds.P4.toMap(item._l),
+  };
   static P44444 create(
     int p0, int p1, int p2, int p3, ds.P4 l, 
   ) {
@@ -685,13 +733,6 @@ class P44444 {
 ///   required ds.P8 l = 5;
 /// }
 class P44448 {
-  static Map<String,dynamic> toMap(P44448 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._p3,
-    "5": item._l == null ? null : ds.P8.toMap(item._l),
-  };
   static P44448 fromMap(Map<String,dynamic> map, [ P44448 item ]) {
     if (map == null) return item;
 
@@ -703,6 +744,19 @@ class P44448 {
     item._l = ds.P8.fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P44448 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P44448 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._l == null ? null : ds.P8.toMap(item._l),
+  };
   static P44448 create(
     int p0, int p1, int p2, int p3, ds.P8 l, 
   ) {
@@ -761,13 +815,6 @@ class P44448 {
 ///   required ds.PD l = 5;
 /// }
 class P4444D {
-  static Map<String,dynamic> toMap(P4444D item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._p3,
-    "5": item._l == null ? null : ds.PD.toMap(item._l),
-  };
   static P4444D fromMap(Map<String,dynamic> map, [ P4444D item ]) {
     if (map == null) return item;
 
@@ -779,6 +826,19 @@ class P4444D {
     item._l = ds.PD.fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4444D $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4444D item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._l == null ? null : ds.PD.toMap(item._l),
+  };
   static P4444D create(
     int p0, int p1, int p2, int p3, ds.PD l, 
   ) {
@@ -837,13 +897,6 @@ class P4444D {
 ///   required ds.PK l = 5;
 /// }
 class P4444K {
-  static Map<String,dynamic> toMap(P4444K item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._p3,
-    "5": item._l == null ? null : ds.PK.toMap(item._l),
-  };
   static P4444K fromMap(Map<String,dynamic> map, [ P4444K item ]) {
     if (map == null) return item;
 
@@ -855,6 +908,19 @@ class P4444K {
     item._l = ds.PK.fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4444K $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4444K item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._l == null ? null : ds.PK.toMap(item._l),
+  };
   static P4444K create(
     int p0, int p1, int p2, int p3, ds.PK l, 
   ) {
@@ -913,13 +979,6 @@ class P4444K {
 ///   required ds.PS l = 5;
 /// }
 class P4444S {
-  static Map<String,dynamic> toMap(P4444S item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._p3,
-    "5": item._l == null ? null : ds.PS.toMap(item._l),
-  };
   static P4444S fromMap(Map<String,dynamic> map, [ P4444S item ]) {
     if (map == null) return item;
 
@@ -931,6 +990,19 @@ class P4444S {
     item._l = ds.PS.fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4444S $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4444S item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._p3,
+    "5": item._l == null ? null : ds.PS.toMap(item._l),
+  };
   static P4444S create(
     int p0, int p1, int p2, int p3, ds.PS l, 
   ) {
@@ -988,12 +1060,6 @@ class P4444S {
 ///   required ds.P1 l = 4;
 /// }
 class P4441 {
-  static Map<String,dynamic> toMap(P4441 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._l == null ? null : ds.P1.toMap(item._l),
-  };
   static P4441 fromMap(Map<String,dynamic> map, [ P4441 item ]) {
     if (map == null) return item;
 
@@ -1004,6 +1070,18 @@ class P4441 {
     item._l = ds.P1.fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4441 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4441 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._l == null ? null : ds.P1.toMap(item._l),
+  };
   static P4441 create(
     int p0, int p1, int p2, ds.P1 l, 
   ) {
@@ -1053,12 +1131,6 @@ class P4441 {
 ///   required ds.P4 l = 4;
 /// }
 class P4444 {
-  static Map<String,dynamic> toMap(P4444 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._l == null ? null : ds.P4.toMap(item._l),
-  };
   static P4444 fromMap(Map<String,dynamic> map, [ P4444 item ]) {
     if (map == null) return item;
 
@@ -1069,6 +1141,18 @@ class P4444 {
     item._l = ds.P4.fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4444 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4444 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._l == null ? null : ds.P4.toMap(item._l),
+  };
   static P4444 create(
     int p0, int p1, int p2, ds.P4 l, 
   ) {
@@ -1118,12 +1202,6 @@ class P4444 {
 ///   required ds.P8 l = 4;
 /// }
 class P4448 {
-  static Map<String,dynamic> toMap(P4448 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._l == null ? null : ds.P8.toMap(item._l),
-  };
   static P4448 fromMap(Map<String,dynamic> map, [ P4448 item ]) {
     if (map == null) return item;
 
@@ -1134,6 +1212,18 @@ class P4448 {
     item._l = ds.P8.fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4448 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4448 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._l == null ? null : ds.P8.toMap(item._l),
+  };
   static P4448 create(
     int p0, int p1, int p2, ds.P8 l, 
   ) {
@@ -1183,12 +1273,6 @@ class P4448 {
 ///   required ds.PD l = 4;
 /// }
 class P444D {
-  static Map<String,dynamic> toMap(P444D item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._l == null ? null : ds.PD.toMap(item._l),
-  };
   static P444D fromMap(Map<String,dynamic> map, [ P444D item ]) {
     if (map == null) return item;
 
@@ -1199,6 +1283,18 @@ class P444D {
     item._l = ds.PD.fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P444D $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P444D item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._l == null ? null : ds.PD.toMap(item._l),
+  };
   static P444D create(
     int p0, int p1, int p2, ds.PD l, 
   ) {
@@ -1248,12 +1344,6 @@ class P444D {
 ///   required ds.PK l = 4;
 /// }
 class P444K {
-  static Map<String,dynamic> toMap(P444K item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._l == null ? null : ds.PK.toMap(item._l),
-  };
   static P444K fromMap(Map<String,dynamic> map, [ P444K item ]) {
     if (map == null) return item;
 
@@ -1264,6 +1354,18 @@ class P444K {
     item._l = ds.PK.fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P444K $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P444K item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._l == null ? null : ds.PK.toMap(item._l),
+  };
   static P444K create(
     int p0, int p1, int p2, ds.PK l, 
   ) {
@@ -1313,12 +1415,6 @@ class P444K {
 ///   required ds.PS l = 4;
 /// }
 class P444S {
-  static Map<String,dynamic> toMap(P444S item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._p2,
-    "4": item._l == null ? null : ds.PS.toMap(item._l),
-  };
   static P444S fromMap(Map<String,dynamic> map, [ P444S item ]) {
     if (map == null) return item;
 
@@ -1329,6 +1425,18 @@ class P444S {
     item._l = ds.PS.fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P444S $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P444S item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._p2,
+    "4": item._l == null ? null : ds.PS.toMap(item._l),
+  };
   static P444S create(
     int p0, int p1, int p2, ds.PS l, 
   ) {
@@ -1377,11 +1485,6 @@ class P444S {
 ///   required ds.P1 l = 3;
 /// }
 class P411 {
-  static Map<String,dynamic> toMap(P411 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P1.toMap(item._l),
-  };
   static P411 fromMap(Map<String,dynamic> map, [ P411 item ]) {
     if (map == null) return item;
 
@@ -1391,6 +1494,17 @@ class P411 {
     item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P411 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P411 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P1.toMap(item._l),
+  };
   static P411 create(
     int p0, int p1, ds.P1 l, 
   ) {
@@ -1431,11 +1545,6 @@ class P411 {
 ///   required ds.P4 l = 3;
 /// }
 class P414 {
-  static Map<String,dynamic> toMap(P414 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P4.toMap(item._l),
-  };
   static P414 fromMap(Map<String,dynamic> map, [ P414 item ]) {
     if (map == null) return item;
 
@@ -1445,6 +1554,17 @@ class P414 {
     item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P414 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P414 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P4.toMap(item._l),
+  };
   static P414 create(
     int p0, int p1, ds.P4 l, 
   ) {
@@ -1485,11 +1605,6 @@ class P414 {
 ///   required ds.P8 l = 3;
 /// }
 class P418 {
-  static Map<String,dynamic> toMap(P418 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P8.toMap(item._l),
-  };
   static P418 fromMap(Map<String,dynamic> map, [ P418 item ]) {
     if (map == null) return item;
 
@@ -1499,6 +1614,17 @@ class P418 {
     item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P418 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P418 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P8.toMap(item._l),
+  };
   static P418 create(
     int p0, int p1, ds.P8 l, 
   ) {
@@ -1539,11 +1665,6 @@ class P418 {
 ///   required ds.PD l = 3;
 /// }
 class P41D {
-  static Map<String,dynamic> toMap(P41D item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PD.toMap(item._l),
-  };
   static P41D fromMap(Map<String,dynamic> map, [ P41D item ]) {
     if (map == null) return item;
 
@@ -1553,6 +1674,17 @@ class P41D {
     item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P41D $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P41D item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PD.toMap(item._l),
+  };
   static P41D create(
     int p0, int p1, ds.PD l, 
   ) {
@@ -1593,11 +1725,6 @@ class P41D {
 ///   required ds.PK l = 3;
 /// }
 class P41K {
-  static Map<String,dynamic> toMap(P41K item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PK.toMap(item._l),
-  };
   static P41K fromMap(Map<String,dynamic> map, [ P41K item ]) {
     if (map == null) return item;
 
@@ -1607,6 +1734,17 @@ class P41K {
     item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P41K $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P41K item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PK.toMap(item._l),
+  };
   static P41K create(
     int p0, int p1, ds.PK l, 
   ) {
@@ -1647,11 +1785,6 @@ class P41K {
 ///   required ds.PS l = 3;
 /// }
 class P41S {
-  static Map<String,dynamic> toMap(P41S item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PS.toMap(item._l),
-  };
   static P41S fromMap(Map<String,dynamic> map, [ P41S item ]) {
     if (map == null) return item;
 
@@ -1661,6 +1794,17 @@ class P41S {
     item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P41S $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P41S item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PS.toMap(item._l),
+  };
   static P41S create(
     int p0, int p1, ds.PS l, 
   ) {
@@ -1701,11 +1845,6 @@ class P41S {
 ///   required ds.P1 l = 3;
 /// }
 class P481 {
-  static Map<String,dynamic> toMap(P481 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P1.toMap(item._l),
-  };
   static P481 fromMap(Map<String,dynamic> map, [ P481 item ]) {
     if (map == null) return item;
 
@@ -1715,6 +1854,17 @@ class P481 {
     item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P481 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P481 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P1.toMap(item._l),
+  };
   static P481 create(
     int p0, int p1, ds.P1 l, 
   ) {
@@ -1755,11 +1905,6 @@ class P481 {
 ///   required ds.P4 l = 3;
 /// }
 class P484 {
-  static Map<String,dynamic> toMap(P484 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P4.toMap(item._l),
-  };
   static P484 fromMap(Map<String,dynamic> map, [ P484 item ]) {
     if (map == null) return item;
 
@@ -1769,6 +1914,17 @@ class P484 {
     item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P484 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P484 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P4.toMap(item._l),
+  };
   static P484 create(
     int p0, int p1, ds.P4 l, 
   ) {
@@ -1809,11 +1965,6 @@ class P484 {
 ///   required ds.P8 l = 3;
 /// }
 class P488 {
-  static Map<String,dynamic> toMap(P488 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P8.toMap(item._l),
-  };
   static P488 fromMap(Map<String,dynamic> map, [ P488 item ]) {
     if (map == null) return item;
 
@@ -1823,6 +1974,17 @@ class P488 {
     item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P488 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P488 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P8.toMap(item._l),
+  };
   static P488 create(
     int p0, int p1, ds.P8 l, 
   ) {
@@ -1863,11 +2025,6 @@ class P488 {
 ///   required ds.PD l = 3;
 /// }
 class P48D {
-  static Map<String,dynamic> toMap(P48D item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PD.toMap(item._l),
-  };
   static P48D fromMap(Map<String,dynamic> map, [ P48D item ]) {
     if (map == null) return item;
 
@@ -1877,6 +2034,17 @@ class P48D {
     item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P48D $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P48D item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PD.toMap(item._l),
+  };
   static P48D create(
     int p0, int p1, ds.PD l, 
   ) {
@@ -1917,11 +2085,6 @@ class P48D {
 ///   required ds.PK l = 3;
 /// }
 class P48K {
-  static Map<String,dynamic> toMap(P48K item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PK.toMap(item._l),
-  };
   static P48K fromMap(Map<String,dynamic> map, [ P48K item ]) {
     if (map == null) return item;
 
@@ -1931,6 +2094,17 @@ class P48K {
     item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P48K $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P48K item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PK.toMap(item._l),
+  };
   static P48K create(
     int p0, int p1, ds.PK l, 
   ) {
@@ -1971,11 +2145,6 @@ class P48K {
 ///   required ds.PS l = 3;
 /// }
 class P48S {
-  static Map<String,dynamic> toMap(P48S item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PS.toMap(item._l),
-  };
   static P48S fromMap(Map<String,dynamic> map, [ P48S item ]) {
     if (map == null) return item;
 
@@ -1985,6 +2154,17 @@ class P48S {
     item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P48S $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P48S item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PS.toMap(item._l),
+  };
   static P48S create(
     int p0, int p1, ds.PS l, 
   ) {
@@ -2025,11 +2205,6 @@ class P48S {
 ///   required ds.P1 l = 3;
 /// }
 class P4D1 {
-  static Map<String,dynamic> toMap(P4D1 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P1.toMap(item._l),
-  };
   static P4D1 fromMap(Map<String,dynamic> map, [ P4D1 item ]) {
     if (map == null) return item;
 
@@ -2039,6 +2214,17 @@ class P4D1 {
     item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4D1 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4D1 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P1.toMap(item._l),
+  };
   static P4D1 create(
     int p0, int p1, ds.P1 l, 
   ) {
@@ -2079,11 +2265,6 @@ class P4D1 {
 ///   required ds.P4 l = 3;
 /// }
 class P4D4 {
-  static Map<String,dynamic> toMap(P4D4 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P4.toMap(item._l),
-  };
   static P4D4 fromMap(Map<String,dynamic> map, [ P4D4 item ]) {
     if (map == null) return item;
 
@@ -2093,6 +2274,17 @@ class P4D4 {
     item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4D4 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4D4 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P4.toMap(item._l),
+  };
   static P4D4 create(
     int p0, int p1, ds.P4 l, 
   ) {
@@ -2133,11 +2325,6 @@ class P4D4 {
 ///   required ds.P8 l = 3;
 /// }
 class P4D8 {
-  static Map<String,dynamic> toMap(P4D8 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P8.toMap(item._l),
-  };
   static P4D8 fromMap(Map<String,dynamic> map, [ P4D8 item ]) {
     if (map == null) return item;
 
@@ -2147,6 +2334,17 @@ class P4D8 {
     item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4D8 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4D8 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P8.toMap(item._l),
+  };
   static P4D8 create(
     int p0, int p1, ds.P8 l, 
   ) {
@@ -2187,11 +2385,6 @@ class P4D8 {
 ///   required ds.PD l = 3;
 /// }
 class P4DD {
-  static Map<String,dynamic> toMap(P4DD item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PD.toMap(item._l),
-  };
   static P4DD fromMap(Map<String,dynamic> map, [ P4DD item ]) {
     if (map == null) return item;
 
@@ -2201,6 +2394,17 @@ class P4DD {
     item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4DD $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4DD item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PD.toMap(item._l),
+  };
   static P4DD create(
     int p0, int p1, ds.PD l, 
   ) {
@@ -2241,11 +2445,6 @@ class P4DD {
 ///   required ds.PK l = 3;
 /// }
 class P4DK {
-  static Map<String,dynamic> toMap(P4DK item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PK.toMap(item._l),
-  };
   static P4DK fromMap(Map<String,dynamic> map, [ P4DK item ]) {
     if (map == null) return item;
 
@@ -2255,6 +2454,17 @@ class P4DK {
     item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4DK $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4DK item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PK.toMap(item._l),
+  };
   static P4DK create(
     int p0, int p1, ds.PK l, 
   ) {
@@ -2295,11 +2505,6 @@ class P4DK {
 ///   required ds.PS l = 3;
 /// }
 class P4DS {
-  static Map<String,dynamic> toMap(P4DS item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PS.toMap(item._l),
-  };
   static P4DS fromMap(Map<String,dynamic> map, [ P4DS item ]) {
     if (map == null) return item;
 
@@ -2309,6 +2514,17 @@ class P4DS {
     item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4DS $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4DS item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PS.toMap(item._l),
+  };
   static P4DS create(
     int p0, int p1, ds.PS l, 
   ) {
@@ -2349,11 +2565,6 @@ class P4DS {
 ///   required ds.P1 l = 3;
 /// }
 class P4K1 {
-  static Map<String,dynamic> toMap(P4K1 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P1.toMap(item._l),
-  };
   static P4K1 fromMap(Map<String,dynamic> map, [ P4K1 item ]) {
     if (map == null) return item;
 
@@ -2363,6 +2574,17 @@ class P4K1 {
     item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4K1 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4K1 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P1.toMap(item._l),
+  };
   static P4K1 create(
     int p0, String p1, ds.P1 l, 
   ) {
@@ -2403,11 +2625,6 @@ class P4K1 {
 ///   required ds.P4 l = 3;
 /// }
 class P4K4 {
-  static Map<String,dynamic> toMap(P4K4 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P4.toMap(item._l),
-  };
   static P4K4 fromMap(Map<String,dynamic> map, [ P4K4 item ]) {
     if (map == null) return item;
 
@@ -2417,6 +2634,17 @@ class P4K4 {
     item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4K4 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4K4 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P4.toMap(item._l),
+  };
   static P4K4 create(
     int p0, String p1, ds.P4 l, 
   ) {
@@ -2457,11 +2685,6 @@ class P4K4 {
 ///   required ds.P8 l = 3;
 /// }
 class P4K8 {
-  static Map<String,dynamic> toMap(P4K8 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P8.toMap(item._l),
-  };
   static P4K8 fromMap(Map<String,dynamic> map, [ P4K8 item ]) {
     if (map == null) return item;
 
@@ -2471,6 +2694,17 @@ class P4K8 {
     item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4K8 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4K8 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P8.toMap(item._l),
+  };
   static P4K8 create(
     int p0, String p1, ds.P8 l, 
   ) {
@@ -2511,11 +2745,6 @@ class P4K8 {
 ///   required ds.PD l = 3;
 /// }
 class P4KD {
-  static Map<String,dynamic> toMap(P4KD item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PD.toMap(item._l),
-  };
   static P4KD fromMap(Map<String,dynamic> map, [ P4KD item ]) {
     if (map == null) return item;
 
@@ -2525,6 +2754,17 @@ class P4KD {
     item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4KD $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4KD item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PD.toMap(item._l),
+  };
   static P4KD create(
     int p0, String p1, ds.PD l, 
   ) {
@@ -2565,11 +2805,6 @@ class P4KD {
 ///   required ds.PK l = 3;
 /// }
 class P4KK {
-  static Map<String,dynamic> toMap(P4KK item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PK.toMap(item._l),
-  };
   static P4KK fromMap(Map<String,dynamic> map, [ P4KK item ]) {
     if (map == null) return item;
 
@@ -2579,6 +2814,17 @@ class P4KK {
     item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4KK $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4KK item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PK.toMap(item._l),
+  };
   static P4KK create(
     int p0, String p1, ds.PK l, 
   ) {
@@ -2619,11 +2865,6 @@ class P4KK {
 ///   required ds.PS l = 3;
 /// }
 class P4KS {
-  static Map<String,dynamic> toMap(P4KS item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PS.toMap(item._l),
-  };
   static P4KS fromMap(Map<String,dynamic> map, [ P4KS item ]) {
     if (map == null) return item;
 
@@ -2633,6 +2874,17 @@ class P4KS {
     item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4KS $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4KS item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PS.toMap(item._l),
+  };
   static P4KS create(
     int p0, String p1, ds.PS l, 
   ) {
@@ -2673,11 +2925,6 @@ class P4KS {
 ///   required ds.P1 l = 3;
 /// }
 class P441 {
-  static Map<String,dynamic> toMap(P441 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P1.toMap(item._l),
-  };
   static P441 fromMap(Map<String,dynamic> map, [ P441 item ]) {
     if (map == null) return item;
 
@@ -2687,6 +2934,17 @@ class P441 {
     item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P441 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P441 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P1.toMap(item._l),
+  };
   static P441 create(
     int p0, int p1, ds.P1 l, 
   ) {
@@ -2727,11 +2985,6 @@ class P441 {
 ///   required ds.P4 l = 3;
 /// }
 class P444 {
-  static Map<String,dynamic> toMap(P444 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P4.toMap(item._l),
-  };
   static P444 fromMap(Map<String,dynamic> map, [ P444 item ]) {
     if (map == null) return item;
 
@@ -2741,6 +2994,17 @@ class P444 {
     item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P444 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P444 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P4.toMap(item._l),
+  };
   static P444 create(
     int p0, int p1, ds.P4 l, 
   ) {
@@ -2781,11 +3045,6 @@ class P444 {
 ///   required ds.P8 l = 3;
 /// }
 class P448 {
-  static Map<String,dynamic> toMap(P448 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P8.toMap(item._l),
-  };
   static P448 fromMap(Map<String,dynamic> map, [ P448 item ]) {
     if (map == null) return item;
 
@@ -2795,6 +3054,17 @@ class P448 {
     item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P448 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P448 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P8.toMap(item._l),
+  };
   static P448 create(
     int p0, int p1, ds.P8 l, 
   ) {
@@ -2835,11 +3105,6 @@ class P448 {
 ///   required ds.PD l = 3;
 /// }
 class P44D {
-  static Map<String,dynamic> toMap(P44D item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PD.toMap(item._l),
-  };
   static P44D fromMap(Map<String,dynamic> map, [ P44D item ]) {
     if (map == null) return item;
 
@@ -2849,6 +3114,17 @@ class P44D {
     item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P44D $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P44D item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PD.toMap(item._l),
+  };
   static P44D create(
     int p0, int p1, ds.PD l, 
   ) {
@@ -2889,11 +3165,6 @@ class P44D {
 ///   required ds.PK l = 3;
 /// }
 class P44K {
-  static Map<String,dynamic> toMap(P44K item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PK.toMap(item._l),
-  };
   static P44K fromMap(Map<String,dynamic> map, [ P44K item ]) {
     if (map == null) return item;
 
@@ -2903,6 +3174,17 @@ class P44K {
     item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P44K $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P44K item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PK.toMap(item._l),
+  };
   static P44K create(
     int p0, int p1, ds.PK l, 
   ) {
@@ -2943,11 +3225,6 @@ class P44K {
 ///   required ds.PS l = 3;
 /// }
 class P44S {
-  static Map<String,dynamic> toMap(P44S item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PS.toMap(item._l),
-  };
   static P44S fromMap(Map<String,dynamic> map, [ P44S item ]) {
     if (map == null) return item;
 
@@ -2957,6 +3234,17 @@ class P44S {
     item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P44S $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P44S item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PS.toMap(item._l),
+  };
   static P44S create(
     int p0, int p1, ds.PS l, 
   ) {
@@ -2997,11 +3285,6 @@ class P44S {
 ///   required ds.P1 l = 3;
 /// }
 class P4S1 {
-  static Map<String,dynamic> toMap(P4S1 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P1.toMap(item._l),
-  };
   static P4S1 fromMap(Map<String,dynamic> map, [ P4S1 item ]) {
     if (map == null) return item;
 
@@ -3011,6 +3294,17 @@ class P4S1 {
     item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4S1 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4S1 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P1.toMap(item._l),
+  };
   static P4S1 create(
     int p0, String p1, ds.P1 l, 
   ) {
@@ -3051,11 +3345,6 @@ class P4S1 {
 ///   required ds.P4 l = 3;
 /// }
 class P4S4 {
-  static Map<String,dynamic> toMap(P4S4 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P4.toMap(item._l),
-  };
   static P4S4 fromMap(Map<String,dynamic> map, [ P4S4 item ]) {
     if (map == null) return item;
 
@@ -3065,6 +3354,17 @@ class P4S4 {
     item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4S4 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4S4 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P4.toMap(item._l),
+  };
   static P4S4 create(
     int p0, String p1, ds.P4 l, 
   ) {
@@ -3105,11 +3405,6 @@ class P4S4 {
 ///   required ds.P8 l = 3;
 /// }
 class P4S8 {
-  static Map<String,dynamic> toMap(P4S8 item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.P8.toMap(item._l),
-  };
   static P4S8 fromMap(Map<String,dynamic> map, [ P4S8 item ]) {
     if (map == null) return item;
 
@@ -3119,6 +3414,17 @@ class P4S8 {
     item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4S8 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4S8 item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.P8.toMap(item._l),
+  };
   static P4S8 create(
     int p0, String p1, ds.P8 l, 
   ) {
@@ -3159,11 +3465,6 @@ class P4S8 {
 ///   required ds.PD l = 3;
 /// }
 class P4SD {
-  static Map<String,dynamic> toMap(P4SD item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PD.toMap(item._l),
-  };
   static P4SD fromMap(Map<String,dynamic> map, [ P4SD item ]) {
     if (map == null) return item;
 
@@ -3173,6 +3474,17 @@ class P4SD {
     item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4SD $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4SD item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PD.toMap(item._l),
+  };
   static P4SD create(
     int p0, String p1, ds.PD l, 
   ) {
@@ -3213,11 +3525,6 @@ class P4SD {
 ///   required ds.PK l = 3;
 /// }
 class P4SK {
-  static Map<String,dynamic> toMap(P4SK item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PK.toMap(item._l),
-  };
   static P4SK fromMap(Map<String,dynamic> map, [ P4SK item ]) {
     if (map == null) return item;
 
@@ -3227,6 +3534,17 @@ class P4SK {
     item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4SK $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4SK item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PK.toMap(item._l),
+  };
   static P4SK create(
     int p0, String p1, ds.PK l, 
   ) {
@@ -3267,11 +3585,6 @@ class P4SK {
 ///   required ds.PS l = 3;
 /// }
 class P4SS {
-  static Map<String,dynamic> toMap(P4SS item) => {
-    "1": item._p0,
-    "2": item._p1,
-    "3": item._l == null ? null : ds.PS.toMap(item._l),
-  };
   static P4SS fromMap(Map<String,dynamic> map, [ P4SS item ]) {
     if (map == null) return item;
 
@@ -3281,6 +3594,17 @@ class P4SS {
     item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4SS $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4SS item) => {
+    "1": item._p0,
+    "2": item._p1,
+    "3": item._l == null ? null : ds.PS.toMap(item._l),
+  };
   static P4SS create(
     int p0, String p1, ds.PS l, 
   ) {
@@ -3320,10 +3644,6 @@ class P4SS {
 ///   required ds.P1 l = 2;
 /// }
 class P41 {
-  static Map<String,dynamic> toMap(P41 item) => {
-    "1": item._p0,
-    "2": item._l == null ? null : ds.P1.toMap(item._l),
-  };
   static P41 fromMap(Map<String,dynamic> map, [ P41 item ]) {
     if (map == null) return item;
 
@@ -3332,6 +3652,16 @@ class P41 {
     item._l = ds.P1.fromMap(map["2"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P41 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P41 item) => {
+    "1": item._p0,
+    "2": item._l == null ? null : ds.P1.toMap(item._l),
+  };
   static P41 create(
     int p0, ds.P1 l, 
   ) {
@@ -3363,10 +3693,6 @@ class P41 {
 ///   required ds.P4 l = 2;
 /// }
 class P44 {
-  static Map<String,dynamic> toMap(P44 item) => {
-    "1": item._p0,
-    "2": item._l == null ? null : ds.P4.toMap(item._l),
-  };
   static P44 fromMap(Map<String,dynamic> map, [ P44 item ]) {
     if (map == null) return item;
 
@@ -3375,6 +3701,16 @@ class P44 {
     item._l = ds.P4.fromMap(map["2"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P44 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P44 item) => {
+    "1": item._p0,
+    "2": item._l == null ? null : ds.P4.toMap(item._l),
+  };
   static P44 create(
     int p0, ds.P4 l, 
   ) {
@@ -3406,10 +3742,6 @@ class P44 {
 ///   required ds.P8 l = 2;
 /// }
 class P48 {
-  static Map<String,dynamic> toMap(P48 item) => {
-    "1": item._p0,
-    "2": item._l == null ? null : ds.P8.toMap(item._l),
-  };
   static P48 fromMap(Map<String,dynamic> map, [ P48 item ]) {
     if (map == null) return item;
 
@@ -3418,6 +3750,16 @@ class P48 {
     item._l = ds.P8.fromMap(map["2"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P48 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P48 item) => {
+    "1": item._p0,
+    "2": item._l == null ? null : ds.P8.toMap(item._l),
+  };
   static P48 create(
     int p0, ds.P8 l, 
   ) {
@@ -3449,10 +3791,6 @@ class P48 {
 ///   required ds.PD l = 2;
 /// }
 class P4D {
-  static Map<String,dynamic> toMap(P4D item) => {
-    "1": item._p0,
-    "2": item._l == null ? null : ds.PD.toMap(item._l),
-  };
   static P4D fromMap(Map<String,dynamic> map, [ P4D item ]) {
     if (map == null) return item;
 
@@ -3461,6 +3799,16 @@ class P4D {
     item._l = ds.PD.fromMap(map["2"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4D $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4D item) => {
+    "1": item._p0,
+    "2": item._l == null ? null : ds.PD.toMap(item._l),
+  };
   static P4D create(
     int p0, ds.PD l, 
   ) {
@@ -3492,10 +3840,6 @@ class P4D {
 ///   required ds.PK l = 2;
 /// }
 class P4K {
-  static Map<String,dynamic> toMap(P4K item) => {
-    "1": item._p0,
-    "2": item._l == null ? null : ds.PK.toMap(item._l),
-  };
   static P4K fromMap(Map<String,dynamic> map, [ P4K item ]) {
     if (map == null) return item;
 
@@ -3504,6 +3848,16 @@ class P4K {
     item._l = ds.PK.fromMap(map["2"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4K $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4K item) => {
+    "1": item._p0,
+    "2": item._l == null ? null : ds.PK.toMap(item._l),
+  };
   static P4K create(
     int p0, ds.PK l, 
   ) {
@@ -3535,10 +3889,6 @@ class P4K {
 ///   required ds.PS l = 2;
 /// }
 class P4S {
-  static Map<String,dynamic> toMap(P4S item) => {
-    "1": item._p0,
-    "2": item._l == null ? null : ds.PS.toMap(item._l),
-  };
   static P4S fromMap(Map<String,dynamic> map, [ P4S item ]) {
     if (map == null) return item;
 
@@ -3547,6 +3897,16 @@ class P4S {
     item._l = ds.PS.fromMap(map["2"] as Map<String,dynamic>, item._l);
     return item;
   }
+  static P4S $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4S item) => {
+    "1": item._p0,
+    "2": item._l == null ? null : ds.PS.toMap(item._l),
+  };
   static P4S create(
     int p0, ds.PS l, 
   ) {

@@ -9,9 +9,6 @@ export './mc.dart' show MultiCAS;
 ///   required uint32 id = 1;
 /// }
 class ParamId {
-  static Map<String,dynamic> toMap(ParamId item) => {
-    "1": item._id,
-  };
   static ParamId fromMap(Map<String,dynamic> map, [ ParamId item ]) {
     if (map == null) return item;
 
@@ -19,6 +16,15 @@ class ParamId {
     item._id = map["1"];
     return item;
   }
+  static ParamId $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(ParamId item) => {
+    "1": item._id,
+  };
   static ParamId create(
     int id, 
   ) {
@@ -54,10 +60,6 @@ class _ParamId extends ParamId with PubSub {
 ///   optional bytes parent_key = 2;
 /// }
 class ParamKey {
-  static Map<String,dynamic> toMap(ParamKey item) => {
-    "1": item._key,
-    "2": item._parentKey,
-  };
   static ParamKey fromMap(Map<String,dynamic> map, [ ParamKey item ]) {
     if (map == null) return item;
 
@@ -66,6 +68,16 @@ class ParamKey {
     item._parentKey = map["2"];
     return item;
   }
+  static ParamKey $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(ParamKey item) => {
+    "1": item._key,
+    "2": item._parentKey,
+  };
   static ParamKey create(
     String key, {
     String parentKey,
@@ -115,11 +127,6 @@ class _ParamKey extends ParamKey with PubSub {
 ///   optional uint32 id = 3;
 /// }
 class ParamUpdate {
-  static Map<String,dynamic> toMap(ParamUpdate item) => {
-    "1": item._key,
-    "2": item._mc == null ? null : MultiCAS.toMap(item._mc),
-    "3": item._id,
-  };
   static ParamUpdate fromMap(Map<String,dynamic> map, [ ParamUpdate item ]) {
     if (map == null) return item;
 
@@ -129,6 +136,17 @@ class ParamUpdate {
     item._id = map["3"];
     return item;
   }
+  static ParamUpdate $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(ParamUpdate item) => {
+    "1": item._key,
+    "2": item._mc == null ? null : MultiCAS.toMap(item._mc),
+    "3": item._id,
+  };
   static ParamUpdate create(
     String key, MultiCAS mc, {
     int id,
@@ -192,12 +210,6 @@ class _ParamUpdate extends ParamUpdate with PubSub {
 ///   optional bytes parent_key = 4;
 /// }
 class ParamRangeKey {
-  static Map<String,dynamic> toMap(ParamRangeKey item) => {
-    "1": item._desc,
-    "2": item._limit,
-    "3": item._startKey,
-    "4": item._parentKey,
-  };
   static ParamRangeKey fromMap(Map<String,dynamic> map, [ ParamRangeKey item ]) {
     if (map == null) return item;
 
@@ -208,6 +220,18 @@ class ParamRangeKey {
     item._parentKey = map["4"];
     return item;
   }
+  static ParamRangeKey $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(ParamRangeKey item) => {
+    "1": item._desc,
+    "2": item._limit,
+    "3": item._startKey,
+    "4": item._parentKey,
+  };
   static ParamRangeKey create(
     bool desc, {
     int limit,
@@ -283,11 +307,6 @@ class _ParamRangeKey extends ParamRangeKey with PubSub {
 ///   optional uint32 id = 3;
 /// }
 class ACResult {
-  static Map<String,dynamic> toMap(ACResult item) => {
-    "1": item._name,
-    "2": item._value,
-    "3": item._id,
-  };
   static ACResult fromMap(Map<String,dynamic> map, [ ACResult item ]) {
     if (map == null) return item;
 
@@ -297,6 +316,17 @@ class ACResult {
     item._id = map["3"];
     return item;
   }
+  static ACResult $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(ACResult item) => {
+    "1": item._name,
+    "2": item._value,
+    "3": item._id,
+  };
   static ACResult create(
     String name, String value, {
     int id,
@@ -354,9 +384,6 @@ class _ACResult extends ACResult with PubSub {
 ///   repeated ACResult p = 1;
 /// }
 class ACResult_PList {
-  static Map<String,dynamic> toMap(ACResult_PList item) => {
-    "1": item._p?.map(ACResult.toMap).toList(growable: false),
-  };
   static ACResult_PList fromMap(Map<String,dynamic> map, [ ACResult_PList item ]) {
     if (map == null) return item;
 
@@ -364,6 +391,15 @@ class ACResult_PList {
     item._p = (map["1"] as List<Map<String,dynamic>>)?.map(ACResult.fromMap).toList(growable: false);
     return item;
   }
+  static ACResult_PList $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(ACResult_PList item) => {
+    "1": item._p?.map(ACResult.toMap).toList(growable: false),
+  };
   static ACResult_PList create({
     List<ACResult> p,
   }) {
@@ -389,12 +425,6 @@ class ACResult_PList {
 ///   required ParamRangeKey prk = 4;
 /// }
 class P1 {
-  static Map<String,dynamic> toMap(P1 item) => {
-    "1": item._value,
-    "2": item._end,
-    "3": item._pgstart,
-    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
-  };
   static P1 fromMap(Map<String,dynamic> map, [ P1 item ]) {
     if (map == null) return item;
 
@@ -405,6 +435,18 @@ class P1 {
     item._prk = ParamRangeKey.fromMap(map["4"] as Map<String,dynamic>, item._prk);
     return item;
   }
+  static P1 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P1 item) => {
+    "1": item._value,
+    "2": item._end,
+    "3": item._pgstart,
+    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
+  };
   static P1 create(
     int value, ParamRangeKey prk, {
     int end,
@@ -481,12 +523,6 @@ class _P1 extends P1 with PubSub {
 ///   required ParamRangeKey prk = 4;
 /// }
 class P4 {
-  static Map<String,dynamic> toMap(P4 item) => {
-    "1": item._value,
-    "2": item._end,
-    "3": item._pgstart,
-    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
-  };
   static P4 fromMap(Map<String,dynamic> map, [ P4 item ]) {
     if (map == null) return item;
 
@@ -497,6 +533,18 @@ class P4 {
     item._prk = ParamRangeKey.fromMap(map["4"] as Map<String,dynamic>, item._prk);
     return item;
   }
+  static P4 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P4 item) => {
+    "1": item._value,
+    "2": item._end,
+    "3": item._pgstart,
+    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
+  };
   static P4 create(
     int value, ParamRangeKey prk, {
     int end,
@@ -573,12 +621,6 @@ class _P4 extends P4 with PubSub {
 ///   required ParamRangeKey prk = 4;
 /// }
 class P8 {
-  static Map<String,dynamic> toMap(P8 item) => {
-    "1": item._value,
-    "2": item._end,
-    "3": item._pgstart,
-    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
-  };
   static P8 fromMap(Map<String,dynamic> map, [ P8 item ]) {
     if (map == null) return item;
 
@@ -589,6 +631,18 @@ class P8 {
     item._prk = ParamRangeKey.fromMap(map["4"] as Map<String,dynamic>, item._prk);
     return item;
   }
+  static P8 $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(P8 item) => {
+    "1": item._value,
+    "2": item._end,
+    "3": item._pgstart,
+    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
+  };
   static P8 create(
     int value, ParamRangeKey prk, {
     int end,
@@ -665,12 +719,6 @@ class _P8 extends P8 with PubSub {
 ///   required ParamRangeKey prk = 4;
 /// }
 class PD {
-  static Map<String,dynamic> toMap(PD item) => {
-    "1": item._value,
-    "2": item._end,
-    "3": item._pgstart,
-    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
-  };
   static PD fromMap(Map<String,dynamic> map, [ PD item ]) {
     if (map == null) return item;
 
@@ -681,6 +729,18 @@ class PD {
     item._prk = ParamRangeKey.fromMap(map["4"] as Map<String,dynamic>, item._prk);
     return item;
   }
+  static PD $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(PD item) => {
+    "1": item._value,
+    "2": item._end,
+    "3": item._pgstart,
+    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
+  };
   static PD create(
     int value, ParamRangeKey prk, {
     int end,
@@ -757,12 +817,6 @@ class _PD extends PD with PubSub {
 ///   required ParamRangeKey prk = 4;
 /// }
 class PB {
-  static Map<String,dynamic> toMap(PB item) => {
-    "1": item._value,
-    "2": item._end,
-    "3": item._pgstart,
-    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
-  };
   static PB fromMap(Map<String,dynamic> map, [ PB item ]) {
     if (map == null) return item;
 
@@ -773,6 +827,18 @@ class PB {
     item._prk = ParamRangeKey.fromMap(map["4"] as Map<String,dynamic>, item._prk);
     return item;
   }
+  static PB $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(PB item) => {
+    "1": item._value,
+    "2": item._end,
+    "3": item._pgstart,
+    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
+  };
   static PB create(
     String value, ParamRangeKey prk, {
     String end,
@@ -849,12 +915,6 @@ class _PB extends PB with PubSub {
 ///   required ParamRangeKey prk = 4;
 /// }
 class PK {
-  static Map<String,dynamic> toMap(PK item) => {
-    "1": item._value,
-    "2": item._end,
-    "3": item._pgstart,
-    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
-  };
   static PK fromMap(Map<String,dynamic> map, [ PK item ]) {
     if (map == null) return item;
 
@@ -865,6 +925,18 @@ class PK {
     item._prk = ParamRangeKey.fromMap(map["4"] as Map<String,dynamic>, item._prk);
     return item;
   }
+  static PK $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(PK item) => {
+    "1": item._value,
+    "2": item._end,
+    "3": item._pgstart,
+    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
+  };
   static PK create(
     String value, ParamRangeKey prk, {
     String end,
@@ -941,12 +1013,6 @@ class _PK extends PK with PubSub {
 ///   required ParamRangeKey prk = 4;
 /// }
 class PS {
-  static Map<String,dynamic> toMap(PS item) => {
-    "1": item._value,
-    "2": item._end,
-    "3": item._pgstart,
-    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
-  };
   static PS fromMap(Map<String,dynamic> map, [ PS item ]) {
     if (map == null) return item;
 
@@ -957,6 +1023,18 @@ class PS {
     item._prk = ParamRangeKey.fromMap(map["4"] as Map<String,dynamic>, item._prk);
     return item;
   }
+  static PS $(dynamic data) {
+      if (data is Map)
+        return fromMap(data as Map<String,dynamic>);
+
+      throw data;
+  }
+  static Map<String,dynamic> toMap(PS item) => {
+    "1": item._value,
+    "2": item._end,
+    "3": item._pgstart,
+    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
+  };
   static PS create(
     String value, ParamRangeKey prk, {
     String end,
