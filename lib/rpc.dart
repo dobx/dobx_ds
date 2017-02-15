@@ -75,9 +75,9 @@ void init(GetTransport gt, PostTransport pt) {
 }
 
 Future<dynamic> get(String location) {
-  return _gt(_prefix + location);
+  return _gt(location);
 }
 
 Future<dynamic> post(String location, String data) {
-  return _pt(_prefix + location, data);
+  return _pt(location, data);
 }
