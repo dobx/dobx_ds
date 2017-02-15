@@ -63,9 +63,6 @@ Future<dynamic> _getHTTP(String location) {
 }
 
 Future<dynamic> _postHTTP(String location, String data) {
-  print(_prefix);
-  print(location);
-  print('GG: ' + _prefix + location);
   return http.post(_prefix + location, body: data).then(parseResponse);
 }
 
