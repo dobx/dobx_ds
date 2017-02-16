@@ -29,7 +29,7 @@ class PSK1 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P1.toMap(item._l),
   };
-  static PSK1 create(
+  static PSK1 $create(
     String p0, String p1, ds.P1 l, 
   ) {
     assert (p0 != null);
@@ -89,7 +89,7 @@ class PSK4 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P4.toMap(item._l),
   };
-  static PSK4 create(
+  static PSK4 $create(
     String p0, String p1, ds.P4 l, 
   ) {
     assert (p0 != null);
@@ -149,7 +149,7 @@ class PSK8 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P8.toMap(item._l),
   };
-  static PSK8 create(
+  static PSK8 $create(
     String p0, String p1, ds.P8 l, 
   ) {
     assert (p0 != null);
@@ -209,7 +209,7 @@ class PSKD {
     "2": item._p1,
     "3": item._l == null ? null : ds.PD.toMap(item._l),
   };
-  static PSKD create(
+  static PSKD $create(
     String p0, String p1, ds.PD l, 
   ) {
     assert (p0 != null);
@@ -269,7 +269,7 @@ class PSKK {
     "2": item._p1,
     "3": item._l == null ? null : ds.PK.toMap(item._l),
   };
-  static PSKK create(
+  static PSKK $create(
     String p0, String p1, ds.PK l, 
   ) {
     assert (p0 != null);
@@ -329,7 +329,7 @@ class PSKS {
     "2": item._p1,
     "3": item._l == null ? null : ds.PS.toMap(item._l),
   };
-  static PSKS create(
+  static PSKS $create(
     String p0, String p1, ds.PS l, 
   ) {
     assert (p0 != null);
@@ -392,7 +392,7 @@ class PS111 {
     "3": item._p2,
     "4": item._l == null ? null : ds.P1.toMap(item._l),
   };
-  static PS111 create(
+  static PS111 $create(
     String p0, int p1, int p2, ds.P1 l, 
   ) {
     assert (p0 != null);
@@ -463,7 +463,7 @@ class PS114 {
     "3": item._p2,
     "4": item._l == null ? null : ds.P4.toMap(item._l),
   };
-  static PS114 create(
+  static PS114 $create(
     String p0, int p1, int p2, ds.P4 l, 
   ) {
     assert (p0 != null);
@@ -534,7 +534,7 @@ class PS118 {
     "3": item._p2,
     "4": item._l == null ? null : ds.P8.toMap(item._l),
   };
-  static PS118 create(
+  static PS118 $create(
     String p0, int p1, int p2, ds.P8 l, 
   ) {
     assert (p0 != null);
@@ -605,7 +605,7 @@ class PS11D {
     "3": item._p2,
     "4": item._l == null ? null : ds.PD.toMap(item._l),
   };
-  static PS11D create(
+  static PS11D $create(
     String p0, int p1, int p2, ds.PD l, 
   ) {
     assert (p0 != null);
@@ -676,7 +676,7 @@ class PS11K {
     "3": item._p2,
     "4": item._l == null ? null : ds.PK.toMap(item._l),
   };
-  static PS11K create(
+  static PS11K $create(
     String p0, int p1, int p2, ds.PK l, 
   ) {
     assert (p0 != null);
@@ -747,7 +747,7 @@ class PS11S {
     "3": item._p2,
     "4": item._l == null ? null : ds.PS.toMap(item._l),
   };
-  static PS11S create(
+  static PS11S $create(
     String p0, int p1, int p2, ds.PS l, 
   ) {
     assert (p0 != null);
@@ -815,7 +815,7 @@ class PSD1 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P1.toMap(item._l),
   };
-  static PSD1 create(
+  static PSD1 $create(
     String p0, int p1, ds.P1 l, 
   ) {
     assert (p0 != null);
@@ -875,7 +875,7 @@ class PSD4 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P4.toMap(item._l),
   };
-  static PSD4 create(
+  static PSD4 $create(
     String p0, int p1, ds.P4 l, 
   ) {
     assert (p0 != null);
@@ -935,7 +935,7 @@ class PSD8 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P8.toMap(item._l),
   };
-  static PSD8 create(
+  static PSD8 $create(
     String p0, int p1, ds.P8 l, 
   ) {
     assert (p0 != null);
@@ -995,7 +995,7 @@ class PSDD {
     "2": item._p1,
     "3": item._l == null ? null : ds.PD.toMap(item._l),
   };
-  static PSDD create(
+  static PSDD $create(
     String p0, int p1, ds.PD l, 
   ) {
     assert (p0 != null);
@@ -1055,7 +1055,7 @@ class PSDK {
     "2": item._p1,
     "3": item._l == null ? null : ds.PK.toMap(item._l),
   };
-  static PSDK create(
+  static PSDK $create(
     String p0, int p1, ds.PK l, 
   ) {
     assert (p0 != null);
@@ -1115,7 +1115,7 @@ class PSDS {
     "2": item._p1,
     "3": item._l == null ? null : ds.PS.toMap(item._l),
   };
-  static PSDS create(
+  static PSDS $create(
     String p0, int p1, ds.PS l, 
   ) {
     assert (p0 != null);
@@ -1175,7 +1175,7 @@ class PS41 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P1.toMap(item._l),
   };
-  static PS41 create(
+  static PS41 $create(
     String p0, int p1, ds.P1 l, 
   ) {
     assert (p0 != null);
@@ -1235,7 +1235,7 @@ class PS44 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P4.toMap(item._l),
   };
-  static PS44 create(
+  static PS44 $create(
     String p0, int p1, ds.P4 l, 
   ) {
     assert (p0 != null);
@@ -1295,7 +1295,7 @@ class PS48 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P8.toMap(item._l),
   };
-  static PS48 create(
+  static PS48 $create(
     String p0, int p1, ds.P8 l, 
   ) {
     assert (p0 != null);
@@ -1355,7 +1355,7 @@ class PS4D {
     "2": item._p1,
     "3": item._l == null ? null : ds.PD.toMap(item._l),
   };
-  static PS4D create(
+  static PS4D $create(
     String p0, int p1, ds.PD l, 
   ) {
     assert (p0 != null);
@@ -1415,7 +1415,7 @@ class PS4K {
     "2": item._p1,
     "3": item._l == null ? null : ds.PK.toMap(item._l),
   };
-  static PS4K create(
+  static PS4K $create(
     String p0, int p1, ds.PK l, 
   ) {
     assert (p0 != null);
@@ -1475,7 +1475,7 @@ class PS4S {
     "2": item._p1,
     "3": item._l == null ? null : ds.PS.toMap(item._l),
   };
-  static PS4S create(
+  static PS4S $create(
     String p0, int p1, ds.PS l, 
   ) {
     assert (p0 != null);
@@ -1535,7 +1535,7 @@ class PSS1 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P1.toMap(item._l),
   };
-  static PSS1 create(
+  static PSS1 $create(
     String p0, String p1, ds.P1 l, 
   ) {
     assert (p0 != null);
@@ -1595,7 +1595,7 @@ class PSS4 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P4.toMap(item._l),
   };
-  static PSS4 create(
+  static PSS4 $create(
     String p0, String p1, ds.P4 l, 
   ) {
     assert (p0 != null);
@@ -1655,7 +1655,7 @@ class PSS8 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P8.toMap(item._l),
   };
-  static PSS8 create(
+  static PSS8 $create(
     String p0, String p1, ds.P8 l, 
   ) {
     assert (p0 != null);
@@ -1715,7 +1715,7 @@ class PSSD {
     "2": item._p1,
     "3": item._l == null ? null : ds.PD.toMap(item._l),
   };
-  static PSSD create(
+  static PSSD $create(
     String p0, String p1, ds.PD l, 
   ) {
     assert (p0 != null);
@@ -1775,7 +1775,7 @@ class PSSK {
     "2": item._p1,
     "3": item._l == null ? null : ds.PK.toMap(item._l),
   };
-  static PSSK create(
+  static PSSK $create(
     String p0, String p1, ds.PK l, 
   ) {
     assert (p0 != null);
@@ -1835,7 +1835,7 @@ class PSSS {
     "2": item._p1,
     "3": item._l == null ? null : ds.PS.toMap(item._l),
   };
-  static PSSS create(
+  static PSSS $create(
     String p0, String p1, ds.PS l, 
   ) {
     assert (p0 != null);
@@ -1895,7 +1895,7 @@ class PS11 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P1.toMap(item._l),
   };
-  static PS11 create(
+  static PS11 $create(
     String p0, int p1, ds.P1 l, 
   ) {
     assert (p0 != null);
@@ -1955,7 +1955,7 @@ class PS14 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P4.toMap(item._l),
   };
-  static PS14 create(
+  static PS14 $create(
     String p0, int p1, ds.P4 l, 
   ) {
     assert (p0 != null);
@@ -2015,7 +2015,7 @@ class PS18 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P8.toMap(item._l),
   };
-  static PS18 create(
+  static PS18 $create(
     String p0, int p1, ds.P8 l, 
   ) {
     assert (p0 != null);
@@ -2075,7 +2075,7 @@ class PS1D {
     "2": item._p1,
     "3": item._l == null ? null : ds.PD.toMap(item._l),
   };
-  static PS1D create(
+  static PS1D $create(
     String p0, int p1, ds.PD l, 
   ) {
     assert (p0 != null);
@@ -2135,7 +2135,7 @@ class PS1K {
     "2": item._p1,
     "3": item._l == null ? null : ds.PK.toMap(item._l),
   };
-  static PS1K create(
+  static PS1K $create(
     String p0, int p1, ds.PK l, 
   ) {
     assert (p0 != null);
@@ -2195,7 +2195,7 @@ class PS1S {
     "2": item._p1,
     "3": item._l == null ? null : ds.PS.toMap(item._l),
   };
-  static PS1S create(
+  static PS1S $create(
     String p0, int p1, ds.PS l, 
   ) {
     assert (p0 != null);
@@ -2255,7 +2255,7 @@ class PS81 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P1.toMap(item._l),
   };
-  static PS81 create(
+  static PS81 $create(
     String p0, int p1, ds.P1 l, 
   ) {
     assert (p0 != null);
@@ -2315,7 +2315,7 @@ class PS84 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P4.toMap(item._l),
   };
-  static PS84 create(
+  static PS84 $create(
     String p0, int p1, ds.P4 l, 
   ) {
     assert (p0 != null);
@@ -2375,7 +2375,7 @@ class PS88 {
     "2": item._p1,
     "3": item._l == null ? null : ds.P8.toMap(item._l),
   };
-  static PS88 create(
+  static PS88 $create(
     String p0, int p1, ds.P8 l, 
   ) {
     assert (p0 != null);
@@ -2435,7 +2435,7 @@ class PS8D {
     "2": item._p1,
     "3": item._l == null ? null : ds.PD.toMap(item._l),
   };
-  static PS8D create(
+  static PS8D $create(
     String p0, int p1, ds.PD l, 
   ) {
     assert (p0 != null);
@@ -2495,7 +2495,7 @@ class PS8K {
     "2": item._p1,
     "3": item._l == null ? null : ds.PK.toMap(item._l),
   };
-  static PS8K create(
+  static PS8K $create(
     String p0, int p1, ds.PK l, 
   ) {
     assert (p0 != null);
@@ -2555,7 +2555,7 @@ class PS8S {
     "2": item._p1,
     "3": item._l == null ? null : ds.PS.toMap(item._l),
   };
-  static PS8S create(
+  static PS8S $create(
     String p0, int p1, ds.PS l, 
   ) {
     assert (p0 != null);
@@ -2612,7 +2612,7 @@ class PS1 {
     "1": item._p0,
     "2": item._l == null ? null : ds.P1.toMap(item._l),
   };
-  static PS1 create(
+  static PS1 $create(
     String p0, ds.P1 l, 
   ) {
     assert (p0 != null);
@@ -2661,7 +2661,7 @@ class PS4 {
     "1": item._p0,
     "2": item._l == null ? null : ds.P4.toMap(item._l),
   };
-  static PS4 create(
+  static PS4 $create(
     String p0, ds.P4 l, 
   ) {
     assert (p0 != null);
@@ -2710,7 +2710,7 @@ class PS8 {
     "1": item._p0,
     "2": item._l == null ? null : ds.P8.toMap(item._l),
   };
-  static PS8 create(
+  static PS8 $create(
     String p0, ds.P8 l, 
   ) {
     assert (p0 != null);
@@ -2759,7 +2759,7 @@ class PSD {
     "1": item._p0,
     "2": item._l == null ? null : ds.PD.toMap(item._l),
   };
-  static PSD create(
+  static PSD $create(
     String p0, ds.PD l, 
   ) {
     assert (p0 != null);
@@ -2808,7 +2808,7 @@ class PSK {
     "1": item._p0,
     "2": item._l == null ? null : ds.PK.toMap(item._l),
   };
-  static PSK create(
+  static PSK $create(
     String p0, ds.PK l, 
   ) {
     assert (p0 != null);
@@ -2857,7 +2857,7 @@ class PSS {
     "1": item._p0,
     "2": item._l == null ? null : ds.PS.toMap(item._l),
   };
-  static PSS create(
+  static PSS $create(
     String p0, ds.PS l, 
   ) {
     assert (p0 != null);

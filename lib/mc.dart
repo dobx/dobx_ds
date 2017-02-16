@@ -22,10 +22,10 @@ class MultiCAS extends DelegatingMap<String,dynamic> {
     // no merge
     return new MultiCAS(map);
   }
-  static MultiCAS create() {
+  static MultiCAS $create() {
     return new MultiCAS({});
   }
-  static MultiCAS createObservable() {
+  static MultiCAS $createObservable() {
     return new MultiCAS({});
   }
 

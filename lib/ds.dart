@@ -25,14 +25,14 @@ class ParamId {
   static Map<String,dynamic> toMap(ParamId item) => {
     "1": item._id,
   };
-  static ParamId create(
+  static ParamId $create(
     int id, 
   ) {
     assert (id != null);
     return new ParamId()
       .._id = id;
   }
-  static ParamId createObservable({
+  static ParamId $createObservable({
     int id = 0,
   }) {
     return new _ParamId()
@@ -78,7 +78,7 @@ class ParamKey {
     "1": item._key,
     "2": item._parentKey,
   };
-  static ParamKey create(
+  static ParamKey $create(
     String key, {
     String parentKey,
   }) {
@@ -87,7 +87,7 @@ class ParamKey {
       .._key = key
       .._parentKey = parentKey;
   }
-  static ParamKey createObservable({
+  static ParamKey $createObservable({
     String key = "",
     String parentKey = "",
   }) {
@@ -147,7 +147,7 @@ class ParamUpdate {
     "2": item._mc == null ? null : MultiCAS.toMap(item._mc),
     "3": item._id,
   };
-  static ParamUpdate create(
+  static ParamUpdate $create(
     String key, MultiCAS mc, {
     int id,
   }) {
@@ -158,14 +158,14 @@ class ParamUpdate {
       .._mc = mc
       .._id = id;
   }
-  static ParamUpdate createObservable({
+  static ParamUpdate $createObservable({
     String key = "",
     MultiCAS mc,
     int id = 0,
   }) {
     return new _ParamUpdate()
       .._key = key
-      .._mc = mc ?? MultiCAS.createObservable()
+      .._mc = mc ?? MultiCAS.$createObservable()
       .._id = id;
   }
 
@@ -232,7 +232,7 @@ class ParamRangeKey {
     "3": item._startKey,
     "4": item._parentKey,
   };
-  static ParamRangeKey create(
+  static ParamRangeKey $create(
     bool desc, {
     int limit,
     String startKey,
@@ -245,7 +245,7 @@ class ParamRangeKey {
       .._startKey = startKey
       .._parentKey = parentKey;
   }
-  static ParamRangeKey createObservable({
+  static ParamRangeKey $createObservable({
     bool desc = false,
     int limit = 10,
     String startKey = "",
@@ -327,7 +327,7 @@ class ACResult {
     "2": item._value,
     "3": item._id,
   };
-  static ACResult create(
+  static ACResult $create(
     String name, String value, {
     int id,
   }) {
@@ -338,7 +338,7 @@ class ACResult {
       .._value = value
       .._id = id;
   }
-  static ACResult createObservable({
+  static ACResult $createObservable({
     String name = "",
     String value = "",
     int id = 0,
@@ -400,7 +400,7 @@ class ACResult_PList {
   static Map<String,dynamic> toMap(ACResult_PList item) => {
     "1": item._p?.map(ACResult.toMap).toList(growable: false),
   };
-  static ACResult_PList create({
+  static ACResult_PList $create({
     List<ACResult> p,
   }) {
     return new ACResult_PList()
@@ -447,7 +447,7 @@ class P1 {
     "3": item._pgstart,
     "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
   };
-  static P1 create(
+  static P1 $create(
     int value, ParamRangeKey prk, {
     int end,
     int pgstart,
@@ -460,7 +460,7 @@ class P1 {
       .._pgstart = pgstart
       .._prk = prk;
   }
-  static P1 createObservable({
+  static P1 $createObservable({
     int value = 0,
     int end = -1,
     int pgstart = -1,
@@ -470,7 +470,7 @@ class P1 {
       .._value = value
       .._end = end
       .._pgstart = pgstart
-      .._prk = prk ?? ParamRangeKey.createObservable();
+      .._prk = prk ?? ParamRangeKey.$createObservable();
   }
 
   static const int FN_VALUE = 1;
@@ -545,7 +545,7 @@ class P4 {
     "3": item._pgstart,
     "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
   };
-  static P4 create(
+  static P4 $create(
     int value, ParamRangeKey prk, {
     int end,
     int pgstart,
@@ -558,7 +558,7 @@ class P4 {
       .._pgstart = pgstart
       .._prk = prk;
   }
-  static P4 createObservable({
+  static P4 $createObservable({
     int value = 0,
     int end = -1,
     int pgstart = -1,
@@ -568,7 +568,7 @@ class P4 {
       .._value = value
       .._end = end
       .._pgstart = pgstart
-      .._prk = prk ?? ParamRangeKey.createObservable();
+      .._prk = prk ?? ParamRangeKey.$createObservable();
   }
 
   static const int FN_VALUE = 1;
@@ -643,7 +643,7 @@ class P8 {
     "3": item._pgstart,
     "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
   };
-  static P8 create(
+  static P8 $create(
     int value, ParamRangeKey prk, {
     int end,
     int pgstart,
@@ -656,7 +656,7 @@ class P8 {
       .._pgstart = pgstart
       .._prk = prk;
   }
-  static P8 createObservable({
+  static P8 $createObservable({
     int value = 0,
     int end = -1,
     int pgstart = -1,
@@ -666,7 +666,7 @@ class P8 {
       .._value = value
       .._end = end
       .._pgstart = pgstart
-      .._prk = prk ?? ParamRangeKey.createObservable();
+      .._prk = prk ?? ParamRangeKey.$createObservable();
   }
 
   static const int FN_VALUE = 1;
@@ -741,7 +741,7 @@ class PD {
     "3": item._pgstart,
     "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
   };
-  static PD create(
+  static PD $create(
     int value, ParamRangeKey prk, {
     int end,
     int pgstart,
@@ -754,7 +754,7 @@ class PD {
       .._pgstart = pgstart
       .._prk = prk;
   }
-  static PD createObservable({
+  static PD $createObservable({
     int value = 0,
     int end = 0,
     int pgstart = 0,
@@ -764,7 +764,7 @@ class PD {
       .._value = value
       .._end = end
       .._pgstart = pgstart
-      .._prk = prk ?? ParamRangeKey.createObservable();
+      .._prk = prk ?? ParamRangeKey.$createObservable();
   }
 
   static const int FN_VALUE = 1;
@@ -839,7 +839,7 @@ class PB {
     "3": item._pgstart,
     "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
   };
-  static PB create(
+  static PB $create(
     String value, ParamRangeKey prk, {
     String end,
     String pgstart,
@@ -852,7 +852,7 @@ class PB {
       .._pgstart = pgstart
       .._prk = prk;
   }
-  static PB createObservable({
+  static PB $createObservable({
     String value = "",
     String end = "",
     String pgstart = "",
@@ -862,7 +862,7 @@ class PB {
       .._value = value
       .._end = end
       .._pgstart = pgstart
-      .._prk = prk ?? ParamRangeKey.createObservable();
+      .._prk = prk ?? ParamRangeKey.$createObservable();
   }
 
   static const int FN_VALUE = 1;
@@ -937,7 +937,7 @@ class PK {
     "3": item._pgstart,
     "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
   };
-  static PK create(
+  static PK $create(
     String value, ParamRangeKey prk, {
     String end,
     String pgstart,
@@ -950,7 +950,7 @@ class PK {
       .._pgstart = pgstart
       .._prk = prk;
   }
-  static PK createObservable({
+  static PK $createObservable({
     String value = "",
     String end = "",
     String pgstart = "",
@@ -960,7 +960,7 @@ class PK {
       .._value = value
       .._end = end
       .._pgstart = pgstart
-      .._prk = prk ?? ParamRangeKey.createObservable();
+      .._prk = prk ?? ParamRangeKey.$createObservable();
   }
 
   static const int FN_VALUE = 1;
@@ -1035,7 +1035,7 @@ class PS {
     "3": item._pgstart,
     "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
   };
-  static PS create(
+  static PS $create(
     String value, ParamRangeKey prk, {
     String end,
     String pgstart,
@@ -1048,7 +1048,7 @@ class PS {
       .._pgstart = pgstart
       .._prk = prk;
   }
-  static PS createObservable({
+  static PS $createObservable({
     String value = "",
     String end = "",
     String pgstart = "",
@@ -1058,7 +1058,7 @@ class PS {
       .._value = value
       .._end = end
       .._pgstart = pgstart
-      .._prk = prk ?? ParamRangeKey.createObservable();
+      .._prk = prk ?? ParamRangeKey.$createObservable();
   }
 
   static const int FN_VALUE = 1;
