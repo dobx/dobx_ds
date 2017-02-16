@@ -75,6 +75,10 @@ String $escape(String str) {
 }
 
 /// Returns a double-quoted string for json.
-String escapeValue(String v) {
+String $escapeQuoted(String v) {
   return '"${$escape(v)}"';
+}
+
+List<T> $map<T,E>(List<E> list, T f(E e)) {
+  return list == null ? null : list.map(f).toList(growable: false);
 }
