@@ -48,8 +48,8 @@ class ParamId {
   void set id(int id) { _id = id; }
 }
 class _ParamId extends ParamId with PubSub {
-  int get id { sub(1); return _id; }
-  void set id(int id) { if (id != null && id == _id) return; _id = id ?? 0; pub(1); }
+  int get id { $sub(1); return _id; }
+  void set id(int id) { if (id != null && id == _id) return; _id = id ?? 0; $pub(1); }
 }
 
 
@@ -111,11 +111,11 @@ class ParamKey {
   void set parentKey(String parentKey) { _parentKey = parentKey; }
 }
 class _ParamKey extends ParamKey with PubSub {
-  String get key { sub(1); return _key; }
-  void set key(String key) { if (key != null && key == _key) return; _key = key ?? ""; pub(1); }
+  String get key { $sub(1); return _key; }
+  void set key(String key) { if (key != null && key == _key) return; _key = key ?? ""; $pub(1); }
 
-  String get parentKey { sub(2); return _parentKey; }
-  void set parentKey(String parentKey) { if (parentKey != null && parentKey == _parentKey) return; _parentKey = parentKey ?? ""; pub(2); }
+  String get parentKey { $sub(2); return _parentKey; }
+  void set parentKey(String parentKey) { if (parentKey != null && parentKey == _parentKey) return; _parentKey = parentKey ?? ""; $pub(2); }
 }
 
 
@@ -190,14 +190,14 @@ class ParamUpdate {
   void set id(int id) { _id = id; }
 }
 class _ParamUpdate extends ParamUpdate with PubSub {
-  String get key { sub(1); return _key; }
-  void set key(String key) { if (key != null && key == _key) return; _key = key ?? ""; pub(1); }
+  String get key { $sub(1); return _key; }
+  void set key(String key) { if (key != null && key == _key) return; _key = key ?? ""; $pub(1); }
 
-  MultiCAS get mc { sub(2); return _mc; }
-  void set mc(MultiCAS mc) { if (mc != null && mc == _mc) return; _mc = mc; pub(2); }
+  MultiCAS get mc { $sub(2); return _mc; }
+  void set mc(MultiCAS mc) { if (mc != null && mc == _mc) return; _mc = mc; $pub(2); }
 
-  int get id { sub(3); return _id; }
-  void set id(int id) { if (id != null && id == _id) return; _id = id ?? 0; pub(3); }
+  int get id { $sub(3); return _id; }
+  void set id(int id) { if (id != null && id == _id) return; _id = id ?? 0; $pub(3); }
 }
 
 
@@ -285,17 +285,17 @@ class ParamRangeKey {
   void set parentKey(String parentKey) { _parentKey = parentKey; }
 }
 class _ParamRangeKey extends ParamRangeKey with PubSub {
-  bool get desc { sub(1); return _desc; }
-  void set desc(bool desc) { if (desc != null && desc == _desc) return; _desc = desc ?? false; pub(1); }
+  bool get desc { $sub(1); return _desc; }
+  void set desc(bool desc) { if (desc != null && desc == _desc) return; _desc = desc ?? false; $pub(1); }
 
-  int get limit { sub(2); return _limit; }
-  void set limit(int limit) { if (limit != null && limit == _limit) return; _limit = limit ?? 10; pub(2); }
+  int get limit { $sub(2); return _limit; }
+  void set limit(int limit) { if (limit != null && limit == _limit) return; _limit = limit ?? 10; $pub(2); }
 
-  String get startKey { sub(3); return _startKey; }
-  void set startKey(String startKey) { if (startKey != null && startKey == _startKey) return; _startKey = startKey ?? ""; pub(3); }
+  String get startKey { $sub(3); return _startKey; }
+  void set startKey(String startKey) { if (startKey != null && startKey == _startKey) return; _startKey = startKey ?? ""; $pub(3); }
 
-  String get parentKey { sub(4); return _parentKey; }
-  void set parentKey(String parentKey) { if (parentKey != null && parentKey == _parentKey) return; _parentKey = parentKey ?? ""; pub(4); }
+  String get parentKey { $sub(4); return _parentKey; }
+  void set parentKey(String parentKey) { if (parentKey != null && parentKey == _parentKey) return; _parentKey = parentKey ?? ""; $pub(4); }
 }
 
 
@@ -370,14 +370,14 @@ class ACResult {
   void set id(int id) { _id = id; }
 }
 class _ACResult extends ACResult with PubSub {
-  String get name { sub(1); return _name; }
-  void set name(String name) { if (name != null && name == _name) return; _name = name ?? ""; pub(1); }
+  String get name { $sub(1); return _name; }
+  void set name(String name) { if (name != null && name == _name) return; _name = name ?? ""; $pub(1); }
 
-  String get value { sub(2); return _value; }
-  void set value(String value) { if (value != null && value == _value) return; _value = value ?? ""; pub(2); }
+  String get value { $sub(2); return _value; }
+  void set value(String value) { if (value != null && value == _value) return; _value = value ?? ""; $pub(2); }
 
-  int get id { sub(3); return _id; }
-  void set id(int id) { if (id != null && id == _id) return; _id = id ?? 0; pub(3); }
+  int get id { $sub(3); return _id; }
+  void set id(int id) { if (id != null && id == _id) return; _id = id ?? 0; $pub(3); }
 }
 
 /// message ACResult_PList {
@@ -500,17 +500,17 @@ class P1 {
   void set prk(ParamRangeKey prk) { _prk = prk; }
 }
 class _P1 extends P1 with PubSub {
-  int get value { sub(1); return _value; }
-  void set value(int value) { if (value != null && value == _value) return; _value = value ?? 0; pub(1); }
+  int get value { $sub(1); return _value; }
+  void set value(int value) { if (value != null && value == _value) return; _value = value ?? 0; $pub(1); }
 
-  int get end { sub(2); return _end; }
-  void set end(int end) { if (end != null && end == _end) return; _end = end ?? -1; pub(2); }
+  int get end { $sub(2); return _end; }
+  void set end(int end) { if (end != null && end == _end) return; _end = end ?? -1; $pub(2); }
 
-  int get pgstart { sub(3); return _pgstart; }
-  void set pgstart(int pgstart) { if (pgstart != null && pgstart == _pgstart) return; _pgstart = pgstart ?? -1; pub(3); }
+  int get pgstart { $sub(3); return _pgstart; }
+  void set pgstart(int pgstart) { if (pgstart != null && pgstart == _pgstart) return; _pgstart = pgstart ?? -1; $pub(3); }
 
-  ParamRangeKey get prk { sub(4); return _prk; }
-  void set prk(ParamRangeKey prk) { if (prk != null && prk == _prk) return; _prk = prk; pub(4); }
+  ParamRangeKey get prk { $sub(4); return _prk; }
+  void set prk(ParamRangeKey prk) { if (prk != null && prk == _prk) return; _prk = prk; $pub(4); }
 }
 
 
@@ -598,17 +598,17 @@ class P4 {
   void set prk(ParamRangeKey prk) { _prk = prk; }
 }
 class _P4 extends P4 with PubSub {
-  int get value { sub(1); return _value; }
-  void set value(int value) { if (value != null && value == _value) return; _value = value ?? 0; pub(1); }
+  int get value { $sub(1); return _value; }
+  void set value(int value) { if (value != null && value == _value) return; _value = value ?? 0; $pub(1); }
 
-  int get end { sub(2); return _end; }
-  void set end(int end) { if (end != null && end == _end) return; _end = end ?? -1; pub(2); }
+  int get end { $sub(2); return _end; }
+  void set end(int end) { if (end != null && end == _end) return; _end = end ?? -1; $pub(2); }
 
-  int get pgstart { sub(3); return _pgstart; }
-  void set pgstart(int pgstart) { if (pgstart != null && pgstart == _pgstart) return; _pgstart = pgstart ?? -1; pub(3); }
+  int get pgstart { $sub(3); return _pgstart; }
+  void set pgstart(int pgstart) { if (pgstart != null && pgstart == _pgstart) return; _pgstart = pgstart ?? -1; $pub(3); }
 
-  ParamRangeKey get prk { sub(4); return _prk; }
-  void set prk(ParamRangeKey prk) { if (prk != null && prk == _prk) return; _prk = prk; pub(4); }
+  ParamRangeKey get prk { $sub(4); return _prk; }
+  void set prk(ParamRangeKey prk) { if (prk != null && prk == _prk) return; _prk = prk; $pub(4); }
 }
 
 
@@ -696,17 +696,17 @@ class P8 {
   void set prk(ParamRangeKey prk) { _prk = prk; }
 }
 class _P8 extends P8 with PubSub {
-  int get value { sub(1); return _value; }
-  void set value(int value) { if (value != null && value == _value) return; _value = value ?? 0; pub(1); }
+  int get value { $sub(1); return _value; }
+  void set value(int value) { if (value != null && value == _value) return; _value = value ?? 0; $pub(1); }
 
-  int get end { sub(2); return _end; }
-  void set end(int end) { if (end != null && end == _end) return; _end = end ?? -1; pub(2); }
+  int get end { $sub(2); return _end; }
+  void set end(int end) { if (end != null && end == _end) return; _end = end ?? -1; $pub(2); }
 
-  int get pgstart { sub(3); return _pgstart; }
-  void set pgstart(int pgstart) { if (pgstart != null && pgstart == _pgstart) return; _pgstart = pgstart ?? -1; pub(3); }
+  int get pgstart { $sub(3); return _pgstart; }
+  void set pgstart(int pgstart) { if (pgstart != null && pgstart == _pgstart) return; _pgstart = pgstart ?? -1; $pub(3); }
 
-  ParamRangeKey get prk { sub(4); return _prk; }
-  void set prk(ParamRangeKey prk) { if (prk != null && prk == _prk) return; _prk = prk; pub(4); }
+  ParamRangeKey get prk { $sub(4); return _prk; }
+  void set prk(ParamRangeKey prk) { if (prk != null && prk == _prk) return; _prk = prk; $pub(4); }
 }
 
 
@@ -794,17 +794,17 @@ class PD {
   void set prk(ParamRangeKey prk) { _prk = prk; }
 }
 class _PD extends PD with PubSub {
-  int get value { sub(1); return _value; }
-  void set value(int value) { if (value != null && value == _value) return; _value = value ?? 0; pub(1); }
+  int get value { $sub(1); return _value; }
+  void set value(int value) { if (value != null && value == _value) return; _value = value ?? 0; $pub(1); }
 
-  int get end { sub(2); return _end; }
-  void set end(int end) { if (end != null && end == _end) return; _end = end ?? 0; pub(2); }
+  int get end { $sub(2); return _end; }
+  void set end(int end) { if (end != null && end == _end) return; _end = end ?? 0; $pub(2); }
 
-  int get pgstart { sub(3); return _pgstart; }
-  void set pgstart(int pgstart) { if (pgstart != null && pgstart == _pgstart) return; _pgstart = pgstart ?? 0; pub(3); }
+  int get pgstart { $sub(3); return _pgstart; }
+  void set pgstart(int pgstart) { if (pgstart != null && pgstart == _pgstart) return; _pgstart = pgstart ?? 0; $pub(3); }
 
-  ParamRangeKey get prk { sub(4); return _prk; }
-  void set prk(ParamRangeKey prk) { if (prk != null && prk == _prk) return; _prk = prk; pub(4); }
+  ParamRangeKey get prk { $sub(4); return _prk; }
+  void set prk(ParamRangeKey prk) { if (prk != null && prk == _prk) return; _prk = prk; $pub(4); }
 }
 
 
@@ -892,17 +892,17 @@ class PB {
   void set prk(ParamRangeKey prk) { _prk = prk; }
 }
 class _PB extends PB with PubSub {
-  String get value { sub(1); return _value; }
-  void set value(String value) { if (value != null && value == _value) return; _value = value ?? ""; pub(1); }
+  String get value { $sub(1); return _value; }
+  void set value(String value) { if (value != null && value == _value) return; _value = value ?? ""; $pub(1); }
 
-  String get end { sub(2); return _end; }
-  void set end(String end) { if (end != null && end == _end) return; _end = end ?? ""; pub(2); }
+  String get end { $sub(2); return _end; }
+  void set end(String end) { if (end != null && end == _end) return; _end = end ?? ""; $pub(2); }
 
-  String get pgstart { sub(3); return _pgstart; }
-  void set pgstart(String pgstart) { if (pgstart != null && pgstart == _pgstart) return; _pgstart = pgstart ?? ""; pub(3); }
+  String get pgstart { $sub(3); return _pgstart; }
+  void set pgstart(String pgstart) { if (pgstart != null && pgstart == _pgstart) return; _pgstart = pgstart ?? ""; $pub(3); }
 
-  ParamRangeKey get prk { sub(4); return _prk; }
-  void set prk(ParamRangeKey prk) { if (prk != null && prk == _prk) return; _prk = prk; pub(4); }
+  ParamRangeKey get prk { $sub(4); return _prk; }
+  void set prk(ParamRangeKey prk) { if (prk != null && prk == _prk) return; _prk = prk; $pub(4); }
 }
 
 
@@ -990,17 +990,17 @@ class PK {
   void set prk(ParamRangeKey prk) { _prk = prk; }
 }
 class _PK extends PK with PubSub {
-  String get value { sub(1); return _value; }
-  void set value(String value) { if (value != null && value == _value) return; _value = value ?? ""; pub(1); }
+  String get value { $sub(1); return _value; }
+  void set value(String value) { if (value != null && value == _value) return; _value = value ?? ""; $pub(1); }
 
-  String get end { sub(2); return _end; }
-  void set end(String end) { if (end != null && end == _end) return; _end = end ?? ""; pub(2); }
+  String get end { $sub(2); return _end; }
+  void set end(String end) { if (end != null && end == _end) return; _end = end ?? ""; $pub(2); }
 
-  String get pgstart { sub(3); return _pgstart; }
-  void set pgstart(String pgstart) { if (pgstart != null && pgstart == _pgstart) return; _pgstart = pgstart ?? ""; pub(3); }
+  String get pgstart { $sub(3); return _pgstart; }
+  void set pgstart(String pgstart) { if (pgstart != null && pgstart == _pgstart) return; _pgstart = pgstart ?? ""; $pub(3); }
 
-  ParamRangeKey get prk { sub(4); return _prk; }
-  void set prk(ParamRangeKey prk) { if (prk != null && prk == _prk) return; _prk = prk; pub(4); }
+  ParamRangeKey get prk { $sub(4); return _prk; }
+  void set prk(ParamRangeKey prk) { if (prk != null && prk == _prk) return; _prk = prk; $pub(4); }
 }
 
 
@@ -1088,17 +1088,17 @@ class PS {
   void set prk(ParamRangeKey prk) { _prk = prk; }
 }
 class _PS extends PS with PubSub {
-  String get value { sub(1); return _value; }
-  void set value(String value) { if (value != null && value == _value) return; _value = value ?? ""; pub(1); }
+  String get value { $sub(1); return _value; }
+  void set value(String value) { if (value != null && value == _value) return; _value = value ?? ""; $pub(1); }
 
-  String get end { sub(2); return _end; }
-  void set end(String end) { if (end != null && end == _end) return; _end = end ?? ""; pub(2); }
+  String get end { $sub(2); return _end; }
+  void set end(String end) { if (end != null && end == _end) return; _end = end ?? ""; $pub(2); }
 
-  String get pgstart { sub(3); return _pgstart; }
-  void set pgstart(String pgstart) { if (pgstart != null && pgstart == _pgstart) return; _pgstart = pgstart ?? ""; pub(3); }
+  String get pgstart { $sub(3); return _pgstart; }
+  void set pgstart(String pgstart) { if (pgstart != null && pgstart == _pgstart) return; _pgstart = pgstart ?? ""; $pub(3); }
 
-  ParamRangeKey get prk { sub(4); return _prk; }
-  void set prk(ParamRangeKey prk) { if (prk != null && prk == _prk) return; _prk = prk; pub(4); }
+  ParamRangeKey get prk { $sub(4); return _prk; }
+  void set prk(ParamRangeKey prk) { if (prk != null && prk == _prk) return; _prk = prk; $pub(4); }
 }
 
 
