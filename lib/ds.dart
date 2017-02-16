@@ -9,20 +9,20 @@ export './mc.dart' show MultiCAS;
 ///   required uint32 id = 1;
 /// }
 class ParamId {
-  static ParamId fromMap(Map<String,dynamic> map, [ ParamId item ]) {
+  static ParamId $fromMap(Map<String,dynamic> map, [ ParamId item ]) {
     if (map == null) return item;
 
     item ??= new ParamId();
     item._id = map["1"];
     return item;
   }
-  static ParamId $(dynamic data) {
+  static ParamId $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(ParamId item) => {
+  static Map<String,dynamic> $toMap(ParamId item) => {
     "1": item._id,
   };
   static ParamId $create(
@@ -48,7 +48,7 @@ class ParamId {
 ///   optional bytes parent_key = 2;
 /// }
 class ParamKey {
-  static ParamKey fromMap(Map<String,dynamic> map, [ ParamKey item ]) {
+  static ParamKey $fromMap(Map<String,dynamic> map, [ ParamKey item ]) {
     if (map == null) return item;
 
     item ??= new ParamKey();
@@ -56,13 +56,13 @@ class ParamKey {
     item._parentKey = map["2"];
     return item;
   }
-  static ParamKey $(dynamic data) {
+  static ParamKey $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(ParamKey item) => {
+  static Map<String,dynamic> $toMap(ParamKey item) => {
     "1": item._key,
     "2": item._parentKey,
   };
@@ -98,24 +98,24 @@ class ParamKey {
 ///   optional uint32 id = 3;
 /// }
 class ParamUpdate {
-  static ParamUpdate fromMap(Map<String,dynamic> map, [ ParamUpdate item ]) {
+  static ParamUpdate $fromMap(Map<String,dynamic> map, [ ParamUpdate item ]) {
     if (map == null) return item;
 
     item ??= new ParamUpdate();
     item._key = map["1"];
-    item._mc = MultiCAS.fromMap(map["2"] as Map<String,dynamic>, item._mc);
+    item._mc = MultiCAS.$fromMap(map["2"] as Map<String,dynamic>, item._mc);
     item._id = map["3"];
     return item;
   }
-  static ParamUpdate $(dynamic data) {
+  static ParamUpdate $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(ParamUpdate item) => {
+  static Map<String,dynamic> $toMap(ParamUpdate item) => {
     "1": item._key,
-    "2": item._mc == null ? null : MultiCAS.toMap(item._mc),
+    "2": item._mc == null ? null : MultiCAS.$toMap(item._mc),
     "3": item._id,
   };
   static ParamUpdate $create(
@@ -159,7 +159,7 @@ class ParamUpdate {
 ///   optional bytes parent_key = 4;
 /// }
 class ParamRangeKey {
-  static ParamRangeKey fromMap(Map<String,dynamic> map, [ ParamRangeKey item ]) {
+  static ParamRangeKey $fromMap(Map<String,dynamic> map, [ ParamRangeKey item ]) {
     if (map == null) return item;
 
     item ??= new ParamRangeKey();
@@ -169,13 +169,13 @@ class ParamRangeKey {
     item._parentKey = map["4"];
     return item;
   }
-  static ParamRangeKey $(dynamic data) {
+  static ParamRangeKey $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(ParamRangeKey item) => {
+  static Map<String,dynamic> $toMap(ParamRangeKey item) => {
     "1": item._desc,
     "2": item._limit,
     "3": item._startKey,
@@ -229,7 +229,7 @@ class ParamRangeKey {
 ///   optional uint32 id = 3;
 /// }
 class ACResult {
-  static ACResult fromMap(Map<String,dynamic> map, [ ACResult item ]) {
+  static ACResult $fromMap(Map<String,dynamic> map, [ ACResult item ]) {
     if (map == null) return item;
 
     item ??= new ACResult();
@@ -238,13 +238,13 @@ class ACResult {
     item._id = map["3"];
     return item;
   }
-  static ACResult $(dynamic data) {
+  static ACResult $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(ACResult item) => {
+  static Map<String,dynamic> $toMap(ACResult item) => {
     "1": item._name,
     "2": item._value,
     "3": item._id,
@@ -284,21 +284,21 @@ class ACResult {
 ///   repeated ACResult p = 1;
 /// }
 class ACResult_PList {
-  static ACResult_PList fromMap(Map<String,dynamic> map, [ ACResult_PList item ]) {
+  static ACResult_PList $fromMap(Map<String,dynamic> map, [ ACResult_PList item ]) {
     if (map == null) return item;
 
     item ??= new ACResult_PList();
-    item._p = (map["1"] as List<Map<String,dynamic>>)?.map(ACResult.fromMap).toList(growable: false);
+    item._p = (map["1"] as List<Map<String,dynamic>>)?.map(ACResult.$fromMap).toList(growable: false);
     return item;
   }
-  static ACResult_PList $(dynamic data) {
+  static ACResult_PList $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(ACResult_PList item) => {
-    "1": item._p?.map(ACResult.toMap).toList(growable: false),
+  static Map<String,dynamic> $toMap(ACResult_PList item) => {
+    "1": item._p?.map(ACResult.$toMap).toList(growable: false),
   };
   static ACResult_PList $create({
     List<ACResult> p,
@@ -325,27 +325,27 @@ class ACResult_PList {
 ///   required ParamRangeKey prk = 4;
 /// }
 class P1 {
-  static P1 fromMap(Map<String,dynamic> map, [ P1 item ]) {
+  static P1 $fromMap(Map<String,dynamic> map, [ P1 item ]) {
     if (map == null) return item;
 
     item ??= new P1();
     item._value = map["1"];
     item._end = map["2"];
     item._pgstart = map["3"];
-    item._prk = ParamRangeKey.fromMap(map["4"] as Map<String,dynamic>, item._prk);
+    item._prk = ParamRangeKey.$fromMap(map["4"] as Map<String,dynamic>, item._prk);
     return item;
   }
-  static P1 $(dynamic data) {
+  static P1 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1 item) => {
+  static Map<String,dynamic> $toMap(P1 item) => {
     "1": item._value,
     "2": item._end,
     "3": item._pgstart,
-    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
+    "4": item._prk == null ? null : ParamRangeKey.$toMap(item._prk),
   };
   static P1 $create(
     int value, ParamRangeKey prk, {
@@ -396,27 +396,27 @@ class P1 {
 ///   required ParamRangeKey prk = 4;
 /// }
 class P4 {
-  static P4 fromMap(Map<String,dynamic> map, [ P4 item ]) {
+  static P4 $fromMap(Map<String,dynamic> map, [ P4 item ]) {
     if (map == null) return item;
 
     item ??= new P4();
     item._value = map["1"];
     item._end = map["2"];
     item._pgstart = map["3"];
-    item._prk = ParamRangeKey.fromMap(map["4"] as Map<String,dynamic>, item._prk);
+    item._prk = ParamRangeKey.$fromMap(map["4"] as Map<String,dynamic>, item._prk);
     return item;
   }
-  static P4 $(dynamic data) {
+  static P4 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P4 item) => {
+  static Map<String,dynamic> $toMap(P4 item) => {
     "1": item._value,
     "2": item._end,
     "3": item._pgstart,
-    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
+    "4": item._prk == null ? null : ParamRangeKey.$toMap(item._prk),
   };
   static P4 $create(
     int value, ParamRangeKey prk, {
@@ -467,27 +467,27 @@ class P4 {
 ///   required ParamRangeKey prk = 4;
 /// }
 class P8 {
-  static P8 fromMap(Map<String,dynamic> map, [ P8 item ]) {
+  static P8 $fromMap(Map<String,dynamic> map, [ P8 item ]) {
     if (map == null) return item;
 
     item ??= new P8();
     item._value = map["1"];
     item._end = map["2"];
     item._pgstart = map["3"];
-    item._prk = ParamRangeKey.fromMap(map["4"] as Map<String,dynamic>, item._prk);
+    item._prk = ParamRangeKey.$fromMap(map["4"] as Map<String,dynamic>, item._prk);
     return item;
   }
-  static P8 $(dynamic data) {
+  static P8 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P8 item) => {
+  static Map<String,dynamic> $toMap(P8 item) => {
     "1": item._value,
     "2": item._end,
     "3": item._pgstart,
-    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
+    "4": item._prk == null ? null : ParamRangeKey.$toMap(item._prk),
   };
   static P8 $create(
     int value, ParamRangeKey prk, {
@@ -538,27 +538,27 @@ class P8 {
 ///   required ParamRangeKey prk = 4;
 /// }
 class PD {
-  static PD fromMap(Map<String,dynamic> map, [ PD item ]) {
+  static PD $fromMap(Map<String,dynamic> map, [ PD item ]) {
     if (map == null) return item;
 
     item ??= new PD();
     item._value = map["1"];
     item._end = map["2"];
     item._pgstart = map["3"];
-    item._prk = ParamRangeKey.fromMap(map["4"] as Map<String,dynamic>, item._prk);
+    item._prk = ParamRangeKey.$fromMap(map["4"] as Map<String,dynamic>, item._prk);
     return item;
   }
-  static PD $(dynamic data) {
+  static PD $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(PD item) => {
+  static Map<String,dynamic> $toMap(PD item) => {
     "1": item._value,
     "2": item._end,
     "3": item._pgstart,
-    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
+    "4": item._prk == null ? null : ParamRangeKey.$toMap(item._prk),
   };
   static PD $create(
     int value, ParamRangeKey prk, {
@@ -609,27 +609,27 @@ class PD {
 ///   required ParamRangeKey prk = 4;
 /// }
 class PB {
-  static PB fromMap(Map<String,dynamic> map, [ PB item ]) {
+  static PB $fromMap(Map<String,dynamic> map, [ PB item ]) {
     if (map == null) return item;
 
     item ??= new PB();
     item._value = map["1"];
     item._end = map["2"];
     item._pgstart = map["3"];
-    item._prk = ParamRangeKey.fromMap(map["4"] as Map<String,dynamic>, item._prk);
+    item._prk = ParamRangeKey.$fromMap(map["4"] as Map<String,dynamic>, item._prk);
     return item;
   }
-  static PB $(dynamic data) {
+  static PB $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(PB item) => {
+  static Map<String,dynamic> $toMap(PB item) => {
     "1": item._value,
     "2": item._end,
     "3": item._pgstart,
-    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
+    "4": item._prk == null ? null : ParamRangeKey.$toMap(item._prk),
   };
   static PB $create(
     String value, ParamRangeKey prk, {
@@ -680,27 +680,27 @@ class PB {
 ///   required ParamRangeKey prk = 4;
 /// }
 class PK {
-  static PK fromMap(Map<String,dynamic> map, [ PK item ]) {
+  static PK $fromMap(Map<String,dynamic> map, [ PK item ]) {
     if (map == null) return item;
 
     item ??= new PK();
     item._value = map["1"];
     item._end = map["2"];
     item._pgstart = map["3"];
-    item._prk = ParamRangeKey.fromMap(map["4"] as Map<String,dynamic>, item._prk);
+    item._prk = ParamRangeKey.$fromMap(map["4"] as Map<String,dynamic>, item._prk);
     return item;
   }
-  static PK $(dynamic data) {
+  static PK $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(PK item) => {
+  static Map<String,dynamic> $toMap(PK item) => {
     "1": item._value,
     "2": item._end,
     "3": item._pgstart,
-    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
+    "4": item._prk == null ? null : ParamRangeKey.$toMap(item._prk),
   };
   static PK $create(
     String value, ParamRangeKey prk, {
@@ -751,27 +751,27 @@ class PK {
 ///   required ParamRangeKey prk = 4;
 /// }
 class PS {
-  static PS fromMap(Map<String,dynamic> map, [ PS item ]) {
+  static PS $fromMap(Map<String,dynamic> map, [ PS item ]) {
     if (map == null) return item;
 
     item ??= new PS();
     item._value = map["1"];
     item._end = map["2"];
     item._pgstart = map["3"];
-    item._prk = ParamRangeKey.fromMap(map["4"] as Map<String,dynamic>, item._prk);
+    item._prk = ParamRangeKey.$fromMap(map["4"] as Map<String,dynamic>, item._prk);
     return item;
   }
-  static PS $(dynamic data) {
+  static PS $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(PS item) => {
+  static Map<String,dynamic> $toMap(PS item) => {
     "1": item._value,
     "2": item._end,
     "3": item._pgstart,
-    "4": item._prk == null ? null : ParamRangeKey.toMap(item._prk),
+    "4": item._prk == null ? null : ParamRangeKey.$toMap(item._prk),
   };
   static PS $create(
     String value, ParamRangeKey prk, {

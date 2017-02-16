@@ -9,25 +9,25 @@ import '../../ds.dart' as ds;
 ///   required ds.P1 l = 3;
 /// }
 class P181 {
-  static P181 fromMap(Map<String,dynamic> map, [ P181 item ]) {
+  static P181 $fromMap(Map<String,dynamic> map, [ P181 item ]) {
     if (map == null) return item;
 
     item ??= new P181();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P181 $(dynamic data) {
+  static P181 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P181 item) => {
+  static Map<String,dynamic> $toMap(P181 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P1.toMap(item._l),
+    "3": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P181 $create(
     int p0, int p1, ds.P1 l, 
@@ -69,25 +69,25 @@ class P181 {
 ///   required ds.P4 l = 3;
 /// }
 class P184 {
-  static P184 fromMap(Map<String,dynamic> map, [ P184 item ]) {
+  static P184 $fromMap(Map<String,dynamic> map, [ P184 item ]) {
     if (map == null) return item;
 
     item ??= new P184();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P184 $(dynamic data) {
+  static P184 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P184 item) => {
+  static Map<String,dynamic> $toMap(P184 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P4.toMap(item._l),
+    "3": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P184 $create(
     int p0, int p1, ds.P4 l, 
@@ -129,25 +129,25 @@ class P184 {
 ///   required ds.P8 l = 3;
 /// }
 class P188 {
-  static P188 fromMap(Map<String,dynamic> map, [ P188 item ]) {
+  static P188 $fromMap(Map<String,dynamic> map, [ P188 item ]) {
     if (map == null) return item;
 
     item ??= new P188();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P188 $(dynamic data) {
+  static P188 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P188 item) => {
+  static Map<String,dynamic> $toMap(P188 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P8.toMap(item._l),
+    "3": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P188 $create(
     int p0, int p1, ds.P8 l, 
@@ -189,25 +189,25 @@ class P188 {
 ///   required ds.PD l = 3;
 /// }
 class P18D {
-  static P18D fromMap(Map<String,dynamic> map, [ P18D item ]) {
+  static P18D $fromMap(Map<String,dynamic> map, [ P18D item ]) {
     if (map == null) return item;
 
     item ??= new P18D();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P18D $(dynamic data) {
+  static P18D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P18D item) => {
+  static Map<String,dynamic> $toMap(P18D item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PD.toMap(item._l),
+    "3": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P18D $create(
     int p0, int p1, ds.PD l, 
@@ -249,25 +249,25 @@ class P18D {
 ///   required ds.PK l = 3;
 /// }
 class P18K {
-  static P18K fromMap(Map<String,dynamic> map, [ P18K item ]) {
+  static P18K $fromMap(Map<String,dynamic> map, [ P18K item ]) {
     if (map == null) return item;
 
     item ??= new P18K();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P18K $(dynamic data) {
+  static P18K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P18K item) => {
+  static Map<String,dynamic> $toMap(P18K item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PK.toMap(item._l),
+    "3": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P18K $create(
     int p0, int p1, ds.PK l, 
@@ -309,25 +309,25 @@ class P18K {
 ///   required ds.PS l = 3;
 /// }
 class P18S {
-  static P18S fromMap(Map<String,dynamic> map, [ P18S item ]) {
+  static P18S $fromMap(Map<String,dynamic> map, [ P18S item ]) {
     if (map == null) return item;
 
     item ??= new P18S();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P18S $(dynamic data) {
+  static P18S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P18S item) => {
+  static Map<String,dynamic> $toMap(P18S item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PS.toMap(item._l),
+    "3": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P18S $create(
     int p0, int p1, ds.PS l, 
@@ -372,7 +372,7 @@ class P18S {
 ///   required ds.P1 l = 6;
 /// }
 class P111411 {
-  static P111411 fromMap(Map<String,dynamic> map, [ P111411 item ]) {
+  static P111411 $fromMap(Map<String,dynamic> map, [ P111411 item ]) {
     if (map == null) return item;
 
     item ??= new P111411();
@@ -381,22 +381,22 @@ class P111411 {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.P1.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111411 $(dynamic data) {
+  static P111411 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111411 item) => {
+  static Map<String,dynamic> $toMap(P111411 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.P1.toMap(item._l),
+    "6": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P111411 $create(
     int p0, int p1, int p2, int p3, int p4, ds.P1 l, 
@@ -465,7 +465,7 @@ class P111411 {
 ///   required ds.P4 l = 6;
 /// }
 class P111414 {
-  static P111414 fromMap(Map<String,dynamic> map, [ P111414 item ]) {
+  static P111414 $fromMap(Map<String,dynamic> map, [ P111414 item ]) {
     if (map == null) return item;
 
     item ??= new P111414();
@@ -474,22 +474,22 @@ class P111414 {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.P4.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111414 $(dynamic data) {
+  static P111414 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111414 item) => {
+  static Map<String,dynamic> $toMap(P111414 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.P4.toMap(item._l),
+    "6": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P111414 $create(
     int p0, int p1, int p2, int p3, int p4, ds.P4 l, 
@@ -558,7 +558,7 @@ class P111414 {
 ///   required ds.P8 l = 6;
 /// }
 class P111418 {
-  static P111418 fromMap(Map<String,dynamic> map, [ P111418 item ]) {
+  static P111418 $fromMap(Map<String,dynamic> map, [ P111418 item ]) {
     if (map == null) return item;
 
     item ??= new P111418();
@@ -567,22 +567,22 @@ class P111418 {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.P8.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111418 $(dynamic data) {
+  static P111418 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111418 item) => {
+  static Map<String,dynamic> $toMap(P111418 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.P8.toMap(item._l),
+    "6": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P111418 $create(
     int p0, int p1, int p2, int p3, int p4, ds.P8 l, 
@@ -651,7 +651,7 @@ class P111418 {
 ///   required ds.PD l = 6;
 /// }
 class P11141D {
-  static P11141D fromMap(Map<String,dynamic> map, [ P11141D item ]) {
+  static P11141D $fromMap(Map<String,dynamic> map, [ P11141D item ]) {
     if (map == null) return item;
 
     item ??= new P11141D();
@@ -660,22 +660,22 @@ class P11141D {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.PD.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11141D $(dynamic data) {
+  static P11141D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11141D item) => {
+  static Map<String,dynamic> $toMap(P11141D item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.PD.toMap(item._l),
+    "6": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P11141D $create(
     int p0, int p1, int p2, int p3, int p4, ds.PD l, 
@@ -744,7 +744,7 @@ class P11141D {
 ///   required ds.PK l = 6;
 /// }
 class P11141K {
-  static P11141K fromMap(Map<String,dynamic> map, [ P11141K item ]) {
+  static P11141K $fromMap(Map<String,dynamic> map, [ P11141K item ]) {
     if (map == null) return item;
 
     item ??= new P11141K();
@@ -753,22 +753,22 @@ class P11141K {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.PK.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11141K $(dynamic data) {
+  static P11141K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11141K item) => {
+  static Map<String,dynamic> $toMap(P11141K item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.PK.toMap(item._l),
+    "6": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P11141K $create(
     int p0, int p1, int p2, int p3, int p4, ds.PK l, 
@@ -837,7 +837,7 @@ class P11141K {
 ///   required ds.PS l = 6;
 /// }
 class P11141S {
-  static P11141S fromMap(Map<String,dynamic> map, [ P11141S item ]) {
+  static P11141S $fromMap(Map<String,dynamic> map, [ P11141S item ]) {
     if (map == null) return item;
 
     item ??= new P11141S();
@@ -846,22 +846,22 @@ class P11141S {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.PS.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11141S $(dynamic data) {
+  static P11141S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11141S item) => {
+  static Map<String,dynamic> $toMap(P11141S item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.PS.toMap(item._l),
+    "6": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P11141S $create(
     int p0, int p1, int p2, int p3, int p4, ds.PS l, 
@@ -929,7 +929,7 @@ class P11141S {
 ///   required ds.P1 l = 5;
 /// }
 class P1D111 {
-  static P1D111 fromMap(Map<String,dynamic> map, [ P1D111 item ]) {
+  static P1D111 $fromMap(Map<String,dynamic> map, [ P1D111 item ]) {
     if (map == null) return item;
 
     item ??= new P1D111();
@@ -937,21 +937,21 @@ class P1D111 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P1.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D111 $(dynamic data) {
+  static P1D111 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D111 item) => {
+  static Map<String,dynamic> $toMap(P1D111 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P1.toMap(item._l),
+    "5": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P1D111 $create(
     int p0, int p1, int p2, int p3, ds.P1 l, 
@@ -1011,7 +1011,7 @@ class P1D111 {
 ///   required ds.P4 l = 5;
 /// }
 class P1D114 {
-  static P1D114 fromMap(Map<String,dynamic> map, [ P1D114 item ]) {
+  static P1D114 $fromMap(Map<String,dynamic> map, [ P1D114 item ]) {
     if (map == null) return item;
 
     item ??= new P1D114();
@@ -1019,21 +1019,21 @@ class P1D114 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P4.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D114 $(dynamic data) {
+  static P1D114 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D114 item) => {
+  static Map<String,dynamic> $toMap(P1D114 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P4.toMap(item._l),
+    "5": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P1D114 $create(
     int p0, int p1, int p2, int p3, ds.P4 l, 
@@ -1093,7 +1093,7 @@ class P1D114 {
 ///   required ds.P8 l = 5;
 /// }
 class P1D118 {
-  static P1D118 fromMap(Map<String,dynamic> map, [ P1D118 item ]) {
+  static P1D118 $fromMap(Map<String,dynamic> map, [ P1D118 item ]) {
     if (map == null) return item;
 
     item ??= new P1D118();
@@ -1101,21 +1101,21 @@ class P1D118 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P8.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D118 $(dynamic data) {
+  static P1D118 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D118 item) => {
+  static Map<String,dynamic> $toMap(P1D118 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P8.toMap(item._l),
+    "5": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P1D118 $create(
     int p0, int p1, int p2, int p3, ds.P8 l, 
@@ -1175,7 +1175,7 @@ class P1D118 {
 ///   required ds.PD l = 5;
 /// }
 class P1D11D {
-  static P1D11D fromMap(Map<String,dynamic> map, [ P1D11D item ]) {
+  static P1D11D $fromMap(Map<String,dynamic> map, [ P1D11D item ]) {
     if (map == null) return item;
 
     item ??= new P1D11D();
@@ -1183,21 +1183,21 @@ class P1D11D {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PD.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D11D $(dynamic data) {
+  static P1D11D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D11D item) => {
+  static Map<String,dynamic> $toMap(P1D11D item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PD.toMap(item._l),
+    "5": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P1D11D $create(
     int p0, int p1, int p2, int p3, ds.PD l, 
@@ -1257,7 +1257,7 @@ class P1D11D {
 ///   required ds.PK l = 5;
 /// }
 class P1D11K {
-  static P1D11K fromMap(Map<String,dynamic> map, [ P1D11K item ]) {
+  static P1D11K $fromMap(Map<String,dynamic> map, [ P1D11K item ]) {
     if (map == null) return item;
 
     item ??= new P1D11K();
@@ -1265,21 +1265,21 @@ class P1D11K {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PK.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D11K $(dynamic data) {
+  static P1D11K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D11K item) => {
+  static Map<String,dynamic> $toMap(P1D11K item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PK.toMap(item._l),
+    "5": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P1D11K $create(
     int p0, int p1, int p2, int p3, ds.PK l, 
@@ -1339,7 +1339,7 @@ class P1D11K {
 ///   required ds.PS l = 5;
 /// }
 class P1D11S {
-  static P1D11S fromMap(Map<String,dynamic> map, [ P1D11S item ]) {
+  static P1D11S $fromMap(Map<String,dynamic> map, [ P1D11S item ]) {
     if (map == null) return item;
 
     item ??= new P1D11S();
@@ -1347,21 +1347,21 @@ class P1D11S {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PS.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D11S $(dynamic data) {
+  static P1D11S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D11S item) => {
+  static Map<String,dynamic> $toMap(P1D11S item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PS.toMap(item._l),
+    "5": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P1D11S $create(
     int p0, int p1, int p2, int p3, ds.PS l, 
@@ -1419,25 +1419,25 @@ class P1D11S {
 ///   required ds.P1 l = 3;
 /// }
 class P141 {
-  static P141 fromMap(Map<String,dynamic> map, [ P141 item ]) {
+  static P141 $fromMap(Map<String,dynamic> map, [ P141 item ]) {
     if (map == null) return item;
 
     item ??= new P141();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P141 $(dynamic data) {
+  static P141 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P141 item) => {
+  static Map<String,dynamic> $toMap(P141 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P1.toMap(item._l),
+    "3": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P141 $create(
     int p0, int p1, ds.P1 l, 
@@ -1479,25 +1479,25 @@ class P141 {
 ///   required ds.P4 l = 3;
 /// }
 class P144 {
-  static P144 fromMap(Map<String,dynamic> map, [ P144 item ]) {
+  static P144 $fromMap(Map<String,dynamic> map, [ P144 item ]) {
     if (map == null) return item;
 
     item ??= new P144();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P144 $(dynamic data) {
+  static P144 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P144 item) => {
+  static Map<String,dynamic> $toMap(P144 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P4.toMap(item._l),
+    "3": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P144 $create(
     int p0, int p1, ds.P4 l, 
@@ -1539,25 +1539,25 @@ class P144 {
 ///   required ds.P8 l = 3;
 /// }
 class P148 {
-  static P148 fromMap(Map<String,dynamic> map, [ P148 item ]) {
+  static P148 $fromMap(Map<String,dynamic> map, [ P148 item ]) {
     if (map == null) return item;
 
     item ??= new P148();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P148 $(dynamic data) {
+  static P148 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P148 item) => {
+  static Map<String,dynamic> $toMap(P148 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P8.toMap(item._l),
+    "3": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P148 $create(
     int p0, int p1, ds.P8 l, 
@@ -1599,25 +1599,25 @@ class P148 {
 ///   required ds.PD l = 3;
 /// }
 class P14D {
-  static P14D fromMap(Map<String,dynamic> map, [ P14D item ]) {
+  static P14D $fromMap(Map<String,dynamic> map, [ P14D item ]) {
     if (map == null) return item;
 
     item ??= new P14D();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P14D $(dynamic data) {
+  static P14D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P14D item) => {
+  static Map<String,dynamic> $toMap(P14D item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PD.toMap(item._l),
+    "3": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P14D $create(
     int p0, int p1, ds.PD l, 
@@ -1659,25 +1659,25 @@ class P14D {
 ///   required ds.PK l = 3;
 /// }
 class P14K {
-  static P14K fromMap(Map<String,dynamic> map, [ P14K item ]) {
+  static P14K $fromMap(Map<String,dynamic> map, [ P14K item ]) {
     if (map == null) return item;
 
     item ??= new P14K();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P14K $(dynamic data) {
+  static P14K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P14K item) => {
+  static Map<String,dynamic> $toMap(P14K item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PK.toMap(item._l),
+    "3": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P14K $create(
     int p0, int p1, ds.PK l, 
@@ -1719,25 +1719,25 @@ class P14K {
 ///   required ds.PS l = 3;
 /// }
 class P14S {
-  static P14S fromMap(Map<String,dynamic> map, [ P14S item ]) {
+  static P14S $fromMap(Map<String,dynamic> map, [ P14S item ]) {
     if (map == null) return item;
 
     item ??= new P14S();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P14S $(dynamic data) {
+  static P14S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P14S item) => {
+  static Map<String,dynamic> $toMap(P14S item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PS.toMap(item._l),
+    "3": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P14S $create(
     int p0, int p1, ds.PS l, 
@@ -1779,25 +1779,25 @@ class P14S {
 ///   required ds.P1 l = 3;
 /// }
 class P1S1 {
-  static P1S1 fromMap(Map<String,dynamic> map, [ P1S1 item ]) {
+  static P1S1 $fromMap(Map<String,dynamic> map, [ P1S1 item ]) {
     if (map == null) return item;
 
     item ??= new P1S1();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1S1 $(dynamic data) {
+  static P1S1 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1S1 item) => {
+  static Map<String,dynamic> $toMap(P1S1 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P1.toMap(item._l),
+    "3": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P1S1 $create(
     int p0, String p1, ds.P1 l, 
@@ -1839,25 +1839,25 @@ class P1S1 {
 ///   required ds.P4 l = 3;
 /// }
 class P1S4 {
-  static P1S4 fromMap(Map<String,dynamic> map, [ P1S4 item ]) {
+  static P1S4 $fromMap(Map<String,dynamic> map, [ P1S4 item ]) {
     if (map == null) return item;
 
     item ??= new P1S4();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1S4 $(dynamic data) {
+  static P1S4 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1S4 item) => {
+  static Map<String,dynamic> $toMap(P1S4 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P4.toMap(item._l),
+    "3": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P1S4 $create(
     int p0, String p1, ds.P4 l, 
@@ -1899,25 +1899,25 @@ class P1S4 {
 ///   required ds.P8 l = 3;
 /// }
 class P1S8 {
-  static P1S8 fromMap(Map<String,dynamic> map, [ P1S8 item ]) {
+  static P1S8 $fromMap(Map<String,dynamic> map, [ P1S8 item ]) {
     if (map == null) return item;
 
     item ??= new P1S8();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1S8 $(dynamic data) {
+  static P1S8 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1S8 item) => {
+  static Map<String,dynamic> $toMap(P1S8 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P8.toMap(item._l),
+    "3": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P1S8 $create(
     int p0, String p1, ds.P8 l, 
@@ -1959,25 +1959,25 @@ class P1S8 {
 ///   required ds.PD l = 3;
 /// }
 class P1SD {
-  static P1SD fromMap(Map<String,dynamic> map, [ P1SD item ]) {
+  static P1SD $fromMap(Map<String,dynamic> map, [ P1SD item ]) {
     if (map == null) return item;
 
     item ??= new P1SD();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1SD $(dynamic data) {
+  static P1SD $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1SD item) => {
+  static Map<String,dynamic> $toMap(P1SD item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PD.toMap(item._l),
+    "3": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P1SD $create(
     int p0, String p1, ds.PD l, 
@@ -2019,25 +2019,25 @@ class P1SD {
 ///   required ds.PK l = 3;
 /// }
 class P1SK {
-  static P1SK fromMap(Map<String,dynamic> map, [ P1SK item ]) {
+  static P1SK $fromMap(Map<String,dynamic> map, [ P1SK item ]) {
     if (map == null) return item;
 
     item ??= new P1SK();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1SK $(dynamic data) {
+  static P1SK $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1SK item) => {
+  static Map<String,dynamic> $toMap(P1SK item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PK.toMap(item._l),
+    "3": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P1SK $create(
     int p0, String p1, ds.PK l, 
@@ -2079,25 +2079,25 @@ class P1SK {
 ///   required ds.PS l = 3;
 /// }
 class P1SS {
-  static P1SS fromMap(Map<String,dynamic> map, [ P1SS item ]) {
+  static P1SS $fromMap(Map<String,dynamic> map, [ P1SS item ]) {
     if (map == null) return item;
 
     item ??= new P1SS();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1SS $(dynamic data) {
+  static P1SS $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1SS item) => {
+  static Map<String,dynamic> $toMap(P1SS item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PS.toMap(item._l),
+    "3": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P1SS $create(
     int p0, String p1, ds.PS l, 
@@ -2139,25 +2139,25 @@ class P1SS {
 ///   required ds.P1 l = 3;
 /// }
 class P1K1 {
-  static P1K1 fromMap(Map<String,dynamic> map, [ P1K1 item ]) {
+  static P1K1 $fromMap(Map<String,dynamic> map, [ P1K1 item ]) {
     if (map == null) return item;
 
     item ??= new P1K1();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1K1 $(dynamic data) {
+  static P1K1 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1K1 item) => {
+  static Map<String,dynamic> $toMap(P1K1 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P1.toMap(item._l),
+    "3": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P1K1 $create(
     int p0, String p1, ds.P1 l, 
@@ -2199,25 +2199,25 @@ class P1K1 {
 ///   required ds.P4 l = 3;
 /// }
 class P1K4 {
-  static P1K4 fromMap(Map<String,dynamic> map, [ P1K4 item ]) {
+  static P1K4 $fromMap(Map<String,dynamic> map, [ P1K4 item ]) {
     if (map == null) return item;
 
     item ??= new P1K4();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1K4 $(dynamic data) {
+  static P1K4 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1K4 item) => {
+  static Map<String,dynamic> $toMap(P1K4 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P4.toMap(item._l),
+    "3": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P1K4 $create(
     int p0, String p1, ds.P4 l, 
@@ -2259,25 +2259,25 @@ class P1K4 {
 ///   required ds.P8 l = 3;
 /// }
 class P1K8 {
-  static P1K8 fromMap(Map<String,dynamic> map, [ P1K8 item ]) {
+  static P1K8 $fromMap(Map<String,dynamic> map, [ P1K8 item ]) {
     if (map == null) return item;
 
     item ??= new P1K8();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1K8 $(dynamic data) {
+  static P1K8 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1K8 item) => {
+  static Map<String,dynamic> $toMap(P1K8 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P8.toMap(item._l),
+    "3": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P1K8 $create(
     int p0, String p1, ds.P8 l, 
@@ -2319,25 +2319,25 @@ class P1K8 {
 ///   required ds.PD l = 3;
 /// }
 class P1KD {
-  static P1KD fromMap(Map<String,dynamic> map, [ P1KD item ]) {
+  static P1KD $fromMap(Map<String,dynamic> map, [ P1KD item ]) {
     if (map == null) return item;
 
     item ??= new P1KD();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1KD $(dynamic data) {
+  static P1KD $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1KD item) => {
+  static Map<String,dynamic> $toMap(P1KD item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PD.toMap(item._l),
+    "3": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P1KD $create(
     int p0, String p1, ds.PD l, 
@@ -2379,25 +2379,25 @@ class P1KD {
 ///   required ds.PK l = 3;
 /// }
 class P1KK {
-  static P1KK fromMap(Map<String,dynamic> map, [ P1KK item ]) {
+  static P1KK $fromMap(Map<String,dynamic> map, [ P1KK item ]) {
     if (map == null) return item;
 
     item ??= new P1KK();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1KK $(dynamic data) {
+  static P1KK $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1KK item) => {
+  static Map<String,dynamic> $toMap(P1KK item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PK.toMap(item._l),
+    "3": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P1KK $create(
     int p0, String p1, ds.PK l, 
@@ -2439,25 +2439,25 @@ class P1KK {
 ///   required ds.PS l = 3;
 /// }
 class P1KS {
-  static P1KS fromMap(Map<String,dynamic> map, [ P1KS item ]) {
+  static P1KS $fromMap(Map<String,dynamic> map, [ P1KS item ]) {
     if (map == null) return item;
 
     item ??= new P1KS();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1KS $(dynamic data) {
+  static P1KS $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1KS item) => {
+  static Map<String,dynamic> $toMap(P1KS item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PS.toMap(item._l),
+    "3": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P1KS $create(
     int p0, String p1, ds.PS l, 
@@ -2499,25 +2499,25 @@ class P1KS {
 ///   required ds.P1 l = 3;
 /// }
 class P1D1 {
-  static P1D1 fromMap(Map<String,dynamic> map, [ P1D1 item ]) {
+  static P1D1 $fromMap(Map<String,dynamic> map, [ P1D1 item ]) {
     if (map == null) return item;
 
     item ??= new P1D1();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D1 $(dynamic data) {
+  static P1D1 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D1 item) => {
+  static Map<String,dynamic> $toMap(P1D1 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P1.toMap(item._l),
+    "3": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P1D1 $create(
     int p0, int p1, ds.P1 l, 
@@ -2559,25 +2559,25 @@ class P1D1 {
 ///   required ds.P4 l = 3;
 /// }
 class P1D4 {
-  static P1D4 fromMap(Map<String,dynamic> map, [ P1D4 item ]) {
+  static P1D4 $fromMap(Map<String,dynamic> map, [ P1D4 item ]) {
     if (map == null) return item;
 
     item ??= new P1D4();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D4 $(dynamic data) {
+  static P1D4 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D4 item) => {
+  static Map<String,dynamic> $toMap(P1D4 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P4.toMap(item._l),
+    "3": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P1D4 $create(
     int p0, int p1, ds.P4 l, 
@@ -2619,25 +2619,25 @@ class P1D4 {
 ///   required ds.P8 l = 3;
 /// }
 class P1D8 {
-  static P1D8 fromMap(Map<String,dynamic> map, [ P1D8 item ]) {
+  static P1D8 $fromMap(Map<String,dynamic> map, [ P1D8 item ]) {
     if (map == null) return item;
 
     item ??= new P1D8();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D8 $(dynamic data) {
+  static P1D8 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D8 item) => {
+  static Map<String,dynamic> $toMap(P1D8 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P8.toMap(item._l),
+    "3": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P1D8 $create(
     int p0, int p1, ds.P8 l, 
@@ -2679,25 +2679,25 @@ class P1D8 {
 ///   required ds.PD l = 3;
 /// }
 class P1DD {
-  static P1DD fromMap(Map<String,dynamic> map, [ P1DD item ]) {
+  static P1DD $fromMap(Map<String,dynamic> map, [ P1DD item ]) {
     if (map == null) return item;
 
     item ??= new P1DD();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1DD $(dynamic data) {
+  static P1DD $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1DD item) => {
+  static Map<String,dynamic> $toMap(P1DD item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PD.toMap(item._l),
+    "3": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P1DD $create(
     int p0, int p1, ds.PD l, 
@@ -2739,25 +2739,25 @@ class P1DD {
 ///   required ds.PK l = 3;
 /// }
 class P1DK {
-  static P1DK fromMap(Map<String,dynamic> map, [ P1DK item ]) {
+  static P1DK $fromMap(Map<String,dynamic> map, [ P1DK item ]) {
     if (map == null) return item;
 
     item ??= new P1DK();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1DK $(dynamic data) {
+  static P1DK $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1DK item) => {
+  static Map<String,dynamic> $toMap(P1DK item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PK.toMap(item._l),
+    "3": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P1DK $create(
     int p0, int p1, ds.PK l, 
@@ -2799,25 +2799,25 @@ class P1DK {
 ///   required ds.PS l = 3;
 /// }
 class P1DS {
-  static P1DS fromMap(Map<String,dynamic> map, [ P1DS item ]) {
+  static P1DS $fromMap(Map<String,dynamic> map, [ P1DS item ]) {
     if (map == null) return item;
 
     item ??= new P1DS();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1DS $(dynamic data) {
+  static P1DS $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1DS item) => {
+  static Map<String,dynamic> $toMap(P1DS item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PS.toMap(item._l),
+    "3": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P1DS $create(
     int p0, int p1, ds.PS l, 
@@ -2860,27 +2860,27 @@ class P1DS {
 ///   required ds.P1 l = 4;
 /// }
 class P1D11 {
-  static P1D11 fromMap(Map<String,dynamic> map, [ P1D11 item ]) {
+  static P1D11 $fromMap(Map<String,dynamic> map, [ P1D11 item ]) {
     if (map == null) return item;
 
     item ??= new P1D11();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P1.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D11 $(dynamic data) {
+  static P1D11 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D11 item) => {
+  static Map<String,dynamic> $toMap(P1D11 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P1.toMap(item._l),
+    "4": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P1D11 $create(
     int p0, int p1, int p2, ds.P1 l, 
@@ -2931,27 +2931,27 @@ class P1D11 {
 ///   required ds.P4 l = 4;
 /// }
 class P1D14 {
-  static P1D14 fromMap(Map<String,dynamic> map, [ P1D14 item ]) {
+  static P1D14 $fromMap(Map<String,dynamic> map, [ P1D14 item ]) {
     if (map == null) return item;
 
     item ??= new P1D14();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P4.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D14 $(dynamic data) {
+  static P1D14 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D14 item) => {
+  static Map<String,dynamic> $toMap(P1D14 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P4.toMap(item._l),
+    "4": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P1D14 $create(
     int p0, int p1, int p2, ds.P4 l, 
@@ -3002,27 +3002,27 @@ class P1D14 {
 ///   required ds.P8 l = 4;
 /// }
 class P1D18 {
-  static P1D18 fromMap(Map<String,dynamic> map, [ P1D18 item ]) {
+  static P1D18 $fromMap(Map<String,dynamic> map, [ P1D18 item ]) {
     if (map == null) return item;
 
     item ??= new P1D18();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P8.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D18 $(dynamic data) {
+  static P1D18 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D18 item) => {
+  static Map<String,dynamic> $toMap(P1D18 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P8.toMap(item._l),
+    "4": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P1D18 $create(
     int p0, int p1, int p2, ds.P8 l, 
@@ -3073,27 +3073,27 @@ class P1D18 {
 ///   required ds.PD l = 4;
 /// }
 class P1D1D {
-  static P1D1D fromMap(Map<String,dynamic> map, [ P1D1D item ]) {
+  static P1D1D $fromMap(Map<String,dynamic> map, [ P1D1D item ]) {
     if (map == null) return item;
 
     item ??= new P1D1D();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PD.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D1D $(dynamic data) {
+  static P1D1D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D1D item) => {
+  static Map<String,dynamic> $toMap(P1D1D item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PD.toMap(item._l),
+    "4": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P1D1D $create(
     int p0, int p1, int p2, ds.PD l, 
@@ -3144,27 +3144,27 @@ class P1D1D {
 ///   required ds.PK l = 4;
 /// }
 class P1D1K {
-  static P1D1K fromMap(Map<String,dynamic> map, [ P1D1K item ]) {
+  static P1D1K $fromMap(Map<String,dynamic> map, [ P1D1K item ]) {
     if (map == null) return item;
 
     item ??= new P1D1K();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PK.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D1K $(dynamic data) {
+  static P1D1K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D1K item) => {
+  static Map<String,dynamic> $toMap(P1D1K item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PK.toMap(item._l),
+    "4": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P1D1K $create(
     int p0, int p1, int p2, ds.PK l, 
@@ -3215,27 +3215,27 @@ class P1D1K {
 ///   required ds.PS l = 4;
 /// }
 class P1D1S {
-  static P1D1S fromMap(Map<String,dynamic> map, [ P1D1S item ]) {
+  static P1D1S $fromMap(Map<String,dynamic> map, [ P1D1S item ]) {
     if (map == null) return item;
 
     item ??= new P1D1S();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PS.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D1S $(dynamic data) {
+  static P1D1S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D1S item) => {
+  static Map<String,dynamic> $toMap(P1D1S item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PS.toMap(item._l),
+    "4": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P1D1S $create(
     int p0, int p1, int p2, ds.PS l, 
@@ -3287,7 +3287,7 @@ class P1D1S {
 ///   required ds.P1 l = 5;
 /// }
 class P11111 {
-  static P11111 fromMap(Map<String,dynamic> map, [ P11111 item ]) {
+  static P11111 $fromMap(Map<String,dynamic> map, [ P11111 item ]) {
     if (map == null) return item;
 
     item ??= new P11111();
@@ -3295,21 +3295,21 @@ class P11111 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P1.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11111 $(dynamic data) {
+  static P11111 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11111 item) => {
+  static Map<String,dynamic> $toMap(P11111 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P1.toMap(item._l),
+    "5": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P11111 $create(
     int p0, int p1, int p2, int p3, ds.P1 l, 
@@ -3369,7 +3369,7 @@ class P11111 {
 ///   required ds.P4 l = 5;
 /// }
 class P11114 {
-  static P11114 fromMap(Map<String,dynamic> map, [ P11114 item ]) {
+  static P11114 $fromMap(Map<String,dynamic> map, [ P11114 item ]) {
     if (map == null) return item;
 
     item ??= new P11114();
@@ -3377,21 +3377,21 @@ class P11114 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P4.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11114 $(dynamic data) {
+  static P11114 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11114 item) => {
+  static Map<String,dynamic> $toMap(P11114 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P4.toMap(item._l),
+    "5": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P11114 $create(
     int p0, int p1, int p2, int p3, ds.P4 l, 
@@ -3451,7 +3451,7 @@ class P11114 {
 ///   required ds.P8 l = 5;
 /// }
 class P11118 {
-  static P11118 fromMap(Map<String,dynamic> map, [ P11118 item ]) {
+  static P11118 $fromMap(Map<String,dynamic> map, [ P11118 item ]) {
     if (map == null) return item;
 
     item ??= new P11118();
@@ -3459,21 +3459,21 @@ class P11118 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P8.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11118 $(dynamic data) {
+  static P11118 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11118 item) => {
+  static Map<String,dynamic> $toMap(P11118 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P8.toMap(item._l),
+    "5": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P11118 $create(
     int p0, int p1, int p2, int p3, ds.P8 l, 
@@ -3533,7 +3533,7 @@ class P11118 {
 ///   required ds.PD l = 5;
 /// }
 class P1111D {
-  static P1111D fromMap(Map<String,dynamic> map, [ P1111D item ]) {
+  static P1111D $fromMap(Map<String,dynamic> map, [ P1111D item ]) {
     if (map == null) return item;
 
     item ??= new P1111D();
@@ -3541,21 +3541,21 @@ class P1111D {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PD.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1111D $(dynamic data) {
+  static P1111D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1111D item) => {
+  static Map<String,dynamic> $toMap(P1111D item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PD.toMap(item._l),
+    "5": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P1111D $create(
     int p0, int p1, int p2, int p3, ds.PD l, 
@@ -3615,7 +3615,7 @@ class P1111D {
 ///   required ds.PK l = 5;
 /// }
 class P1111K {
-  static P1111K fromMap(Map<String,dynamic> map, [ P1111K item ]) {
+  static P1111K $fromMap(Map<String,dynamic> map, [ P1111K item ]) {
     if (map == null) return item;
 
     item ??= new P1111K();
@@ -3623,21 +3623,21 @@ class P1111K {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PK.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1111K $(dynamic data) {
+  static P1111K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1111K item) => {
+  static Map<String,dynamic> $toMap(P1111K item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PK.toMap(item._l),
+    "5": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P1111K $create(
     int p0, int p1, int p2, int p3, ds.PK l, 
@@ -3697,7 +3697,7 @@ class P1111K {
 ///   required ds.PS l = 5;
 /// }
 class P1111S {
-  static P1111S fromMap(Map<String,dynamic> map, [ P1111S item ]) {
+  static P1111S $fromMap(Map<String,dynamic> map, [ P1111S item ]) {
     if (map == null) return item;
 
     item ??= new P1111S();
@@ -3705,21 +3705,21 @@ class P1111S {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PS.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1111S $(dynamic data) {
+  static P1111S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1111S item) => {
+  static Map<String,dynamic> $toMap(P1111S item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PS.toMap(item._l),
+    "5": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P1111S $create(
     int p0, int p1, int p2, int p3, ds.PS l, 
@@ -3777,25 +3777,25 @@ class P1111S {
 ///   required ds.P1 l = 3;
 /// }
 class P111 {
-  static P111 fromMap(Map<String,dynamic> map, [ P111 item ]) {
+  static P111 $fromMap(Map<String,dynamic> map, [ P111 item ]) {
     if (map == null) return item;
 
     item ??= new P111();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P1.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111 $(dynamic data) {
+  static P111 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111 item) => {
+  static Map<String,dynamic> $toMap(P111 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P1.toMap(item._l),
+    "3": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P111 $create(
     int p0, int p1, ds.P1 l, 
@@ -3837,25 +3837,25 @@ class P111 {
 ///   required ds.P4 l = 3;
 /// }
 class P114 {
-  static P114 fromMap(Map<String,dynamic> map, [ P114 item ]) {
+  static P114 $fromMap(Map<String,dynamic> map, [ P114 item ]) {
     if (map == null) return item;
 
     item ??= new P114();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P4.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P114 $(dynamic data) {
+  static P114 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P114 item) => {
+  static Map<String,dynamic> $toMap(P114 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P4.toMap(item._l),
+    "3": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P114 $create(
     int p0, int p1, ds.P4 l, 
@@ -3897,25 +3897,25 @@ class P114 {
 ///   required ds.P8 l = 3;
 /// }
 class P118 {
-  static P118 fromMap(Map<String,dynamic> map, [ P118 item ]) {
+  static P118 $fromMap(Map<String,dynamic> map, [ P118 item ]) {
     if (map == null) return item;
 
     item ??= new P118();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.P8.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P118 $(dynamic data) {
+  static P118 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P118 item) => {
+  static Map<String,dynamic> $toMap(P118 item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.P8.toMap(item._l),
+    "3": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P118 $create(
     int p0, int p1, ds.P8 l, 
@@ -3957,25 +3957,25 @@ class P118 {
 ///   required ds.PD l = 3;
 /// }
 class P11D {
-  static P11D fromMap(Map<String,dynamic> map, [ P11D item ]) {
+  static P11D $fromMap(Map<String,dynamic> map, [ P11D item ]) {
     if (map == null) return item;
 
     item ??= new P11D();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PD.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11D $(dynamic data) {
+  static P11D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11D item) => {
+  static Map<String,dynamic> $toMap(P11D item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PD.toMap(item._l),
+    "3": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P11D $create(
     int p0, int p1, ds.PD l, 
@@ -4017,25 +4017,25 @@ class P11D {
 ///   required ds.PK l = 3;
 /// }
 class P11K {
-  static P11K fromMap(Map<String,dynamic> map, [ P11K item ]) {
+  static P11K $fromMap(Map<String,dynamic> map, [ P11K item ]) {
     if (map == null) return item;
 
     item ??= new P11K();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PK.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11K $(dynamic data) {
+  static P11K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11K item) => {
+  static Map<String,dynamic> $toMap(P11K item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PK.toMap(item._l),
+    "3": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P11K $create(
     int p0, int p1, ds.PK l, 
@@ -4077,25 +4077,25 @@ class P11K {
 ///   required ds.PS l = 3;
 /// }
 class P11S {
-  static P11S fromMap(Map<String,dynamic> map, [ P11S item ]) {
+  static P11S $fromMap(Map<String,dynamic> map, [ P11S item ]) {
     if (map == null) return item;
 
     item ??= new P11S();
     item._p0 = map["1"];
     item._p1 = map["2"];
-    item._l = ds.PS.fromMap(map["3"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["3"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11S $(dynamic data) {
+  static P11S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11S item) => {
+  static Map<String,dynamic> $toMap(P11S item) => {
     "1": item._p0,
     "2": item._p1,
-    "3": item._l == null ? null : ds.PS.toMap(item._l),
+    "3": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P11S $create(
     int p0, int p1, ds.PS l, 
@@ -4139,7 +4139,7 @@ class P11S {
 ///   required ds.P1 l = 5;
 /// }
 class P111K1 {
-  static P111K1 fromMap(Map<String,dynamic> map, [ P111K1 item ]) {
+  static P111K1 $fromMap(Map<String,dynamic> map, [ P111K1 item ]) {
     if (map == null) return item;
 
     item ??= new P111K1();
@@ -4147,21 +4147,21 @@ class P111K1 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P1.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111K1 $(dynamic data) {
+  static P111K1 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111K1 item) => {
+  static Map<String,dynamic> $toMap(P111K1 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P1.toMap(item._l),
+    "5": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P111K1 $create(
     int p0, int p1, int p2, String p3, ds.P1 l, 
@@ -4221,7 +4221,7 @@ class P111K1 {
 ///   required ds.P4 l = 5;
 /// }
 class P111K4 {
-  static P111K4 fromMap(Map<String,dynamic> map, [ P111K4 item ]) {
+  static P111K4 $fromMap(Map<String,dynamic> map, [ P111K4 item ]) {
     if (map == null) return item;
 
     item ??= new P111K4();
@@ -4229,21 +4229,21 @@ class P111K4 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P4.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111K4 $(dynamic data) {
+  static P111K4 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111K4 item) => {
+  static Map<String,dynamic> $toMap(P111K4 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P4.toMap(item._l),
+    "5": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P111K4 $create(
     int p0, int p1, int p2, String p3, ds.P4 l, 
@@ -4303,7 +4303,7 @@ class P111K4 {
 ///   required ds.P8 l = 5;
 /// }
 class P111K8 {
-  static P111K8 fromMap(Map<String,dynamic> map, [ P111K8 item ]) {
+  static P111K8 $fromMap(Map<String,dynamic> map, [ P111K8 item ]) {
     if (map == null) return item;
 
     item ??= new P111K8();
@@ -4311,21 +4311,21 @@ class P111K8 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P8.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111K8 $(dynamic data) {
+  static P111K8 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111K8 item) => {
+  static Map<String,dynamic> $toMap(P111K8 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P8.toMap(item._l),
+    "5": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P111K8 $create(
     int p0, int p1, int p2, String p3, ds.P8 l, 
@@ -4385,7 +4385,7 @@ class P111K8 {
 ///   required ds.PD l = 5;
 /// }
 class P111KD {
-  static P111KD fromMap(Map<String,dynamic> map, [ P111KD item ]) {
+  static P111KD $fromMap(Map<String,dynamic> map, [ P111KD item ]) {
     if (map == null) return item;
 
     item ??= new P111KD();
@@ -4393,21 +4393,21 @@ class P111KD {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PD.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111KD $(dynamic data) {
+  static P111KD $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111KD item) => {
+  static Map<String,dynamic> $toMap(P111KD item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PD.toMap(item._l),
+    "5": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P111KD $create(
     int p0, int p1, int p2, String p3, ds.PD l, 
@@ -4467,7 +4467,7 @@ class P111KD {
 ///   required ds.PK l = 5;
 /// }
 class P111KK {
-  static P111KK fromMap(Map<String,dynamic> map, [ P111KK item ]) {
+  static P111KK $fromMap(Map<String,dynamic> map, [ P111KK item ]) {
     if (map == null) return item;
 
     item ??= new P111KK();
@@ -4475,21 +4475,21 @@ class P111KK {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PK.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111KK $(dynamic data) {
+  static P111KK $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111KK item) => {
+  static Map<String,dynamic> $toMap(P111KK item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PK.toMap(item._l),
+    "5": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P111KK $create(
     int p0, int p1, int p2, String p3, ds.PK l, 
@@ -4549,7 +4549,7 @@ class P111KK {
 ///   required ds.PS l = 5;
 /// }
 class P111KS {
-  static P111KS fromMap(Map<String,dynamic> map, [ P111KS item ]) {
+  static P111KS $fromMap(Map<String,dynamic> map, [ P111KS item ]) {
     if (map == null) return item;
 
     item ??= new P111KS();
@@ -4557,21 +4557,21 @@ class P111KS {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PS.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111KS $(dynamic data) {
+  static P111KS $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111KS item) => {
+  static Map<String,dynamic> $toMap(P111KS item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PS.toMap(item._l),
+    "5": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P111KS $create(
     int p0, int p1, int p2, String p3, ds.PS l, 
@@ -4630,27 +4630,27 @@ class P111KS {
 ///   required ds.P1 l = 4;
 /// }
 class P1141 {
-  static P1141 fromMap(Map<String,dynamic> map, [ P1141 item ]) {
+  static P1141 $fromMap(Map<String,dynamic> map, [ P1141 item ]) {
     if (map == null) return item;
 
     item ??= new P1141();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P1.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1141 $(dynamic data) {
+  static P1141 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1141 item) => {
+  static Map<String,dynamic> $toMap(P1141 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P1.toMap(item._l),
+    "4": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P1141 $create(
     int p0, int p1, int p2, ds.P1 l, 
@@ -4701,27 +4701,27 @@ class P1141 {
 ///   required ds.P4 l = 4;
 /// }
 class P1144 {
-  static P1144 fromMap(Map<String,dynamic> map, [ P1144 item ]) {
+  static P1144 $fromMap(Map<String,dynamic> map, [ P1144 item ]) {
     if (map == null) return item;
 
     item ??= new P1144();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P4.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1144 $(dynamic data) {
+  static P1144 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1144 item) => {
+  static Map<String,dynamic> $toMap(P1144 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P4.toMap(item._l),
+    "4": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P1144 $create(
     int p0, int p1, int p2, ds.P4 l, 
@@ -4772,27 +4772,27 @@ class P1144 {
 ///   required ds.P8 l = 4;
 /// }
 class P1148 {
-  static P1148 fromMap(Map<String,dynamic> map, [ P1148 item ]) {
+  static P1148 $fromMap(Map<String,dynamic> map, [ P1148 item ]) {
     if (map == null) return item;
 
     item ??= new P1148();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P8.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1148 $(dynamic data) {
+  static P1148 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1148 item) => {
+  static Map<String,dynamic> $toMap(P1148 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P8.toMap(item._l),
+    "4": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P1148 $create(
     int p0, int p1, int p2, ds.P8 l, 
@@ -4843,27 +4843,27 @@ class P1148 {
 ///   required ds.PD l = 4;
 /// }
 class P114D {
-  static P114D fromMap(Map<String,dynamic> map, [ P114D item ]) {
+  static P114D $fromMap(Map<String,dynamic> map, [ P114D item ]) {
     if (map == null) return item;
 
     item ??= new P114D();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PD.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P114D $(dynamic data) {
+  static P114D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P114D item) => {
+  static Map<String,dynamic> $toMap(P114D item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PD.toMap(item._l),
+    "4": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P114D $create(
     int p0, int p1, int p2, ds.PD l, 
@@ -4914,27 +4914,27 @@ class P114D {
 ///   required ds.PK l = 4;
 /// }
 class P114K {
-  static P114K fromMap(Map<String,dynamic> map, [ P114K item ]) {
+  static P114K $fromMap(Map<String,dynamic> map, [ P114K item ]) {
     if (map == null) return item;
 
     item ??= new P114K();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PK.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P114K $(dynamic data) {
+  static P114K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P114K item) => {
+  static Map<String,dynamic> $toMap(P114K item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PK.toMap(item._l),
+    "4": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P114K $create(
     int p0, int p1, int p2, ds.PK l, 
@@ -4985,27 +4985,27 @@ class P114K {
 ///   required ds.PS l = 4;
 /// }
 class P114S {
-  static P114S fromMap(Map<String,dynamic> map, [ P114S item ]) {
+  static P114S $fromMap(Map<String,dynamic> map, [ P114S item ]) {
     if (map == null) return item;
 
     item ??= new P114S();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PS.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P114S $(dynamic data) {
+  static P114S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P114S item) => {
+  static Map<String,dynamic> $toMap(P114S item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PS.toMap(item._l),
+    "4": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P114S $create(
     int p0, int p1, int p2, ds.PS l, 
@@ -5056,27 +5056,27 @@ class P114S {
 ///   required ds.P1 l = 4;
 /// }
 class P11K1 {
-  static P11K1 fromMap(Map<String,dynamic> map, [ P11K1 item ]) {
+  static P11K1 $fromMap(Map<String,dynamic> map, [ P11K1 item ]) {
     if (map == null) return item;
 
     item ??= new P11K1();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P1.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11K1 $(dynamic data) {
+  static P11K1 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11K1 item) => {
+  static Map<String,dynamic> $toMap(P11K1 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P1.toMap(item._l),
+    "4": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P11K1 $create(
     int p0, int p1, String p2, ds.P1 l, 
@@ -5127,27 +5127,27 @@ class P11K1 {
 ///   required ds.P4 l = 4;
 /// }
 class P11K4 {
-  static P11K4 fromMap(Map<String,dynamic> map, [ P11K4 item ]) {
+  static P11K4 $fromMap(Map<String,dynamic> map, [ P11K4 item ]) {
     if (map == null) return item;
 
     item ??= new P11K4();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P4.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11K4 $(dynamic data) {
+  static P11K4 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11K4 item) => {
+  static Map<String,dynamic> $toMap(P11K4 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P4.toMap(item._l),
+    "4": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P11K4 $create(
     int p0, int p1, String p2, ds.P4 l, 
@@ -5198,27 +5198,27 @@ class P11K4 {
 ///   required ds.P8 l = 4;
 /// }
 class P11K8 {
-  static P11K8 fromMap(Map<String,dynamic> map, [ P11K8 item ]) {
+  static P11K8 $fromMap(Map<String,dynamic> map, [ P11K8 item ]) {
     if (map == null) return item;
 
     item ??= new P11K8();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P8.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11K8 $(dynamic data) {
+  static P11K8 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11K8 item) => {
+  static Map<String,dynamic> $toMap(P11K8 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P8.toMap(item._l),
+    "4": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P11K8 $create(
     int p0, int p1, String p2, ds.P8 l, 
@@ -5269,27 +5269,27 @@ class P11K8 {
 ///   required ds.PD l = 4;
 /// }
 class P11KD {
-  static P11KD fromMap(Map<String,dynamic> map, [ P11KD item ]) {
+  static P11KD $fromMap(Map<String,dynamic> map, [ P11KD item ]) {
     if (map == null) return item;
 
     item ??= new P11KD();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PD.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11KD $(dynamic data) {
+  static P11KD $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11KD item) => {
+  static Map<String,dynamic> $toMap(P11KD item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PD.toMap(item._l),
+    "4": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P11KD $create(
     int p0, int p1, String p2, ds.PD l, 
@@ -5340,27 +5340,27 @@ class P11KD {
 ///   required ds.PK l = 4;
 /// }
 class P11KK {
-  static P11KK fromMap(Map<String,dynamic> map, [ P11KK item ]) {
+  static P11KK $fromMap(Map<String,dynamic> map, [ P11KK item ]) {
     if (map == null) return item;
 
     item ??= new P11KK();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PK.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11KK $(dynamic data) {
+  static P11KK $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11KK item) => {
+  static Map<String,dynamic> $toMap(P11KK item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PK.toMap(item._l),
+    "4": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P11KK $create(
     int p0, int p1, String p2, ds.PK l, 
@@ -5411,27 +5411,27 @@ class P11KK {
 ///   required ds.PS l = 4;
 /// }
 class P11KS {
-  static P11KS fromMap(Map<String,dynamic> map, [ P11KS item ]) {
+  static P11KS $fromMap(Map<String,dynamic> map, [ P11KS item ]) {
     if (map == null) return item;
 
     item ??= new P11KS();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PS.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11KS $(dynamic data) {
+  static P11KS $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11KS item) => {
+  static Map<String,dynamic> $toMap(P11KS item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PS.toMap(item._l),
+    "4": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P11KS $create(
     int p0, int p1, String p2, ds.PS l, 
@@ -5482,27 +5482,27 @@ class P11KS {
 ///   required ds.P1 l = 4;
 /// }
 class P1DK1 {
-  static P1DK1 fromMap(Map<String,dynamic> map, [ P1DK1 item ]) {
+  static P1DK1 $fromMap(Map<String,dynamic> map, [ P1DK1 item ]) {
     if (map == null) return item;
 
     item ??= new P1DK1();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P1.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1DK1 $(dynamic data) {
+  static P1DK1 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1DK1 item) => {
+  static Map<String,dynamic> $toMap(P1DK1 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P1.toMap(item._l),
+    "4": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P1DK1 $create(
     int p0, int p1, String p2, ds.P1 l, 
@@ -5553,27 +5553,27 @@ class P1DK1 {
 ///   required ds.P4 l = 4;
 /// }
 class P1DK4 {
-  static P1DK4 fromMap(Map<String,dynamic> map, [ P1DK4 item ]) {
+  static P1DK4 $fromMap(Map<String,dynamic> map, [ P1DK4 item ]) {
     if (map == null) return item;
 
     item ??= new P1DK4();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P4.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1DK4 $(dynamic data) {
+  static P1DK4 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1DK4 item) => {
+  static Map<String,dynamic> $toMap(P1DK4 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P4.toMap(item._l),
+    "4": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P1DK4 $create(
     int p0, int p1, String p2, ds.P4 l, 
@@ -5624,27 +5624,27 @@ class P1DK4 {
 ///   required ds.P8 l = 4;
 /// }
 class P1DK8 {
-  static P1DK8 fromMap(Map<String,dynamic> map, [ P1DK8 item ]) {
+  static P1DK8 $fromMap(Map<String,dynamic> map, [ P1DK8 item ]) {
     if (map == null) return item;
 
     item ??= new P1DK8();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P8.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1DK8 $(dynamic data) {
+  static P1DK8 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1DK8 item) => {
+  static Map<String,dynamic> $toMap(P1DK8 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P8.toMap(item._l),
+    "4": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P1DK8 $create(
     int p0, int p1, String p2, ds.P8 l, 
@@ -5695,27 +5695,27 @@ class P1DK8 {
 ///   required ds.PD l = 4;
 /// }
 class P1DKD {
-  static P1DKD fromMap(Map<String,dynamic> map, [ P1DKD item ]) {
+  static P1DKD $fromMap(Map<String,dynamic> map, [ P1DKD item ]) {
     if (map == null) return item;
 
     item ??= new P1DKD();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PD.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1DKD $(dynamic data) {
+  static P1DKD $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1DKD item) => {
+  static Map<String,dynamic> $toMap(P1DKD item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PD.toMap(item._l),
+    "4": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P1DKD $create(
     int p0, int p1, String p2, ds.PD l, 
@@ -5766,27 +5766,27 @@ class P1DKD {
 ///   required ds.PK l = 4;
 /// }
 class P1DKK {
-  static P1DKK fromMap(Map<String,dynamic> map, [ P1DKK item ]) {
+  static P1DKK $fromMap(Map<String,dynamic> map, [ P1DKK item ]) {
     if (map == null) return item;
 
     item ??= new P1DKK();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PK.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1DKK $(dynamic data) {
+  static P1DKK $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1DKK item) => {
+  static Map<String,dynamic> $toMap(P1DKK item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PK.toMap(item._l),
+    "4": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P1DKK $create(
     int p0, int p1, String p2, ds.PK l, 
@@ -5837,27 +5837,27 @@ class P1DKK {
 ///   required ds.PS l = 4;
 /// }
 class P1DKS {
-  static P1DKS fromMap(Map<String,dynamic> map, [ P1DKS item ]) {
+  static P1DKS $fromMap(Map<String,dynamic> map, [ P1DKS item ]) {
     if (map == null) return item;
 
     item ??= new P1DKS();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PS.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1DKS $(dynamic data) {
+  static P1DKS $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1DKS item) => {
+  static Map<String,dynamic> $toMap(P1DKS item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PS.toMap(item._l),
+    "4": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P1DKS $create(
     int p0, int p1, String p2, ds.PS l, 
@@ -5909,7 +5909,7 @@ class P1DKS {
 ///   required ds.P1 l = 5;
 /// }
 class P14441 {
-  static P14441 fromMap(Map<String,dynamic> map, [ P14441 item ]) {
+  static P14441 $fromMap(Map<String,dynamic> map, [ P14441 item ]) {
     if (map == null) return item;
 
     item ??= new P14441();
@@ -5917,21 +5917,21 @@ class P14441 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P1.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P14441 $(dynamic data) {
+  static P14441 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P14441 item) => {
+  static Map<String,dynamic> $toMap(P14441 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P1.toMap(item._l),
+    "5": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P14441 $create(
     int p0, int p1, int p2, int p3, ds.P1 l, 
@@ -5991,7 +5991,7 @@ class P14441 {
 ///   required ds.P4 l = 5;
 /// }
 class P14444 {
-  static P14444 fromMap(Map<String,dynamic> map, [ P14444 item ]) {
+  static P14444 $fromMap(Map<String,dynamic> map, [ P14444 item ]) {
     if (map == null) return item;
 
     item ??= new P14444();
@@ -5999,21 +5999,21 @@ class P14444 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P4.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P14444 $(dynamic data) {
+  static P14444 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P14444 item) => {
+  static Map<String,dynamic> $toMap(P14444 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P4.toMap(item._l),
+    "5": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P14444 $create(
     int p0, int p1, int p2, int p3, ds.P4 l, 
@@ -6073,7 +6073,7 @@ class P14444 {
 ///   required ds.P8 l = 5;
 /// }
 class P14448 {
-  static P14448 fromMap(Map<String,dynamic> map, [ P14448 item ]) {
+  static P14448 $fromMap(Map<String,dynamic> map, [ P14448 item ]) {
     if (map == null) return item;
 
     item ??= new P14448();
@@ -6081,21 +6081,21 @@ class P14448 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P8.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P14448 $(dynamic data) {
+  static P14448 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P14448 item) => {
+  static Map<String,dynamic> $toMap(P14448 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P8.toMap(item._l),
+    "5": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P14448 $create(
     int p0, int p1, int p2, int p3, ds.P8 l, 
@@ -6155,7 +6155,7 @@ class P14448 {
 ///   required ds.PD l = 5;
 /// }
 class P1444D {
-  static P1444D fromMap(Map<String,dynamic> map, [ P1444D item ]) {
+  static P1444D $fromMap(Map<String,dynamic> map, [ P1444D item ]) {
     if (map == null) return item;
 
     item ??= new P1444D();
@@ -6163,21 +6163,21 @@ class P1444D {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PD.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1444D $(dynamic data) {
+  static P1444D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1444D item) => {
+  static Map<String,dynamic> $toMap(P1444D item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PD.toMap(item._l),
+    "5": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P1444D $create(
     int p0, int p1, int p2, int p3, ds.PD l, 
@@ -6237,7 +6237,7 @@ class P1444D {
 ///   required ds.PK l = 5;
 /// }
 class P1444K {
-  static P1444K fromMap(Map<String,dynamic> map, [ P1444K item ]) {
+  static P1444K $fromMap(Map<String,dynamic> map, [ P1444K item ]) {
     if (map == null) return item;
 
     item ??= new P1444K();
@@ -6245,21 +6245,21 @@ class P1444K {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PK.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1444K $(dynamic data) {
+  static P1444K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1444K item) => {
+  static Map<String,dynamic> $toMap(P1444K item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PK.toMap(item._l),
+    "5": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P1444K $create(
     int p0, int p1, int p2, int p3, ds.PK l, 
@@ -6319,7 +6319,7 @@ class P1444K {
 ///   required ds.PS l = 5;
 /// }
 class P1444S {
-  static P1444S fromMap(Map<String,dynamic> map, [ P1444S item ]) {
+  static P1444S $fromMap(Map<String,dynamic> map, [ P1444S item ]) {
     if (map == null) return item;
 
     item ??= new P1444S();
@@ -6327,21 +6327,21 @@ class P1444S {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PS.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1444S $(dynamic data) {
+  static P1444S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1444S item) => {
+  static Map<String,dynamic> $toMap(P1444S item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PS.toMap(item._l),
+    "5": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P1444S $create(
     int p0, int p1, int p2, int p3, ds.PS l, 
@@ -6402,7 +6402,7 @@ class P1444S {
 ///   required ds.P1 l = 6;
 /// }
 class P111111 {
-  static P111111 fromMap(Map<String,dynamic> map, [ P111111 item ]) {
+  static P111111 $fromMap(Map<String,dynamic> map, [ P111111 item ]) {
     if (map == null) return item;
 
     item ??= new P111111();
@@ -6411,22 +6411,22 @@ class P111111 {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.P1.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111111 $(dynamic data) {
+  static P111111 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111111 item) => {
+  static Map<String,dynamic> $toMap(P111111 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.P1.toMap(item._l),
+    "6": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P111111 $create(
     int p0, int p1, int p2, int p3, int p4, ds.P1 l, 
@@ -6495,7 +6495,7 @@ class P111111 {
 ///   required ds.P4 l = 6;
 /// }
 class P111114 {
-  static P111114 fromMap(Map<String,dynamic> map, [ P111114 item ]) {
+  static P111114 $fromMap(Map<String,dynamic> map, [ P111114 item ]) {
     if (map == null) return item;
 
     item ??= new P111114();
@@ -6504,22 +6504,22 @@ class P111114 {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.P4.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111114 $(dynamic data) {
+  static P111114 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111114 item) => {
+  static Map<String,dynamic> $toMap(P111114 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.P4.toMap(item._l),
+    "6": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P111114 $create(
     int p0, int p1, int p2, int p3, int p4, ds.P4 l, 
@@ -6588,7 +6588,7 @@ class P111114 {
 ///   required ds.P8 l = 6;
 /// }
 class P111118 {
-  static P111118 fromMap(Map<String,dynamic> map, [ P111118 item ]) {
+  static P111118 $fromMap(Map<String,dynamic> map, [ P111118 item ]) {
     if (map == null) return item;
 
     item ??= new P111118();
@@ -6597,22 +6597,22 @@ class P111118 {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.P8.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111118 $(dynamic data) {
+  static P111118 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111118 item) => {
+  static Map<String,dynamic> $toMap(P111118 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.P8.toMap(item._l),
+    "6": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P111118 $create(
     int p0, int p1, int p2, int p3, int p4, ds.P8 l, 
@@ -6681,7 +6681,7 @@ class P111118 {
 ///   required ds.PD l = 6;
 /// }
 class P11111D {
-  static P11111D fromMap(Map<String,dynamic> map, [ P11111D item ]) {
+  static P11111D $fromMap(Map<String,dynamic> map, [ P11111D item ]) {
     if (map == null) return item;
 
     item ??= new P11111D();
@@ -6690,22 +6690,22 @@ class P11111D {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.PD.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11111D $(dynamic data) {
+  static P11111D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11111D item) => {
+  static Map<String,dynamic> $toMap(P11111D item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.PD.toMap(item._l),
+    "6": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P11111D $create(
     int p0, int p1, int p2, int p3, int p4, ds.PD l, 
@@ -6774,7 +6774,7 @@ class P11111D {
 ///   required ds.PK l = 6;
 /// }
 class P11111K {
-  static P11111K fromMap(Map<String,dynamic> map, [ P11111K item ]) {
+  static P11111K $fromMap(Map<String,dynamic> map, [ P11111K item ]) {
     if (map == null) return item;
 
     item ??= new P11111K();
@@ -6783,22 +6783,22 @@ class P11111K {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.PK.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11111K $(dynamic data) {
+  static P11111K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11111K item) => {
+  static Map<String,dynamic> $toMap(P11111K item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.PK.toMap(item._l),
+    "6": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P11111K $create(
     int p0, int p1, int p2, int p3, int p4, ds.PK l, 
@@ -6867,7 +6867,7 @@ class P11111K {
 ///   required ds.PS l = 6;
 /// }
 class P11111S {
-  static P11111S fromMap(Map<String,dynamic> map, [ P11111S item ]) {
+  static P11111S $fromMap(Map<String,dynamic> map, [ P11111S item ]) {
     if (map == null) return item;
 
     item ??= new P11111S();
@@ -6876,22 +6876,22 @@ class P11111S {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.PS.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11111S $(dynamic data) {
+  static P11111S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11111S item) => {
+  static Map<String,dynamic> $toMap(P11111S item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.PS.toMap(item._l),
+    "6": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P11111S $create(
     int p0, int p1, int p2, int p3, int p4, ds.PS l, 
@@ -6960,7 +6960,7 @@ class P11111S {
 ///   required ds.P1 l = 6;
 /// }
 class P1D1111 {
-  static P1D1111 fromMap(Map<String,dynamic> map, [ P1D1111 item ]) {
+  static P1D1111 $fromMap(Map<String,dynamic> map, [ P1D1111 item ]) {
     if (map == null) return item;
 
     item ??= new P1D1111();
@@ -6969,22 +6969,22 @@ class P1D1111 {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.P1.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D1111 $(dynamic data) {
+  static P1D1111 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D1111 item) => {
+  static Map<String,dynamic> $toMap(P1D1111 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.P1.toMap(item._l),
+    "6": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P1D1111 $create(
     int p0, int p1, int p2, int p3, int p4, ds.P1 l, 
@@ -7053,7 +7053,7 @@ class P1D1111 {
 ///   required ds.P4 l = 6;
 /// }
 class P1D1114 {
-  static P1D1114 fromMap(Map<String,dynamic> map, [ P1D1114 item ]) {
+  static P1D1114 $fromMap(Map<String,dynamic> map, [ P1D1114 item ]) {
     if (map == null) return item;
 
     item ??= new P1D1114();
@@ -7062,22 +7062,22 @@ class P1D1114 {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.P4.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D1114 $(dynamic data) {
+  static P1D1114 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D1114 item) => {
+  static Map<String,dynamic> $toMap(P1D1114 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.P4.toMap(item._l),
+    "6": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P1D1114 $create(
     int p0, int p1, int p2, int p3, int p4, ds.P4 l, 
@@ -7146,7 +7146,7 @@ class P1D1114 {
 ///   required ds.P8 l = 6;
 /// }
 class P1D1118 {
-  static P1D1118 fromMap(Map<String,dynamic> map, [ P1D1118 item ]) {
+  static P1D1118 $fromMap(Map<String,dynamic> map, [ P1D1118 item ]) {
     if (map == null) return item;
 
     item ??= new P1D1118();
@@ -7155,22 +7155,22 @@ class P1D1118 {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.P8.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D1118 $(dynamic data) {
+  static P1D1118 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D1118 item) => {
+  static Map<String,dynamic> $toMap(P1D1118 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.P8.toMap(item._l),
+    "6": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P1D1118 $create(
     int p0, int p1, int p2, int p3, int p4, ds.P8 l, 
@@ -7239,7 +7239,7 @@ class P1D1118 {
 ///   required ds.PD l = 6;
 /// }
 class P1D111D {
-  static P1D111D fromMap(Map<String,dynamic> map, [ P1D111D item ]) {
+  static P1D111D $fromMap(Map<String,dynamic> map, [ P1D111D item ]) {
     if (map == null) return item;
 
     item ??= new P1D111D();
@@ -7248,22 +7248,22 @@ class P1D111D {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.PD.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D111D $(dynamic data) {
+  static P1D111D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D111D item) => {
+  static Map<String,dynamic> $toMap(P1D111D item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.PD.toMap(item._l),
+    "6": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P1D111D $create(
     int p0, int p1, int p2, int p3, int p4, ds.PD l, 
@@ -7332,7 +7332,7 @@ class P1D111D {
 ///   required ds.PK l = 6;
 /// }
 class P1D111K {
-  static P1D111K fromMap(Map<String,dynamic> map, [ P1D111K item ]) {
+  static P1D111K $fromMap(Map<String,dynamic> map, [ P1D111K item ]) {
     if (map == null) return item;
 
     item ??= new P1D111K();
@@ -7341,22 +7341,22 @@ class P1D111K {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.PK.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D111K $(dynamic data) {
+  static P1D111K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D111K item) => {
+  static Map<String,dynamic> $toMap(P1D111K item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.PK.toMap(item._l),
+    "6": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P1D111K $create(
     int p0, int p1, int p2, int p3, int p4, ds.PK l, 
@@ -7425,7 +7425,7 @@ class P1D111K {
 ///   required ds.PS l = 6;
 /// }
 class P1D111S {
-  static P1D111S fromMap(Map<String,dynamic> map, [ P1D111S item ]) {
+  static P1D111S $fromMap(Map<String,dynamic> map, [ P1D111S item ]) {
     if (map == null) return item;
 
     item ??= new P1D111S();
@@ -7434,22 +7434,22 @@ class P1D111S {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.PS.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D111S $(dynamic data) {
+  static P1D111S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D111S item) => {
+  static Map<String,dynamic> $toMap(P1D111S item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.PS.toMap(item._l),
+    "6": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P1D111S $create(
     int p0, int p1, int p2, int p3, int p4, ds.PS l, 
@@ -7518,7 +7518,7 @@ class P1D111S {
 ///   required ds.P1 l = 6;
 /// }
 class P111141 {
-  static P111141 fromMap(Map<String,dynamic> map, [ P111141 item ]) {
+  static P111141 $fromMap(Map<String,dynamic> map, [ P111141 item ]) {
     if (map == null) return item;
 
     item ??= new P111141();
@@ -7527,22 +7527,22 @@ class P111141 {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.P1.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111141 $(dynamic data) {
+  static P111141 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111141 item) => {
+  static Map<String,dynamic> $toMap(P111141 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.P1.toMap(item._l),
+    "6": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P111141 $create(
     int p0, int p1, int p2, int p3, int p4, ds.P1 l, 
@@ -7611,7 +7611,7 @@ class P111141 {
 ///   required ds.P4 l = 6;
 /// }
 class P111144 {
-  static P111144 fromMap(Map<String,dynamic> map, [ P111144 item ]) {
+  static P111144 $fromMap(Map<String,dynamic> map, [ P111144 item ]) {
     if (map == null) return item;
 
     item ??= new P111144();
@@ -7620,22 +7620,22 @@ class P111144 {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.P4.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111144 $(dynamic data) {
+  static P111144 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111144 item) => {
+  static Map<String,dynamic> $toMap(P111144 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.P4.toMap(item._l),
+    "6": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P111144 $create(
     int p0, int p1, int p2, int p3, int p4, ds.P4 l, 
@@ -7704,7 +7704,7 @@ class P111144 {
 ///   required ds.P8 l = 6;
 /// }
 class P111148 {
-  static P111148 fromMap(Map<String,dynamic> map, [ P111148 item ]) {
+  static P111148 $fromMap(Map<String,dynamic> map, [ P111148 item ]) {
     if (map == null) return item;
 
     item ??= new P111148();
@@ -7713,22 +7713,22 @@ class P111148 {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.P8.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111148 $(dynamic data) {
+  static P111148 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111148 item) => {
+  static Map<String,dynamic> $toMap(P111148 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.P8.toMap(item._l),
+    "6": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P111148 $create(
     int p0, int p1, int p2, int p3, int p4, ds.P8 l, 
@@ -7797,7 +7797,7 @@ class P111148 {
 ///   required ds.PD l = 6;
 /// }
 class P11114D {
-  static P11114D fromMap(Map<String,dynamic> map, [ P11114D item ]) {
+  static P11114D $fromMap(Map<String,dynamic> map, [ P11114D item ]) {
     if (map == null) return item;
 
     item ??= new P11114D();
@@ -7806,22 +7806,22 @@ class P11114D {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.PD.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11114D $(dynamic data) {
+  static P11114D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11114D item) => {
+  static Map<String,dynamic> $toMap(P11114D item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.PD.toMap(item._l),
+    "6": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P11114D $create(
     int p0, int p1, int p2, int p3, int p4, ds.PD l, 
@@ -7890,7 +7890,7 @@ class P11114D {
 ///   required ds.PK l = 6;
 /// }
 class P11114K {
-  static P11114K fromMap(Map<String,dynamic> map, [ P11114K item ]) {
+  static P11114K $fromMap(Map<String,dynamic> map, [ P11114K item ]) {
     if (map == null) return item;
 
     item ??= new P11114K();
@@ -7899,22 +7899,22 @@ class P11114K {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.PK.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11114K $(dynamic data) {
+  static P11114K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11114K item) => {
+  static Map<String,dynamic> $toMap(P11114K item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.PK.toMap(item._l),
+    "6": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P11114K $create(
     int p0, int p1, int p2, int p3, int p4, ds.PK l, 
@@ -7983,7 +7983,7 @@ class P11114K {
 ///   required ds.PS l = 6;
 /// }
 class P11114S {
-  static P11114S fromMap(Map<String,dynamic> map, [ P11114S item ]) {
+  static P11114S $fromMap(Map<String,dynamic> map, [ P11114S item ]) {
     if (map == null) return item;
 
     item ??= new P11114S();
@@ -7992,22 +7992,22 @@ class P11114S {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.PS.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11114S $(dynamic data) {
+  static P11114S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11114S item) => {
+  static Map<String,dynamic> $toMap(P11114S item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.PS.toMap(item._l),
+    "6": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P11114S $create(
     int p0, int p1, int p2, int p3, int p4, ds.PS l, 
@@ -8072,23 +8072,23 @@ class P11114S {
 ///   required ds.P1 l = 2;
 /// }
 class P11 {
-  static P11 fromMap(Map<String,dynamic> map, [ P11 item ]) {
+  static P11 $fromMap(Map<String,dynamic> map, [ P11 item ]) {
     if (map == null) return item;
 
     item ??= new P11();
     item._p0 = map["1"];
-    item._l = ds.P1.fromMap(map["2"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["2"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11 $(dynamic data) {
+  static P11 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11 item) => {
+  static Map<String,dynamic> $toMap(P11 item) => {
     "1": item._p0,
-    "2": item._l == null ? null : ds.P1.toMap(item._l),
+    "2": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P11 $create(
     int p0, ds.P1 l, 
@@ -8121,23 +8121,23 @@ class P11 {
 ///   required ds.P4 l = 2;
 /// }
 class P14 {
-  static P14 fromMap(Map<String,dynamic> map, [ P14 item ]) {
+  static P14 $fromMap(Map<String,dynamic> map, [ P14 item ]) {
     if (map == null) return item;
 
     item ??= new P14();
     item._p0 = map["1"];
-    item._l = ds.P4.fromMap(map["2"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["2"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P14 $(dynamic data) {
+  static P14 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P14 item) => {
+  static Map<String,dynamic> $toMap(P14 item) => {
     "1": item._p0,
-    "2": item._l == null ? null : ds.P4.toMap(item._l),
+    "2": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P14 $create(
     int p0, ds.P4 l, 
@@ -8170,23 +8170,23 @@ class P14 {
 ///   required ds.P8 l = 2;
 /// }
 class P18 {
-  static P18 fromMap(Map<String,dynamic> map, [ P18 item ]) {
+  static P18 $fromMap(Map<String,dynamic> map, [ P18 item ]) {
     if (map == null) return item;
 
     item ??= new P18();
     item._p0 = map["1"];
-    item._l = ds.P8.fromMap(map["2"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["2"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P18 $(dynamic data) {
+  static P18 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P18 item) => {
+  static Map<String,dynamic> $toMap(P18 item) => {
     "1": item._p0,
-    "2": item._l == null ? null : ds.P8.toMap(item._l),
+    "2": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P18 $create(
     int p0, ds.P8 l, 
@@ -8219,23 +8219,23 @@ class P18 {
 ///   required ds.PD l = 2;
 /// }
 class P1D {
-  static P1D fromMap(Map<String,dynamic> map, [ P1D item ]) {
+  static P1D $fromMap(Map<String,dynamic> map, [ P1D item ]) {
     if (map == null) return item;
 
     item ??= new P1D();
     item._p0 = map["1"];
-    item._l = ds.PD.fromMap(map["2"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["2"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1D $(dynamic data) {
+  static P1D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1D item) => {
+  static Map<String,dynamic> $toMap(P1D item) => {
     "1": item._p0,
-    "2": item._l == null ? null : ds.PD.toMap(item._l),
+    "2": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P1D $create(
     int p0, ds.PD l, 
@@ -8268,23 +8268,23 @@ class P1D {
 ///   required ds.PK l = 2;
 /// }
 class P1K {
-  static P1K fromMap(Map<String,dynamic> map, [ P1K item ]) {
+  static P1K $fromMap(Map<String,dynamic> map, [ P1K item ]) {
     if (map == null) return item;
 
     item ??= new P1K();
     item._p0 = map["1"];
-    item._l = ds.PK.fromMap(map["2"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["2"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1K $(dynamic data) {
+  static P1K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1K item) => {
+  static Map<String,dynamic> $toMap(P1K item) => {
     "1": item._p0,
-    "2": item._l == null ? null : ds.PK.toMap(item._l),
+    "2": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P1K $create(
     int p0, ds.PK l, 
@@ -8317,23 +8317,23 @@ class P1K {
 ///   required ds.PS l = 2;
 /// }
 class P1S {
-  static P1S fromMap(Map<String,dynamic> map, [ P1S item ]) {
+  static P1S $fromMap(Map<String,dynamic> map, [ P1S item ]) {
     if (map == null) return item;
 
     item ??= new P1S();
     item._p0 = map["1"];
-    item._l = ds.PS.fromMap(map["2"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["2"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1S $(dynamic data) {
+  static P1S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1S item) => {
+  static Map<String,dynamic> $toMap(P1S item) => {
     "1": item._p0,
-    "2": item._l == null ? null : ds.PS.toMap(item._l),
+    "2": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P1S $create(
     int p0, ds.PS l, 
@@ -8370,7 +8370,7 @@ class P1S {
 ///   required ds.P1 l = 6;
 /// }
 class P111K11 {
-  static P111K11 fromMap(Map<String,dynamic> map, [ P111K11 item ]) {
+  static P111K11 $fromMap(Map<String,dynamic> map, [ P111K11 item ]) {
     if (map == null) return item;
 
     item ??= new P111K11();
@@ -8379,22 +8379,22 @@ class P111K11 {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.P1.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111K11 $(dynamic data) {
+  static P111K11 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111K11 item) => {
+  static Map<String,dynamic> $toMap(P111K11 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.P1.toMap(item._l),
+    "6": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P111K11 $create(
     int p0, int p1, int p2, String p3, int p4, ds.P1 l, 
@@ -8463,7 +8463,7 @@ class P111K11 {
 ///   required ds.P4 l = 6;
 /// }
 class P111K14 {
-  static P111K14 fromMap(Map<String,dynamic> map, [ P111K14 item ]) {
+  static P111K14 $fromMap(Map<String,dynamic> map, [ P111K14 item ]) {
     if (map == null) return item;
 
     item ??= new P111K14();
@@ -8472,22 +8472,22 @@ class P111K14 {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.P4.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111K14 $(dynamic data) {
+  static P111K14 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111K14 item) => {
+  static Map<String,dynamic> $toMap(P111K14 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.P4.toMap(item._l),
+    "6": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P111K14 $create(
     int p0, int p1, int p2, String p3, int p4, ds.P4 l, 
@@ -8556,7 +8556,7 @@ class P111K14 {
 ///   required ds.P8 l = 6;
 /// }
 class P111K18 {
-  static P111K18 fromMap(Map<String,dynamic> map, [ P111K18 item ]) {
+  static P111K18 $fromMap(Map<String,dynamic> map, [ P111K18 item ]) {
     if (map == null) return item;
 
     item ??= new P111K18();
@@ -8565,22 +8565,22 @@ class P111K18 {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.P8.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111K18 $(dynamic data) {
+  static P111K18 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111K18 item) => {
+  static Map<String,dynamic> $toMap(P111K18 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.P8.toMap(item._l),
+    "6": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P111K18 $create(
     int p0, int p1, int p2, String p3, int p4, ds.P8 l, 
@@ -8649,7 +8649,7 @@ class P111K18 {
 ///   required ds.PD l = 6;
 /// }
 class P111K1D {
-  static P111K1D fromMap(Map<String,dynamic> map, [ P111K1D item ]) {
+  static P111K1D $fromMap(Map<String,dynamic> map, [ P111K1D item ]) {
     if (map == null) return item;
 
     item ??= new P111K1D();
@@ -8658,22 +8658,22 @@ class P111K1D {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.PD.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111K1D $(dynamic data) {
+  static P111K1D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111K1D item) => {
+  static Map<String,dynamic> $toMap(P111K1D item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.PD.toMap(item._l),
+    "6": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P111K1D $create(
     int p0, int p1, int p2, String p3, int p4, ds.PD l, 
@@ -8742,7 +8742,7 @@ class P111K1D {
 ///   required ds.PK l = 6;
 /// }
 class P111K1K {
-  static P111K1K fromMap(Map<String,dynamic> map, [ P111K1K item ]) {
+  static P111K1K $fromMap(Map<String,dynamic> map, [ P111K1K item ]) {
     if (map == null) return item;
 
     item ??= new P111K1K();
@@ -8751,22 +8751,22 @@ class P111K1K {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.PK.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111K1K $(dynamic data) {
+  static P111K1K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111K1K item) => {
+  static Map<String,dynamic> $toMap(P111K1K item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.PK.toMap(item._l),
+    "6": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P111K1K $create(
     int p0, int p1, int p2, String p3, int p4, ds.PK l, 
@@ -8835,7 +8835,7 @@ class P111K1K {
 ///   required ds.PS l = 6;
 /// }
 class P111K1S {
-  static P111K1S fromMap(Map<String,dynamic> map, [ P111K1S item ]) {
+  static P111K1S $fromMap(Map<String,dynamic> map, [ P111K1S item ]) {
     if (map == null) return item;
 
     item ??= new P111K1S();
@@ -8844,22 +8844,22 @@ class P111K1S {
     item._p2 = map["3"];
     item._p3 = map["4"];
     item._p4 = map["5"];
-    item._l = ds.PS.fromMap(map["6"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["6"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111K1S $(dynamic data) {
+  static P111K1S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111K1S item) => {
+  static Map<String,dynamic> $toMap(P111K1S item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
     "5": item._p4,
-    "6": item._l == null ? null : ds.PS.toMap(item._l),
+    "6": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P111K1S $create(
     int p0, int p1, int p2, String p3, int p4, ds.PS l, 
@@ -8926,27 +8926,27 @@ class P111K1S {
 ///   required ds.P1 l = 4;
 /// }
 class P1441 {
-  static P1441 fromMap(Map<String,dynamic> map, [ P1441 item ]) {
+  static P1441 $fromMap(Map<String,dynamic> map, [ P1441 item ]) {
     if (map == null) return item;
 
     item ??= new P1441();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P1.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1441 $(dynamic data) {
+  static P1441 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1441 item) => {
+  static Map<String,dynamic> $toMap(P1441 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P1.toMap(item._l),
+    "4": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P1441 $create(
     int p0, int p1, int p2, ds.P1 l, 
@@ -8997,27 +8997,27 @@ class P1441 {
 ///   required ds.P4 l = 4;
 /// }
 class P1444 {
-  static P1444 fromMap(Map<String,dynamic> map, [ P1444 item ]) {
+  static P1444 $fromMap(Map<String,dynamic> map, [ P1444 item ]) {
     if (map == null) return item;
 
     item ??= new P1444();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P4.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1444 $(dynamic data) {
+  static P1444 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1444 item) => {
+  static Map<String,dynamic> $toMap(P1444 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P4.toMap(item._l),
+    "4": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P1444 $create(
     int p0, int p1, int p2, ds.P4 l, 
@@ -9068,27 +9068,27 @@ class P1444 {
 ///   required ds.P8 l = 4;
 /// }
 class P1448 {
-  static P1448 fromMap(Map<String,dynamic> map, [ P1448 item ]) {
+  static P1448 $fromMap(Map<String,dynamic> map, [ P1448 item ]) {
     if (map == null) return item;
 
     item ??= new P1448();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P8.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1448 $(dynamic data) {
+  static P1448 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1448 item) => {
+  static Map<String,dynamic> $toMap(P1448 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P8.toMap(item._l),
+    "4": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P1448 $create(
     int p0, int p1, int p2, ds.P8 l, 
@@ -9139,27 +9139,27 @@ class P1448 {
 ///   required ds.PD l = 4;
 /// }
 class P144D {
-  static P144D fromMap(Map<String,dynamic> map, [ P144D item ]) {
+  static P144D $fromMap(Map<String,dynamic> map, [ P144D item ]) {
     if (map == null) return item;
 
     item ??= new P144D();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PD.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P144D $(dynamic data) {
+  static P144D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P144D item) => {
+  static Map<String,dynamic> $toMap(P144D item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PD.toMap(item._l),
+    "4": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P144D $create(
     int p0, int p1, int p2, ds.PD l, 
@@ -9210,27 +9210,27 @@ class P144D {
 ///   required ds.PK l = 4;
 /// }
 class P144K {
-  static P144K fromMap(Map<String,dynamic> map, [ P144K item ]) {
+  static P144K $fromMap(Map<String,dynamic> map, [ P144K item ]) {
     if (map == null) return item;
 
     item ??= new P144K();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PK.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P144K $(dynamic data) {
+  static P144K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P144K item) => {
+  static Map<String,dynamic> $toMap(P144K item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PK.toMap(item._l),
+    "4": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P144K $create(
     int p0, int p1, int p2, ds.PK l, 
@@ -9281,27 +9281,27 @@ class P144K {
 ///   required ds.PS l = 4;
 /// }
 class P144S {
-  static P144S fromMap(Map<String,dynamic> map, [ P144S item ]) {
+  static P144S $fromMap(Map<String,dynamic> map, [ P144S item ]) {
     if (map == null) return item;
 
     item ??= new P144S();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PS.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P144S $(dynamic data) {
+  static P144S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P144S item) => {
+  static Map<String,dynamic> $toMap(P144S item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PS.toMap(item._l),
+    "4": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P144S $create(
     int p0, int p1, int p2, ds.PS l, 
@@ -9352,27 +9352,27 @@ class P144S {
 ///   required ds.P1 l = 4;
 /// }
 class P1111 {
-  static P1111 fromMap(Map<String,dynamic> map, [ P1111 item ]) {
+  static P1111 $fromMap(Map<String,dynamic> map, [ P1111 item ]) {
     if (map == null) return item;
 
     item ??= new P1111();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P1.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1111 $(dynamic data) {
+  static P1111 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1111 item) => {
+  static Map<String,dynamic> $toMap(P1111 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P1.toMap(item._l),
+    "4": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P1111 $create(
     int p0, int p1, int p2, ds.P1 l, 
@@ -9423,27 +9423,27 @@ class P1111 {
 ///   required ds.P4 l = 4;
 /// }
 class P1114 {
-  static P1114 fromMap(Map<String,dynamic> map, [ P1114 item ]) {
+  static P1114 $fromMap(Map<String,dynamic> map, [ P1114 item ]) {
     if (map == null) return item;
 
     item ??= new P1114();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P4.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1114 $(dynamic data) {
+  static P1114 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1114 item) => {
+  static Map<String,dynamic> $toMap(P1114 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P4.toMap(item._l),
+    "4": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P1114 $create(
     int p0, int p1, int p2, ds.P4 l, 
@@ -9494,27 +9494,27 @@ class P1114 {
 ///   required ds.P8 l = 4;
 /// }
 class P1118 {
-  static P1118 fromMap(Map<String,dynamic> map, [ P1118 item ]) {
+  static P1118 $fromMap(Map<String,dynamic> map, [ P1118 item ]) {
     if (map == null) return item;
 
     item ??= new P1118();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P8.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1118 $(dynamic data) {
+  static P1118 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1118 item) => {
+  static Map<String,dynamic> $toMap(P1118 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P8.toMap(item._l),
+    "4": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P1118 $create(
     int p0, int p1, int p2, ds.P8 l, 
@@ -9565,27 +9565,27 @@ class P1118 {
 ///   required ds.PD l = 4;
 /// }
 class P111D {
-  static P111D fromMap(Map<String,dynamic> map, [ P111D item ]) {
+  static P111D $fromMap(Map<String,dynamic> map, [ P111D item ]) {
     if (map == null) return item;
 
     item ??= new P111D();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PD.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111D $(dynamic data) {
+  static P111D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111D item) => {
+  static Map<String,dynamic> $toMap(P111D item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PD.toMap(item._l),
+    "4": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P111D $create(
     int p0, int p1, int p2, ds.PD l, 
@@ -9636,27 +9636,27 @@ class P111D {
 ///   required ds.PK l = 4;
 /// }
 class P111K {
-  static P111K fromMap(Map<String,dynamic> map, [ P111K item ]) {
+  static P111K $fromMap(Map<String,dynamic> map, [ P111K item ]) {
     if (map == null) return item;
 
     item ??= new P111K();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PK.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111K $(dynamic data) {
+  static P111K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111K item) => {
+  static Map<String,dynamic> $toMap(P111K item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PK.toMap(item._l),
+    "4": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P111K $create(
     int p0, int p1, int p2, ds.PK l, 
@@ -9707,27 +9707,27 @@ class P111K {
 ///   required ds.PS l = 4;
 /// }
 class P111S {
-  static P111S fromMap(Map<String,dynamic> map, [ P111S item ]) {
+  static P111S $fromMap(Map<String,dynamic> map, [ P111S item ]) {
     if (map == null) return item;
 
     item ??= new P111S();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PS.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P111S $(dynamic data) {
+  static P111S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P111S item) => {
+  static Map<String,dynamic> $toMap(P111S item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PS.toMap(item._l),
+    "4": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P111S $create(
     int p0, int p1, int p2, ds.PS l, 
@@ -9778,27 +9778,27 @@ class P111S {
 ///   required ds.P1 l = 4;
 /// }
 class P11S1 {
-  static P11S1 fromMap(Map<String,dynamic> map, [ P11S1 item ]) {
+  static P11S1 $fromMap(Map<String,dynamic> map, [ P11S1 item ]) {
     if (map == null) return item;
 
     item ??= new P11S1();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P1.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11S1 $(dynamic data) {
+  static P11S1 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11S1 item) => {
+  static Map<String,dynamic> $toMap(P11S1 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P1.toMap(item._l),
+    "4": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P11S1 $create(
     int p0, int p1, String p2, ds.P1 l, 
@@ -9849,27 +9849,27 @@ class P11S1 {
 ///   required ds.P4 l = 4;
 /// }
 class P11S4 {
-  static P11S4 fromMap(Map<String,dynamic> map, [ P11S4 item ]) {
+  static P11S4 $fromMap(Map<String,dynamic> map, [ P11S4 item ]) {
     if (map == null) return item;
 
     item ??= new P11S4();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P4.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11S4 $(dynamic data) {
+  static P11S4 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11S4 item) => {
+  static Map<String,dynamic> $toMap(P11S4 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P4.toMap(item._l),
+    "4": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P11S4 $create(
     int p0, int p1, String p2, ds.P4 l, 
@@ -9920,27 +9920,27 @@ class P11S4 {
 ///   required ds.P8 l = 4;
 /// }
 class P11S8 {
-  static P11S8 fromMap(Map<String,dynamic> map, [ P11S8 item ]) {
+  static P11S8 $fromMap(Map<String,dynamic> map, [ P11S8 item ]) {
     if (map == null) return item;
 
     item ??= new P11S8();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.P8.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11S8 $(dynamic data) {
+  static P11S8 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11S8 item) => {
+  static Map<String,dynamic> $toMap(P11S8 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.P8.toMap(item._l),
+    "4": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P11S8 $create(
     int p0, int p1, String p2, ds.P8 l, 
@@ -9991,27 +9991,27 @@ class P11S8 {
 ///   required ds.PD l = 4;
 /// }
 class P11SD {
-  static P11SD fromMap(Map<String,dynamic> map, [ P11SD item ]) {
+  static P11SD $fromMap(Map<String,dynamic> map, [ P11SD item ]) {
     if (map == null) return item;
 
     item ??= new P11SD();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PD.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11SD $(dynamic data) {
+  static P11SD $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11SD item) => {
+  static Map<String,dynamic> $toMap(P11SD item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PD.toMap(item._l),
+    "4": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P11SD $create(
     int p0, int p1, String p2, ds.PD l, 
@@ -10062,27 +10062,27 @@ class P11SD {
 ///   required ds.PK l = 4;
 /// }
 class P11SK {
-  static P11SK fromMap(Map<String,dynamic> map, [ P11SK item ]) {
+  static P11SK $fromMap(Map<String,dynamic> map, [ P11SK item ]) {
     if (map == null) return item;
 
     item ??= new P11SK();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PK.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11SK $(dynamic data) {
+  static P11SK $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11SK item) => {
+  static Map<String,dynamic> $toMap(P11SK item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PK.toMap(item._l),
+    "4": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P11SK $create(
     int p0, int p1, String p2, ds.PK l, 
@@ -10133,27 +10133,27 @@ class P11SK {
 ///   required ds.PS l = 4;
 /// }
 class P11SS {
-  static P11SS fromMap(Map<String,dynamic> map, [ P11SS item ]) {
+  static P11SS $fromMap(Map<String,dynamic> map, [ P11SS item ]) {
     if (map == null) return item;
 
     item ??= new P11SS();
     item._p0 = map["1"];
     item._p1 = map["2"];
     item._p2 = map["3"];
-    item._l = ds.PS.fromMap(map["4"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["4"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11SS $(dynamic data) {
+  static P11SS $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11SS item) => {
+  static Map<String,dynamic> $toMap(P11SS item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
-    "4": item._l == null ? null : ds.PS.toMap(item._l),
+    "4": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P11SS $create(
     int p0, int p1, String p2, ds.PS l, 
@@ -10205,7 +10205,7 @@ class P11SS {
 ///   required ds.P1 l = 5;
 /// }
 class P1DK11 {
-  static P1DK11 fromMap(Map<String,dynamic> map, [ P1DK11 item ]) {
+  static P1DK11 $fromMap(Map<String,dynamic> map, [ P1DK11 item ]) {
     if (map == null) return item;
 
     item ??= new P1DK11();
@@ -10213,21 +10213,21 @@ class P1DK11 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P1.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1DK11 $(dynamic data) {
+  static P1DK11 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1DK11 item) => {
+  static Map<String,dynamic> $toMap(P1DK11 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P1.toMap(item._l),
+    "5": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P1DK11 $create(
     int p0, int p1, String p2, int p3, ds.P1 l, 
@@ -10287,7 +10287,7 @@ class P1DK11 {
 ///   required ds.P4 l = 5;
 /// }
 class P1DK14 {
-  static P1DK14 fromMap(Map<String,dynamic> map, [ P1DK14 item ]) {
+  static P1DK14 $fromMap(Map<String,dynamic> map, [ P1DK14 item ]) {
     if (map == null) return item;
 
     item ??= new P1DK14();
@@ -10295,21 +10295,21 @@ class P1DK14 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P4.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1DK14 $(dynamic data) {
+  static P1DK14 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1DK14 item) => {
+  static Map<String,dynamic> $toMap(P1DK14 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P4.toMap(item._l),
+    "5": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P1DK14 $create(
     int p0, int p1, String p2, int p3, ds.P4 l, 
@@ -10369,7 +10369,7 @@ class P1DK14 {
 ///   required ds.P8 l = 5;
 /// }
 class P1DK18 {
-  static P1DK18 fromMap(Map<String,dynamic> map, [ P1DK18 item ]) {
+  static P1DK18 $fromMap(Map<String,dynamic> map, [ P1DK18 item ]) {
     if (map == null) return item;
 
     item ??= new P1DK18();
@@ -10377,21 +10377,21 @@ class P1DK18 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P8.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1DK18 $(dynamic data) {
+  static P1DK18 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1DK18 item) => {
+  static Map<String,dynamic> $toMap(P1DK18 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P8.toMap(item._l),
+    "5": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P1DK18 $create(
     int p0, int p1, String p2, int p3, ds.P8 l, 
@@ -10451,7 +10451,7 @@ class P1DK18 {
 ///   required ds.PD l = 5;
 /// }
 class P1DK1D {
-  static P1DK1D fromMap(Map<String,dynamic> map, [ P1DK1D item ]) {
+  static P1DK1D $fromMap(Map<String,dynamic> map, [ P1DK1D item ]) {
     if (map == null) return item;
 
     item ??= new P1DK1D();
@@ -10459,21 +10459,21 @@ class P1DK1D {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PD.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1DK1D $(dynamic data) {
+  static P1DK1D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1DK1D item) => {
+  static Map<String,dynamic> $toMap(P1DK1D item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PD.toMap(item._l),
+    "5": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P1DK1D $create(
     int p0, int p1, String p2, int p3, ds.PD l, 
@@ -10533,7 +10533,7 @@ class P1DK1D {
 ///   required ds.PK l = 5;
 /// }
 class P1DK1K {
-  static P1DK1K fromMap(Map<String,dynamic> map, [ P1DK1K item ]) {
+  static P1DK1K $fromMap(Map<String,dynamic> map, [ P1DK1K item ]) {
     if (map == null) return item;
 
     item ??= new P1DK1K();
@@ -10541,21 +10541,21 @@ class P1DK1K {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PK.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1DK1K $(dynamic data) {
+  static P1DK1K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1DK1K item) => {
+  static Map<String,dynamic> $toMap(P1DK1K item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PK.toMap(item._l),
+    "5": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P1DK1K $create(
     int p0, int p1, String p2, int p3, ds.PK l, 
@@ -10615,7 +10615,7 @@ class P1DK1K {
 ///   required ds.PS l = 5;
 /// }
 class P1DK1S {
-  static P1DK1S fromMap(Map<String,dynamic> map, [ P1DK1S item ]) {
+  static P1DK1S $fromMap(Map<String,dynamic> map, [ P1DK1S item ]) {
     if (map == null) return item;
 
     item ??= new P1DK1S();
@@ -10623,21 +10623,21 @@ class P1DK1S {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PS.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1DK1S $(dynamic data) {
+  static P1DK1S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1DK1S item) => {
+  static Map<String,dynamic> $toMap(P1DK1S item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PS.toMap(item._l),
+    "5": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P1DK1S $create(
     int p0, int p1, String p2, int p3, ds.PS l, 
@@ -10697,7 +10697,7 @@ class P1DK1S {
 ///   required ds.P1 l = 5;
 /// }
 class P11141 {
-  static P11141 fromMap(Map<String,dynamic> map, [ P11141 item ]) {
+  static P11141 $fromMap(Map<String,dynamic> map, [ P11141 item ]) {
     if (map == null) return item;
 
     item ??= new P11141();
@@ -10705,21 +10705,21 @@ class P11141 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P1.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P1.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11141 $(dynamic data) {
+  static P11141 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11141 item) => {
+  static Map<String,dynamic> $toMap(P11141 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P1.toMap(item._l),
+    "5": item._l == null ? null : ds.P1.$toMap(item._l),
   };
   static P11141 $create(
     int p0, int p1, int p2, int p3, ds.P1 l, 
@@ -10779,7 +10779,7 @@ class P11141 {
 ///   required ds.P4 l = 5;
 /// }
 class P11144 {
-  static P11144 fromMap(Map<String,dynamic> map, [ P11144 item ]) {
+  static P11144 $fromMap(Map<String,dynamic> map, [ P11144 item ]) {
     if (map == null) return item;
 
     item ??= new P11144();
@@ -10787,21 +10787,21 @@ class P11144 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P4.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P4.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11144 $(dynamic data) {
+  static P11144 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11144 item) => {
+  static Map<String,dynamic> $toMap(P11144 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P4.toMap(item._l),
+    "5": item._l == null ? null : ds.P4.$toMap(item._l),
   };
   static P11144 $create(
     int p0, int p1, int p2, int p3, ds.P4 l, 
@@ -10861,7 +10861,7 @@ class P11144 {
 ///   required ds.P8 l = 5;
 /// }
 class P11148 {
-  static P11148 fromMap(Map<String,dynamic> map, [ P11148 item ]) {
+  static P11148 $fromMap(Map<String,dynamic> map, [ P11148 item ]) {
     if (map == null) return item;
 
     item ??= new P11148();
@@ -10869,21 +10869,21 @@ class P11148 {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.P8.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.P8.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P11148 $(dynamic data) {
+  static P11148 $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P11148 item) => {
+  static Map<String,dynamic> $toMap(P11148 item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.P8.toMap(item._l),
+    "5": item._l == null ? null : ds.P8.$toMap(item._l),
   };
   static P11148 $create(
     int p0, int p1, int p2, int p3, ds.P8 l, 
@@ -10943,7 +10943,7 @@ class P11148 {
 ///   required ds.PD l = 5;
 /// }
 class P1114D {
-  static P1114D fromMap(Map<String,dynamic> map, [ P1114D item ]) {
+  static P1114D $fromMap(Map<String,dynamic> map, [ P1114D item ]) {
     if (map == null) return item;
 
     item ??= new P1114D();
@@ -10951,21 +10951,21 @@ class P1114D {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PD.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PD.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1114D $(dynamic data) {
+  static P1114D $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1114D item) => {
+  static Map<String,dynamic> $toMap(P1114D item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PD.toMap(item._l),
+    "5": item._l == null ? null : ds.PD.$toMap(item._l),
   };
   static P1114D $create(
     int p0, int p1, int p2, int p3, ds.PD l, 
@@ -11025,7 +11025,7 @@ class P1114D {
 ///   required ds.PK l = 5;
 /// }
 class P1114K {
-  static P1114K fromMap(Map<String,dynamic> map, [ P1114K item ]) {
+  static P1114K $fromMap(Map<String,dynamic> map, [ P1114K item ]) {
     if (map == null) return item;
 
     item ??= new P1114K();
@@ -11033,21 +11033,21 @@ class P1114K {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PK.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PK.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1114K $(dynamic data) {
+  static P1114K $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1114K item) => {
+  static Map<String,dynamic> $toMap(P1114K item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PK.toMap(item._l),
+    "5": item._l == null ? null : ds.PK.$toMap(item._l),
   };
   static P1114K $create(
     int p0, int p1, int p2, int p3, ds.PK l, 
@@ -11107,7 +11107,7 @@ class P1114K {
 ///   required ds.PS l = 5;
 /// }
 class P1114S {
-  static P1114S fromMap(Map<String,dynamic> map, [ P1114S item ]) {
+  static P1114S $fromMap(Map<String,dynamic> map, [ P1114S item ]) {
     if (map == null) return item;
 
     item ??= new P1114S();
@@ -11115,21 +11115,21 @@ class P1114S {
     item._p1 = map["2"];
     item._p2 = map["3"];
     item._p3 = map["4"];
-    item._l = ds.PS.fromMap(map["5"] as Map<String,dynamic>, item._l);
+    item._l = ds.PS.$fromMap(map["5"] as Map<String,dynamic>, item._l);
     return item;
   }
-  static P1114S $(dynamic data) {
+  static P1114S $from(dynamic data) {
       if (data is Map)
-        return fromMap(data as Map<String,dynamic>);
+        return $fromMap(data as Map<String,dynamic>);
 
       throw data;
   }
-  static Map<String,dynamic> toMap(P1114S item) => {
+  static Map<String,dynamic> $toMap(P1114S item) => {
     "1": item._p0,
     "2": item._p1,
     "3": item._p2,
     "4": item._p3,
-    "5": item._l == null ? null : ds.PS.toMap(item._l),
+    "5": item._l == null ? null : ds.PS.$toMap(item._l),
   };
   static P1114S $create(
     int p0, int p1, int p2, int p3, ds.PS l, 
