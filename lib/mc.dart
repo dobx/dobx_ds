@@ -17,10 +17,10 @@
 import 'package:collection/collection.dart';
 
 class MultiCAS extends DelegatingMap<String,dynamic> {
-  static Map<String,dynamic> toMap(MultiCAS item) => item._store;
-  static MultiCAS fromMap(Map<String,dynamic> map, [ MultiCAS item ]) {
-    // no merge
-    return new MultiCAS(map);
+  static Map<String,dynamic> $toMap(MultiCAS item) => item._store;
+  static MultiCAS $fromMap(Map<String,dynamic> map, [ MultiCAS item ]) {
+    // noop
+    return item;
   }
   static MultiCAS $create() {
     return new MultiCAS({});
