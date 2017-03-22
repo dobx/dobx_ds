@@ -14,4 +14,10 @@
 // @author dyu
 // @created 2017/02/20
 
-// TODO
+bool isAsciiOnly(String value) {
+  for (var i = 0, len = value.length; i < len; i++) {
+    if (value.codeUnitAt(i) > 127)
+      return false;
+  }
+  return true;
+}
