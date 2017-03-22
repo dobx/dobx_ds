@@ -1,7 +1,8 @@
 name: dobx_ds
 version: 0.1.0
 author: dyu <davidyu@cebu.io>
-description: dobx and protostuff-ds
+description: dobx lib for protostuffdb
+homepage: https://github.com/dobx/dobx_ds
 
 environment:
   sdk: '>=1.22.0 <2.0.0'
