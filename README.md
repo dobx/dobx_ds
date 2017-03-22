@@ -7,7 +7,7 @@ git clone https://gitlab.com/dyu/ds-proto.git p
 ./codegen.sh
 ```
 
-### Installl deps
+### Install deps
 ```sh
 pub get
 ```
