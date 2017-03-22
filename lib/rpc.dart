@@ -32,10 +32,14 @@ class RpcError extends Error {
 dynamic parseResponse(http.Response res) {
   String raw = res.body;
   List<dynamic> data;
-  int first = raw.codeUnitAt(0);
+  int first = raw.codeUnitAt(0),
+      len = raw.length,
+      // optional trailing CRLF       '\n'
+      end = raw.codeUnitAt(len - 1) == 10 ? len - 2 : len;
+
   // '+'
   if (first == 43) {
-    data = JSON.decode(raw.substring(1, raw.length - 2));
+    data = JSON.decode(raw.substring(1, end));
     if (data[0] != 0)
       throw data;
 
@@ -48,9 +52,9 @@ dynamic parseResponse(http.Response res) {
 
   // '['
   if (raw.codeUnitAt(1) != 91)
-    throw new RpcError(raw.substring(1, raw.length - 2));
+    throw new RpcError(raw.substring(1, end));
 
-  throw JSON.decode(raw.substring(1, raw.length - 2));
+  throw JSON.decode(raw.substring(1, end));
 }
 
 String _prefix = '';
