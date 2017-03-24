@@ -16,7 +16,9 @@
 
 import 'package:collection/collection.dart';
 
-class MultiCAS extends DelegatingMap<String,dynamic> {
+import './types.dart';
+
+class MultiCAS extends DelegatingMap<String,List<dynamic>> {
   static Map<String,dynamic> $toMap(MultiCAS item) => item._store;
   static MultiCAS $fromMap(Map<String,dynamic> map, [ MultiCAS item ]) {
     // noop
@@ -29,7 +31,51 @@ class MultiCAS extends DelegatingMap<String,dynamic> {
     return new MultiCAS({});
   }
 
-  final Map<String,dynamic> _store;
+  final Map<String,List<dynamic>> _store;
 
-  MultiCAS(Map<String,dynamic> store) : _store = store, super(store);
+  MultiCAS(Map<String,List<dynamic>> store) : _store = store, super(store);
+
+  List<dynamic> _newValue() {
+    return [];
+  }
+
+  void addBool(int fieldNumber, bool cmp) {
+    _store.putIfAbsent(numericKey(FieldType.BOOL), _newValue)
+        .add({ '1': fieldNumber, '2': cmp, '3': !cmp });
+  }
+
+  void addBytes(int fieldNumber, String cmp, String val) {
+    _store.putIfAbsent(numericKey(FieldType.BYTES), _newValue)
+        .add({ '1': fieldNumber, '2': cmp, '3': val });
+  }
+
+  void addString(int fieldNumber, String cmp, String val) {
+    _store.putIfAbsent(numericKey(FieldType.STRING), _newValue)
+        .add({ '1': fieldNumber, '2': cmp, '3': val });
+  }
+
+  void addFloat(int fieldNumber, num cmp, num val) {
+    _store.putIfAbsent(numericKey(FieldType.FLOAT), _newValue)
+        .add({ '1': fieldNumber, '2': cmp, '3': val });
+  }
+
+  void addDouble(int fieldNumber, num cmp, num val) {
+    _store.putIfAbsent(numericKey(FieldType.DOUBLE), _newValue)
+        .add({ '1': fieldNumber, '2': cmp, '3': val });
+  }
+
+  void add32(int fieldNumber, int cmp, int val) {
+    _store.putIfAbsent(numericKey(FieldType.FIXED32), _newValue)
+        .add({ '1': fieldNumber, '2': cmp, '3': val });
+  }
+
+  void add64(int fieldNumber, int cmp, int val) {
+    _store.putIfAbsent(numericKey(FieldType.FIXED64), _newValue)
+        .add({ '1': fieldNumber, '2': cmp, '3': val });
+  }
+
+  void addEnum(int fieldNumber, int cmp, int val) {
+    _store.putIfAbsent(numericKey(FieldType.INT32), _newValue)
+        .add({ '1': fieldNumber, '2': cmp, '3': val });
+  }
 }
