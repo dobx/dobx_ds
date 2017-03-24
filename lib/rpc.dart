@@ -30,10 +30,7 @@ class RpcError extends Error {
 }
 
 String getErrMsg(dynamic e) {
-  if (e is List)
-    return e[1]['1'];
-
-  return e.toString();
+  return e is List ? e[1]['1'] : e.toString();
 }
 
 dynamic parseResponse(http.Response res) {
