@@ -29,6 +29,13 @@ class RpcError extends Error {
   String toString() => msg;
 }
 
+String getErrMsg(dynamic e) {
+  if (e is List)
+    return e[1]['1'];
+
+  return e.toString();
+}
+
 dynamic parseResponse(http.Response res) {
   String raw = res.body;
   List<dynamic> data;
