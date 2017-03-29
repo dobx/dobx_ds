@@ -33,8 +33,8 @@ abstract class SelectableItem {
 }
 
 abstract class Pair<T> {
-  T orig;
-  T copy;
+  T get orig;
+  T get copy;
 }
 
 typedef Pair<T> CreateFn<T>(T value);
