@@ -248,7 +248,10 @@ class Store<T extends Entity> {
   bool fetchUpdate({
     bool debounce = false,
   }) {
-    if (list.isEmpty || $state.loading)
+    if (list.isEmpty)
+      return fetchNewer(debounce: debounce);
+
+    if ($state.loading)
       return false;
 
     // debounce
