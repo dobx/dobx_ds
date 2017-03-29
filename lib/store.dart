@@ -55,6 +55,7 @@ class Store<T extends Entity> {
   final MergeFn<T> mergeFn;
   final FetchFn fetchFn;
   final StoreState $state = new StoreState();
+  final int multiplier;
 
   bool desc;
   List<Pair<T>> list, mainList;
@@ -66,9 +67,10 @@ class Store<T extends Entity> {
   String errmsg = '';
 
   Store(this.pageSize, this.createFn, this.mergeFn, this.fetchFn, {
+    int multiplier = 1,
     bool desc = true,
     List<Pair<T>> list,
-  }) : this.desc = desc, this.list = list ?? [] {
+  }) : this.multiplier = multiplier, this.desc = desc, this.list = list ?? [] {
     this.mainList = this.list;
   }
 
@@ -213,7 +215,7 @@ class Store<T extends Entity> {
     }
 
     var req = ds.ParamRangeKey.$create(empty,
-        limit: empty ? pageSize + 1 : pageSize,
+        limit: empty ? pageSize * multiplier + 1 : (desc ? pageSize : pageSize * multiplier),
         startKey: empty ? null : (desc ? list.first.orig.key : list.last.orig.key));
 
     _fetchTs = now;
@@ -238,7 +240,7 @@ class Store<T extends Entity> {
     }
 
     var req = ds.ParamRangeKey.$create(true,
-        limit: pageSize,
+        limit: desc ? pageSize * multiplier : pageSize,
         startKey: desc ? list.last.orig.key : list.first.orig.key);
 
     _fetchTs = now;
