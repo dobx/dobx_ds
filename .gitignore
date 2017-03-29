@@ -4,6 +4,7 @@
 .packages
 .pub
 .generated
+.dart_tool
 g
 p
 target
