@@ -27,6 +27,11 @@ abstract class Entity {
   int ts;
 }
 
+abstract class SelectableItem {
+  int get index;
+  void reset();
+}
+
 abstract class Pair<T> {
   T orig;
   T copy;
@@ -53,6 +58,7 @@ class Store<T extends Entity> {
 
   bool desc;
   List<Pair<T>> list, mainList;
+  SelectableItem _selected;
 
   FetchType _fetchType;
   int _fetchTs = 0;
@@ -276,5 +282,19 @@ class Store<T extends Entity> {
     $state.loading = true;
     return true;
   }
+
+  bool isVisible(int idx) {
+    final pageStart = page * pageSize;
+    return pageStart == idx || (idx > pageStart && idx < (pageStart + pageSize));
+  }
+
+  void select(SelectableItem item) {
+    int idx;
+    if (_selected != null && (idx=_selected.index) != item.index && isVisible(idx)) {
+      _selected.reset();
+    }
+    _selected = item;
+  }
+
 }
 
