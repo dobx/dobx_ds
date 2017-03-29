@@ -57,7 +57,7 @@ class Store<T extends Entity> {
   final StoreState $state = new StoreState();
   final int multiplier;
 
-  bool desc;
+  bool _desc;
   List<Pair<T>> list, mainList;
   SelectableItem _selected;
 
@@ -70,13 +70,15 @@ class Store<T extends Entity> {
     int multiplier = 1,
     bool desc = true,
     List<Pair<T>> list,
-  }) : this.multiplier = multiplier, this.desc = desc, this.list = list ?? [] {
+  }) : this.multiplier = multiplier, this._desc = desc, this.list = list ?? [] {
     this.mainList = this.list;
   }
 
+  bool get desc => _desc;
+
   FetchType get fetchType => _fetchType;
 
-  T get latest => desc ? list.first.orig : list.last.orig;
+  T get latest => _desc ? list.first.orig : list.last.orig;
 
   void cbFetchFailed(dynamic e) {
     errmsg = rpc.getErrMsg(e);
@@ -92,7 +94,7 @@ class Store<T extends Entity> {
         if (p == null || p.isEmpty)
           break;
 
-        if (!list.isEmpty && desc)
+        if (!list.isEmpty && _desc)
           list.insertAll(0, p.reversed.map(createFn));
         else
           list.addAll(p.map(createFn));
@@ -100,7 +102,7 @@ class Store<T extends Entity> {
       case FetchType.OLDER:
         if (p == null || p.isEmpty)
           break;
-        if (desc)
+        if (_desc)
           list.addAll(p.map(createFn));
         else
           list.insertAll(0, p.reversed.map(createFn));
@@ -125,7 +127,7 @@ class Store<T extends Entity> {
       }
 
       final populatePages = page * pageSize;
-      if (desc) {
+      if (_desc) {
         list.removeRange(populatePages, size - populatePages);
       } else {
         list.removeRange(0, size - populatePages);
@@ -138,7 +140,7 @@ class Store<T extends Entity> {
         populatePages = page * populateLen,
         i = 0,
         removed = 0,
-        idx = desc ? populatePages + i : size - populatePages - i - 1;
+        idx = _desc ? populatePages + i : size - populatePages - i - 1;
 
     Pair<T> pair;
     T update;
@@ -150,7 +152,7 @@ class Store<T extends Entity> {
 
         mergeFn(update, pair);
 
-        if (desc) {
+        if (_desc) {
           idx = populatePages + i;
 
           if (idx == size) break;
@@ -177,7 +179,7 @@ class Store<T extends Entity> {
       removed++;
       size--;
 
-      if (!desc) {
+      if (!_desc) {
         idx = size - populatePages - i - 1;
 
         if (idx == -1) break;
@@ -188,7 +190,7 @@ class Store<T extends Entity> {
 
     if (i < updateLen) {
       final subList = i == 0 ? updateList : updateList.sublist(i);
-      if (desc) {
+      if (_desc) {
         list.addAll(subList.map(createFn));
       } else {
         list.insertAll(0, subList.reversed.map(createFn));
@@ -206,7 +208,7 @@ class Store<T extends Entity> {
 
     final empty = list.isEmpty;
     if (empty)
-      desc = true;
+      _desc = true;
 
     // debounce
     var now = new DateTime.now().millisecondsSinceEpoch;
@@ -215,8 +217,8 @@ class Store<T extends Entity> {
     }
 
     var req = ds.ParamRangeKey.$create(empty,
-        limit: empty ? pageSize * multiplier + 1 : (desc ? pageSize : pageSize * multiplier),
-        startKey: empty ? null : (desc ? list.first.orig.key : list.last.orig.key));
+        limit: empty ? pageSize * multiplier + 1 : (_desc ? pageSize : pageSize * multiplier),
+        startKey: empty ? null : (_desc ? list.first.orig.key : list.last.orig.key));
 
     _fetchTs = now;
     _fetchType = FetchType.NEWER;
@@ -240,8 +242,8 @@ class Store<T extends Entity> {
     }
 
     var req = ds.ParamRangeKey.$create(true,
-        limit: desc ? pageSize * multiplier : pageSize,
-        startKey: desc ? list.last.orig.key : list.first.orig.key);
+        limit: _desc ? pageSize * multiplier : pageSize,
+        startKey: _desc ? list.last.orig.key : list.first.orig.key);
 
     _fetchTs = now;
     _fetchType = FetchType.OLDER;
@@ -251,7 +253,6 @@ class Store<T extends Entity> {
     $state.loading = true;
     return true;
   }
-
 
   bool fetchUpdate({
     bool debounce = false,
@@ -271,9 +272,9 @@ class Store<T extends Entity> {
     // the first item in the visible list
     var pair = list[page * pageSize];
 
-    var req = ds.ParamRangeKey.$create(desc,
+    var req = ds.ParamRangeKey.$create(_desc,
       limit: math.min(pageSize, list.length),
-      startKey: desc ? util.incrementKey(pair.orig.key) : util.decrementKey(pair.orig.key),
+      startKey: _desc ? util.incrementKey(pair.orig.key) : util.decrementKey(pair.orig.key),
     );
 
     _fetchTs = now;
@@ -298,5 +299,11 @@ class Store<T extends Entity> {
     _selected = item;
   }
 
+  bool toggleDesc() {
+    final val = !_desc;
+    _desc = val;
+    list = list.reversed.toList(growable: true);
+    return val;
+  }
 }
 
