@@ -68,6 +68,8 @@ class Store<T extends Entity> {
 
   FetchType get fetchType => _fetchType;
 
+  T get latest => desc ? list.first.orig : list.last.orig;
+
   void cbFetchFailed(dynamic e) {
     errmsg = rpc.getErrMsg(e);
     $state.loading = false;
