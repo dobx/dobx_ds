@@ -336,7 +336,8 @@ class Store<T extends Entity> {
     final val = !_desc;
     _desc = val;
 
-    list = list.reversed.toList(growable: true);
+    if (list.length > 1)
+      list = list.reversed.toList(growable: true);
 
     if (cb != null)
       cb(arg);
