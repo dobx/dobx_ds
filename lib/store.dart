@@ -61,7 +61,7 @@ class Store<T extends Entity> {
   final int multiplier;
 
   bool _desc;
-  List<Pair<T>> list, mainList;
+  List<Pair<T>> list;
   SelectableItem _selected;
 
   FetchType _fetchType;
@@ -73,9 +73,10 @@ class Store<T extends Entity> {
     int multiplier = 1,
     bool desc = true,
     List<Pair<T>> list,
-  }) : this.multiplier = multiplier, this._desc = desc, this.list = list ?? [] {
-    this.mainList = this.list;
-  }
+  })
+      : this.multiplier = multiplier,
+        this._desc = desc,
+        this.list = list ?? [];
 
   bool get desc => _desc;
   bool get $desc { $state.$sub(StoreState.DESC); return _desc; }
