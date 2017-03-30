@@ -80,6 +80,28 @@ class Store<T extends Entity> {
 
   T get latest => _desc ? list.first.orig : list.last.orig;
 
+  void prepend(T message) {
+    list.insert(0, createFn(message));
+  }
+
+  void prependAll(List<T> l, [ bool reversed = false ]) {
+    if (list.length == 1)
+      list.insert(0, createFn(l[0]));
+    else
+      list.insertAll(0, reversed ? l.reversed.map(createFn) : l.map(createFn));
+  }
+
+  void append(T message) {
+    list.add(createFn(message));
+  }
+
+  void appendAll(List<T> l, [ bool reversed = false ]) {
+    if (list.length == 1)
+      list.add(createFn(l[0]));
+    else
+      list.addAll(reversed ? l.reversed.map(createFn) : l.map(createFn));
+  }
+
   void cbFetchFailed(dynamic e) {
     errmsg = rpc.getErrMsg(e);
     $state.loading = false;
@@ -95,17 +117,18 @@ class Store<T extends Entity> {
           break;
 
         if (!list.isEmpty && _desc)
-          list.insertAll(0, p.reversed.map(createFn));
+          prependAll(p, true);
         else
-          list.addAll(p.map(createFn));
+          appendAll(p);
         break;
       case FetchType.OLDER:
         if (p == null || p.isEmpty)
           break;
+
         if (_desc)
-          list.addAll(p.map(createFn));
+          appendAll(p);
         else
-          list.insertAll(0, p.reversed.map(createFn));
+          prependAll(p, true);
         break;
       case FetchType.UPDATE:
         _update(p);
