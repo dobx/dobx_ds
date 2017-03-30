@@ -21,6 +21,7 @@ import './rpc.dart' as rpc;
 import './util.dart' as util;
 
 import './observables.dart' show StoreState;
+export './observables.dart' show StoreState;
 
 abstract class Entity {
   String key;
@@ -36,6 +37,8 @@ abstract class Pair<T> {
   T get orig;
   T get copy;
 }
+
+typedef void ValueChanged<T>(T value);
 
 typedef Pair<T> CreateFn<T>(T value);
 
@@ -75,6 +78,7 @@ class Store<T extends Entity> {
   }
 
   bool get desc => _desc;
+  bool get $desc { $state.$sub(StoreState.DESC); return _desc; }
 
   FetchType get fetchType => _fetchType;
 
@@ -229,14 +233,16 @@ class Store<T extends Entity> {
     if ($state.loading)
       return false;
 
-    final empty = list.isEmpty;
-    if (empty)
-      _desc = true;
-
     // debounce
     var now = new DateTime.now().millisecondsSinceEpoch;
     if (debounce && (now - _fetchTs) < 500) {
       return false;
+    }
+
+    final empty = list.isEmpty;
+    if (empty && !_desc) {
+      _desc = true;
+      $state.$pub(StoreState.DESC);
     }
 
     var req = ds.ParamRangeKey.$create(empty,
@@ -322,10 +328,19 @@ class Store<T extends Entity> {
     _selected = item;
   }
 
-  bool toggleDesc() {
+  bool toggleDesc<T>([ ValueChanged<T> cb, T arg]) {
+    if ($state.loading)
+      return _desc;
+
     final val = !_desc;
     _desc = val;
+
     list = list.reversed.toList(growable: true);
+
+    if (cb != null)
+      cb(arg);
+
+    $state.$pub(StoreState.DESC);
     return val;
   }
 }

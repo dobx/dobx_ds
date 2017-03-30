@@ -26,5 +26,9 @@ abstract class StoreState {
 
   bool loading;
 
+  static const int DESC = 5;
+  void $pub(int id);
+  void $sub(int id);
+
   factory StoreState() => _$StoreState();
 }
