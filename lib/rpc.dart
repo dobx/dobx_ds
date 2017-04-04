@@ -16,7 +16,10 @@
 
 import 'dart:async';
 import 'dart:convert';
-import 'package:flutter/http.dart' as http;
+import 'package:http/http.dart' as http;
+import 'package:flutter/src/services/http_client.dart';
+
+final client = createHttpClient();
 
 typedef Future<dynamic> GetTransport(String location);
 typedef Future<dynamic> PostTransport(String location, String data);
@@ -67,11 +70,11 @@ void setPrefix(String prefix) {
 }
 
 Future<dynamic> _getHTTP(String location) {
-  return http.get(_prefix + location).then(parseResponse);
+  return client.get(_prefix + location).then(parseResponse);
 }
 
 Future<dynamic> _postHTTP(String location, String data) {
-  return http.post(_prefix + location, body: data).then(parseResponse);
+  return client.post(_prefix + location, body: data).then(parseResponse);
 }
 
 GetTransport _gt = _getHTTP;
