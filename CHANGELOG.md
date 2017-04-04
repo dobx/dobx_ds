@@ -1,3 +1,7 @@
+## 0.4.0
+
+* Fix update/reload diff
+
 ## 0.3.0
 
 * Updated flutter (2017-04-04) and fixed broken imports caused by the update.

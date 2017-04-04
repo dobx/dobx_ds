@@ -155,11 +155,7 @@ class Store<T extends Entity> {
       }
 
       final populatePages = page * pageSize;
-      if (_desc) {
-        list.removeRange(populatePages, size - populatePages);
-      } else {
-        list.removeRange(0, size - populatePages);
-      }
+      list.removeRange(populatePages, size - populatePages);
       return true;
     }
 
@@ -168,7 +164,7 @@ class Store<T extends Entity> {
         populatePages = page * populateLen,
         i = 0,
         removed = 0,
-        idx = _desc ? populatePages + i : size - populatePages - i - 1;
+        idx = populatePages;
 
     Pair<T> pair;
     T update;
@@ -180,15 +176,8 @@ class Store<T extends Entity> {
 
         mergeFn(update, pair);
 
-        if (_desc) {
-          idx = populatePages + i;
-
-          if (idx == size) break;
-        } else {
-          idx = size - populatePages - i - 1;
-
-          if (idx == -1) break;
-        }
+        if (++idx == size)
+          break;
 
         if (i != updateLen)
           continue;
@@ -207,22 +196,12 @@ class Store<T extends Entity> {
       removed++;
       size--;
 
-      if (!_desc) {
-        idx = size - populatePages - i - 1;
-
-        if (idx == -1) break;
-      } else if (idx == size) {
+      if (idx == size)
         break;
-      }
     }
 
     if (i < updateLen) {
-      final subList = i == 0 ? updateList : updateList.sublist(i);
-      if (_desc) {
-        list.addAll(subList.map(createFn));
-      } else {
-        list.insertAll(0, subList.reversed.map(createFn));
-      }
+      list.addAll(i == 0 ? updateList.map(createFn) : updateList.getRange(i, updateLen).map(createFn));
     }
 
     return removed != 0;
