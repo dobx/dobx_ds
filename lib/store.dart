@@ -101,7 +101,7 @@ class Store<T extends Entity> {
   }
 
   void appendAll(List<T> l, [ bool reversed = false ]) {
-    if (list.length == 1)
+    if (l.length == 1)
       list.add(createFn(l[0]));
     else
       list.addAll(reversed ? l.reversed.map(createFn) : l.map(createFn));
