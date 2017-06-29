@@ -90,7 +90,7 @@ class Store<T extends Entity> {
   }
 
   void prependAll(List<T> l, [ bool reversed = false ]) {
-    if (list.length == 1)
+    if (l.length == 1)
       list.insert(0, createFn(l[0]));
     else
       list.insertAll(0, reversed ? l.reversed.map(createFn) : l.map(createFn));
