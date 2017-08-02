@@ -324,5 +324,19 @@ class Store<T extends Entity> {
     $state.$pub(StoreState.DESC);
     return val;
   }
+
+  String page_info(int page) {
+    final size = list.length;
+    if (size == 0)
+      return '';
+
+    final start = (page * pageSize) + 1,
+        end = start + pageSize - 1;
+
+    if (start == size)
+      return '$start of $size';
+
+    return '$start - ${math.min(end, size)} of $size';
+  }
 }
 

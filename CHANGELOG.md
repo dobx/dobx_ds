@@ -1,3 +1,7 @@
+## 0.4.2
+
+* Add Store.page_info method
+
 ## 0.4.1
 
 * Fix append/prepend bug
