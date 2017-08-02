@@ -1,3 +1,7 @@
+## 0.4.1
+
+* Fix append/prepend bug
+
 ## 0.4.0
 
 * Fix update/reload diff
