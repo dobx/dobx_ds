@@ -106,7 +106,7 @@ packages:
   flutter:
     description: flutter
     source: sdk
-    version: "0.0.22"
+    version: "0.0.33-dev"
   glob:
     description:
       name: glob
@@ -154,7 +154,7 @@ packages:
       name: meta
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.4"
+    version: "1.1.1"
   mime:
     description:
       name: mime
@@ -282,4 +282,4 @@ packages:
     source: hosted
     version: "2.1.12"
 sdks:
-  dart: ">=1.23.0-dev.0.0 <2.0.0"
+  dart: ">=1.23.0-dev.0.0 <2.0.0-dev.infinity"
