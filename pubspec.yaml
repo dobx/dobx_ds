@@ -1,5 +1,5 @@
 name: dobx_ds
-version: 0.4.2
+version: 0.5.0
 author: dyu <davidyu@cebu.io>
 description: dobx lib for protostuffdb
 homepage: https://github.com/dobx/dobx_ds

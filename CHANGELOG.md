@@ -1,3 +1,7 @@
+## 0.5.0
+
+* Fix http dependency
+
 ## 0.4.2
 
 * Add Store.page_info method
