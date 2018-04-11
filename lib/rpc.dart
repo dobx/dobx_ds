@@ -17,9 +17,8 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:flutter/src/services/http_client.dart';
 
-final client = createHttpClient();
+final client = new http.Client();
 
 typedef Future<dynamic> GetTransport(String location);
 typedef Future<dynamic> PostTransport(String location, String data);
