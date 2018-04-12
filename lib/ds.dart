@@ -289,7 +289,7 @@ class ACResult_PList {
     if (map == null) return item;
 
     item ??= new ACResult_PList();
-    item._p = $map(map["1"] as List<Map<String,dynamic>>, ACResult.$fromMap);
+    item._p = $map(map["1"] as List<dynamic>, ACResult.$from);
     return item;
   }
   static ACResult_PList $from(dynamic data) {
