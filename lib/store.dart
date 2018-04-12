@@ -90,10 +90,13 @@ class Store<T extends Entity> {
   }
 
   void prependAll(List<T> l, [ bool reversed = false ]) {
-    if (l.length == 1)
-      list.insert(0, createFn(l[0]));
-    else
-      list.insertAll(0, reversed ? l.reversed.map(createFn) : l.map(createFn));
+    if (reversed) {
+      for (var i = l.length; i-- > 0;)
+        list.insert(0, createFn(l[i]));
+    } else {
+      for (var i = 0, len = l.length; i < len; i++)
+        list.insert(0, createFn(l[i]));
+    }
   }
 
   void append(T message) {
@@ -101,10 +104,13 @@ class Store<T extends Entity> {
   }
 
   void appendAll(List<T> l, [ bool reversed = false ]) {
-    if (l.length == 1)
-      list.add(createFn(l[0]));
-    else
-      list.addAll(reversed ? l.reversed.map(createFn) : l.map(createFn));
+    if (reversed) {
+      for (var i = l.length; i-- > 0;)
+        list.add(createFn(l[i]));
+    } else {
+      for (var i = 0, len = l.length; i < len; i++)
+        list.add(createFn(l[i]));
+    }
   }
 
   void cbFetchFailed(dynamic e) {

@@ -1,3 +1,7 @@
+## 0.5.1
+
+* Fix 'subtype' errors for collection addAll/insertAll when used with `list.map(fn)`
+
 ## 0.5.0
 
 * Fix http dependency
